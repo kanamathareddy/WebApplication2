@@ -1,0 +1,64 @@
+﻿
+@{
+    ViewData["Title"] = "Online Classes";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+@section Styles{
+    <style>
+        #section-banner {
+            background-image: url(../images/Home/OnlineClasses.jfif)
+        }
+
+        #core-content {
+            box-shadow: none;
+        }
+    </style>
+}
+
+<div id="rti-content">
+    <section id="inner-banner">
+        @Html.Partial("_innerbanner");
+    </section>
+    <div class="row">
+        <article id="core-content" class="container">
+            <div class="col-sm-12">
+                <div id="content-title">
+                    <div class="page-header">
+                        <h1 class="h1 main-headings">Training the mind to think</h1>
+                    </div>
+                </div>
+                <section id="content-block">
+                    <div id="content-block__main">
+                        <h4 class="small-headings">E-Classrooms</h4>
+                        <p class="text-content text-para">
+                        A positive and supportive classroom environment is a prime factor in creating an interactive learning environment. Increasing and seamless access to the latest teaching aids provides an opportunity to the teaching staff to improve the learning outcomes.    
+                        </p>
+                        <p class="text-content text-para">
+                        In PBR Visvodaya Institute of Technology and Science, all the classrooms and laboratories are provided with the state-of-the-art audio-visual teaching aids. The use of these aids helps in holding student attention and ensures better understanding of the concepts. Students are encouraged to participate in interactive sessions with the faculty so that interest is created in the students towards the learning activity.   
+                        </p>                        
+                        <h4 class="small-headings">Online Classes</h4>
+                      <p class="text-content text-para">
+                            <p class="text-content text-para">
+                        In keeping with the contemporary requirements, online teaching methodologies are employed in PBR Visvodaya Institute of Technology & Science along with the conventional classroom teaching. The faculty post online teaching material including video lectures, assignments and written materials. The faculty also conduct online interactive group sessions to clear doubts.    
+                        </p>
+                        <p class="text-content text-para">
+                       The availability of the subject material online enables the students to learn at their own pace and eliminate the need for the faculty to conduct repeat sessions. With the advent of technology, online method of learning is a very convenient option to the students
+                        </p>
+                        <p class="text-content text-para">
+                        PBR Visvodaya Institute of Technology & Science caters to this requirement by making use of student-friendly learning resources and platforms like You-tube, Google Meet, Google Classroom, Greatlearning and Codetantra.
+                        </p>
+                        
+                    </div>
+                </section>
+            </div>
+
+        </article>
+    </div>
+</div>
+
+@section Scripts{
+    <script>
+    </script>
+}

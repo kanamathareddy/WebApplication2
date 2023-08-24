@@ -1,0 +1,80 @@
+﻿
+@{
+    ViewData["Title"] = "NIRF";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section Styles{
+    <link rel="stylesheet" href="~/css/accreditation.css" />
+}
+
+<div id="accreditation-content">
+    <section id="inner-banner">
+        @Html.Partial("_innerBanner")
+    </section>
+    <div class="row">
+        <aside id="left-side-nav-menu" class="col-md-3 col-sm-4 box hidden-xs">
+            @Html.Partial("_AccreditationSideBar")
+        </aside>
+        <article id="core-content" class="col-md-9 col-sm-8 box ">
+            <div class="col-xs-12">
+                <div id="content-title">
+                    <div class="page-header">
+                        <h1 class="main-headings">NIRF</h1>
+                    </div>
+                </div>
+                <section id="content-block">
+                    <div id="content-block__main">
+                        <div id="accordion" class="panel-group">
+                            <div class="panel panel-default">
+                                <div class="panel-heading" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                                    <a class="panel-title">NIRF</a>
+                                </div>
+                                <div id="collapseOne" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <table class="table table-hover table-bordered table-striped customTable">
+                                            <thead>
+                                                <tr class="table-header">
+                                                    <th class="text-center">Title</th>
+                                                    <th class="text-center">Download</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>2017-2018</td>
+                                                    <td class="text-center"><a class="href-links" href="~/files/Accreditation/NIRF/NIRF_VITS_APPLICATION_2017-18_28.11.2018.pdf" target="_blank">Download File</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2018-2019</td>
+                                                    <td class="text-center"><a class="href-links" href="~/files/Accreditation/NIRF/NIRF_VITS_APPLICATION_2018-19.pdf" target="_blank">Download File</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2019-2020</td>
+                                                    <td class="text-center"><a class="href-links" href="~/files/Accreditation/NIRF/NIRF_VITS_APPLICATION_2019-20_17.01.2020.pdf" target="_blank">Download File</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2020-2021</td>
+                                                    <td class="text-center"><a class="href-links" href="~/files/Accreditation/NIRF/NIRF_VITS_APPLICATION_2020-21.pdf" target="_blank">Download File</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2021-2022</td>
+                                                    <td class="text-center"><a class="href-links" href="~/files/Accreditation/NIRF/NIRF_VITS_APPLICATION_2021-22.pdf" target="_blank">Download File</a></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </article>
+
+    </div>
+</div>
+
+@section Scripts{
+    <script src="~/js/accreditation.js"></script>
+}
+

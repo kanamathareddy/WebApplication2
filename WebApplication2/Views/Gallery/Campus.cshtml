@@ -1,0 +1,66 @@
+﻿
+@{
+    ViewData["Title"] = "Campus";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section Styles{
+    <link rel="stylesheet" href="~/css/gallery.css" />
+    <link rel="stylesheet" href="~/css/simpleLightbox.min.css" />
+    @*<link rel="stylesheet" href="~/css/simple-lightbox.css" />*@
+}
+
+<section class="hero-section">
+    <h2>Campus</h2>
+
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="gallery">
+                <a class="fader" title="Image 1" href="~/images/Gallery/CampusLife/Basketball.JPG">
+                    <img src="~/images/Gallery/Campus/Basketball.JPG">
+                </a>
+                <a class="fader" title="Image 2" href="~/images/Gallery/CampusLife/Bus.JPG">
+                    <img src="~/images/Gallery/Campus/Bus.JPG">
+                </a>
+                <a class="fader" title="Image 3" href="~/images/Gallery/CampusLife/Canteen.JPG">
+                    <img src="~/images/Gallery/Campus/Canteen.JPG">
+                </a>
+                <a class="fader" title="Image 3" href="~/images/Gallery/CampusLife/Library.JPG">
+                    <img src="~/images/Gallery/Campus/Library.JPG">
+                </a>
+                <a class="fader" title="Image 3" href="~/images/Gallery/CampusLife/Library2.JPG">
+                    <img src="~/images/Gallery/Campus/Library2.JPG">
+                </a>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+@section Scripts{
+    <script src="~/js/gallery.js"></script>
+    @*https://www.jqueryscript.net/gallery/Fullscreen-Responsive-Gallery-Lightbox-Plugin-SimpleLightbox.html*@
+    <script src="~/js/simpleLightbox.min.js"></script>
+    @*https://www.jqueryscript.net/lightbox/Responsive-Touch-enabled-jQuery-Image-Lightbox-Plugin.html - Not imported Yet*@
+    <script src="~/js/simple-lightbox.min.js"></script>
+    @*https://www.jqueryscript.net/animation/jQuery-Plugin-To-Fade-In-Out-Html-Elements-jQFader.html*@
+    <script src="~/js/jquery.jqfader.js"></script>
+
+    <script>
+        $('.gallery a').simpleLightbox({
+            // options here
+        });
+
+        $(document).ready(function () {
+            $('.fader').css({ 'display': 'none' });
+            $('.fader').jqfader({
+                speed: 400, // Speed between fade
+                randomize: false, // Option randomize
+                reverse: false, // Option reverse
+                animate: 1000, // Speed of fade
+                callback: function () { } // Callback function
+            });
+        });
+
+    </script>
+}

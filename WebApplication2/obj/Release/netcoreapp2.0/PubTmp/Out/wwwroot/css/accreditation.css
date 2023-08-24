@@ -1,0 +1,49 @@
+﻿/***************************************/
+/*        inner banner Properties      */
+/***************************************/
+#section-banner__placeholder--content:before {
+    content: "Accreditation";
+}
+
+/*******************************/
+/*        PDF rendering        */
+/*******************************/
+#my_pdf {
+    text-align: center;
+    display: inline-grid;
+}
+
+.pdf-nav-bar {
+    background: #333;
+    color: #fff;
+    padding: 1rem;
+}
+
+.btn {
+    background: #d84153;
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 0.7rem 2rem;
+}
+
+    .btn:hover {
+        opacity: 0.9;
+    }
+
+.page-info {
+    margin-left: 1rem;
+}
+
+.error {
+    background: orangered;
+    color: #fff;
+    padding: 1rem;
+}
+
+
+#pdf-render {
+    width: 100%;
+    border: 5px solid #333;
+}

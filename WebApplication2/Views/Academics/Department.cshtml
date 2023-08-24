@@ -1,0 +1,711 @@
+﻿@using Microsoft.AspNetCore.Mvc.Rendering
+@{
+    ViewData["Title"] = "Departments";
+}
+
+@section Styles{
+    <link rel="stylesheet" href="~/css/Academics.css" />
+}
+
+<div id="academics-content">
+    <section id="inner-banner">
+        @Html.Partial("_innerBanner")
+    </section>
+    <div class="row">
+        <aside id="left-side-nav-menu" class="col-md-3 col-sm-4 box hidden-xs">
+            @Html.Partial("_AcadamicsSideBar")
+        </aside>
+        <article id="core-content" class="col-md-9 col-sm-8 box ">
+            <div class="col-xs-12">
+                <ul id="breadcrumb-nav-section" class="breadcrumb">
+                    <li class="current"><a class="href-links" asp-controller="Academics" asp-action="Index" id="academics">Academics</a></li>
+                    <li id="currentpageBreadcrum" class="current">Departments</li>
+                </ul>
+                <div id="content-title">
+                    <div class="tab-content">
+                        <section class="blocks tab-pane tab-main">
+                            <div class="page-header">
+                                <h1 class="h1 main-headings">Departments</h1>
+                            </div>
+                        </section>
+                        <section class="blocks tab-pane tab-computerScience">
+                            <div class="page-header">
+                                <h1 class="h1 main-headings">department of computer science engineering</h1>
+                            </div>
+                        </section>
+                        <section class="blocks tab-pane tab-electronicsCommunication">
+                            <div class="page-header">
+                                <h1 class="h1 main-headings">department of electronics and communication engineering</h1>
+                            </div>
+                        </section>
+                        <section class="blocks tab-pane tab-electricalElectronics">
+                            <div class="page-header">
+                                <h1 class="h1 main-headings">department of electrical and electronics engineering</h1>
+                            </div>
+                        </section>
+                        <section class="blocks tab-pane tab-mechanical">
+                            <div class="page-header">
+                                <h1 class="h1 main-headings">department of mechanical engineering</h1>
+                            </div>
+                        </section>
+                        <section class="blocks tab-pane tab-civil">
+            <div class="page-header">
+                <h1 class="h1 main-headings">department of Civil Engineering</h1>
+            </div>
+        </section>
+                        <section class="blocks tab-pane tab-mba">
+                            <div class="page-header">
+                                <h1 class="h1 main-headings">Master of Business Administration</h1>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+                <section id="content-block">
+                    <div class="col-md-8">
+                        <div id="content-block__main">
+                            <div class="tab-content">
+                                <section class="blocks tab-pane tab-main">
+                                    <p class="text-content text-para">
+                                        The academics of the institute are a rare blend of latest technical skills to impart the knowledge to the students so that they will be able to prepare themselves suitable for the industry requirement. In addition to the teaching, the academics include the modern laboratories with the sate-of-the-art systems. The academics are structured in such a way that there is a continuous improvement in the performance of the students in the academic trend and as well as in research areas.
+                                    </p>
+                                    <p class="text-content text-para">
+                                        The Departments are organized with fully capable academicians to meet the academic and research activities of the each Department.
+                                        The Department is supported with basic administrative unit to effectively manage the functioning of the Departmental activities. Each Department has a Head of the Department and an Associate Head of the Department. The Head of the Department will lead, manage and develop the department and ensure that it achieves the highest possible standards of excellence in all its activities.
+                                        The institution has 6-departments viz,
+                                        <a class="href-links" href=".tab-electronicsCommunication" data-toggle="tab">Electronics &amp; Communication </a>,
+                                        <a class="href-links" href=".tab-computerScience" data-toggle="tab">Computer Science </a>,
+                                        <a class="href-links" href=".tab-electricalElectronics" data-toggle="tab">Electrical &amp; Electronics  </a>,
+                                        <a class="href-links" href=".tab-mechanical" data-toggle="tab">Mechanical </a>,
+                                        <a class="href-links" href=".tab-civil" data-toggle="tab">Civil </a>
+                                        and <a class="href-links" href=".tab-mba" data-toggle="tab">MBA </a>.
+                                    </p>
+
+                                    <h6 class="h6 small-headings">
+                                        The college offers the following UG and PG programmes
+                                    </h6>
+
+                                    <table class="table table-hover table-bordered table-striped customTable">
+                                        <thead>
+                                            <tr class="table-title"><th colspan="2" class="text-center">UG Programmes Offered</th></tr>
+                                            <tr class="table-header">
+                                                <th class="text-center">Branch</th>
+                                                <th class="text-center">Capacity</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Electronics and Communication Engineering</td>
+                                                <td>Intake of 360</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Computer Science Engineering</td>
+                                                <td>Intake of 300</td>
+                                            </tr>
+                                            <tr>
+                                                <td>CSE - Artificial Intelligence</td>
+                                                <td>Intake of 90</td>
+                                            </tr>
+                                            <tr>
+                                                <td>CSE - Internet Of Things</td>
+                                                <td>Intake of 180</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Artificial Intelligence & Machine Learning</td>
+                                                <td>Intake of 120</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Electrical and Electronics Engineering</td>
+                                                <td>Intake of 60</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Mechanical Engineering</td>
+                                                <td>Intake of 30</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Civil Engineering</td>
+                                                <td>Intake of 60</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                    <table class="table table-hover table-bordered table-striped customTable">
+                                        <thead>
+                                            <tr class="table-title"><th colspan="2" class="text-center">PG Programmes Offered</th></tr>
+                                            <tr class="table-header">
+                                                <th class="text-center">Branch</th>
+                                                <th class="text-center">Capacity</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>VLSI Design</td>
+                                                <td>Intake of 30</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Power Electronics</td>
+                                                <td>Intake of 18</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Machine Design</td>
+                                                <td>Intake of 12</td>
+                                            </tr>
+                                            <tr>
+                                                <td>CSE</td>
+                                                <td>Intake of 18</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Highway Engineering</td>
+                                                <td>Intake of 24</td>
+                                            </tr>
+                                            @*<tr>
+                                                <td>MCA</td>
+                                                <td>Intake of 120</td>
+                                            </tr>*@
+                                            <tr>
+                                                <td>MBA</td>
+                                                <td>Intake of 180</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <p class="text-content text-para">
+                                        All the programs offered, are affiliated to Jawaharlal Nehru Technological University Anantapur(JNTUA), Anantapuramu and approved
+                                        by the All India Council for Technical Education (AICTE), New Delhi. The College follows the regulations and syllabi of JNTUA and evaluation
+                                        is done according to the norms of the University. The durations of the programs are as follows:
+                                    </p>
+
+                                    <table class="table table-hover table-bordered table-striped customTable">
+                                        <thead>
+                                            <tr class="table-header">
+                                                <th class="text-center">Program</th>
+                                                <th class="text-center">Duration</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>B.Tech</td>
+                                                <td>8 semesters (4 years)</td>
+                                            </tr>
+                                            <tr>
+                                                <td>M.Tech</td>
+                                                <td>4 semesters (2 years)</td>
+                                            </tr>
+                                            <tr>
+                                                <td>MCA</td>
+                                                <td>6 semesters (3 years)</td>
+                                            </tr>
+                                            <tr>
+                                                <td>MBA</td>
+                                                <td>4 semesters (2 years)</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                </section>
+                                <section class="blocks tab-pane tab-computerScience">
+                                    <p class="text-content text-para">
+                                        Our students and faculty at PBR Vits engage in a four-year intellectual conversation — a journey of discovery — that begins in the classroom and extends into the institutions, laboratories, communities and further reaches to the globe.
+                                    </p>
+                                    You’ll graduate with the knowledge and experience to engage your future on your own terms.
+                                    <h6 class="h6 small-headings">Programmes offered by the Department</h6>
+                                    <ul class="text-content">
+                                        <li>B.Tech – Computer Science and Engineering with intake of 300</li>
+                                        <li>B.Tech - Artificial Intelligence with intake of 90</li>
+                                        <li>B.Tech - Internet Of Things with intake of 180</li>
+                                        <li>B.Tech – Artificial Intelligence &Aacute; Machine Learning of 120</li>
+                                    </ul>
+                                    <h4 class="inner-headings">Vision</h4>
+                                    <p class="text-content text-para">
+                                        To be a recognized Centre in the field of Computer Science & Engineering by imparting quality education and also equipping the students with latest technologies, soft skills and ethical values to face the challenges in industry & society.
+                                    </p>
+                                    <h4 class="inner-headings">Mission</h4>
+                                    <ul class="text-content">
+                                        <li>To provide quality education by imparting state of the art facility in Computer Science Engineering.</li>
+                                        <li>Enrich the students with innovative and problem solving skills by establishing continuous Industry Institute interaction.</li>
+                                        <li>To prepare the learners possessing social commitment and ethical values to face the dynamic challenges of industry and society.</li>
+                                    </ul>
+                                    <div class="inner-tabpanel-navigation">
+                                        <div class="tab" role="tabpanel">
+                                            <!-- Nav tabs -->
+                                            <ul class="nav nav-tabs inner-tabpanel-nav__list-menu" role="tablist">
+                                                <li class="active" role="presentation"><a class="h6" role="tab" href="#PEO-CS" data-toggle="tab">PEO</a></li>
+                                                <li role="presentation"><a class="h6" role="tab" href="#PO-CS" data-toggle="tab">PO</a></li>
+                                                <li role="presentation"><a class="h6" role="tab" href="#PSO-CS" data-toggle="tab">PSO</a></li>
+                                            </ul>
+                                            <!-- Tab panes -->
+                                            <div class="tab-content tabs">
+                                                <div role="tabpanel" class="tab-pane fade active in" id="PEO-CS" overflow="scroll">
+                                                    <h4 class="inner-headings">Programme Educational Objectives</h4>
+                                                    <p>A graduate of the Computer Science and Engineering Program should:</p>
+                                                    <dl class="row text-content">
+                                                        <dt class="col-sm-2">PEO-I :</dt>
+                                                        <dd class="col-sm-10">Graduates shall be able to apply principles learnt from the programme with analytical thinking and problem solving skills for developing software systems and creates value to organization as an employee.</dd>
+                                                        <dt class="col-sm-2">PEO-II :</dt>
+                                                        <dd class="col-sm-10">Assess real time problems and develop suitable technological solutions to fulfill the requirements of their professional career and pursue higher education to become a prolific researcher.</dd>
+                                                        <dt class="col-sm-2">PEO-III :</dt>
+                                                        <dd class="col-sm-10">Assess real time problems and develop suitable technological solutions to fulfill requirements of Software Industry. </dd>
+                                                    </dl>
+                                                </div>
+                                                <div role="tabpanel" class="tab-pane fade" id="PO-CS">
+                                                    <h4 class="inner-headings">Programme Outcomes</h4>
+                                                    <p class="text-content">After the graduation, the student will be able to </p>
+                                                    <ul class="text-content">
+                                                        <li> <strong>Engineering knowledge:</strong> Apply the knowledge of mathematics, science, engineering fundamentals, and an engineering specialization to the solution of complex engineering problems.</li>
+                                                        <li> <strong>Problem analysis:</strong> Identify, formulate, review research literature, and analyze complex engineering problems reaching substantiated conclusions using first principles of mathematics, natural sciences, and engineering sciences.</li>
+                                                        <li> <strong>Design/development of solutions:</strong> Design solutions for complex engineering problems and design system components or processes that meet the specified needs with appropriate consideration for the public health and safety, and the cultural, societal, and environmental considerations.</li>
+                                                        <li> <strong>Conduct investigations of complex problems:</strong> Use research-based knowledge and research methods including design of experiments, analysis and interpretation of data, and synthesis of the information to provide valid conclusions.</li>
+                                                        <li> <strong>Modern tool usage:</strong> Create, select, and apply appropriate techniques, resources, and modern engineering and IT tools including prediction and modeling to complex engineering activities with an understanding of the limitations.</li>
+                                                        <li> <strong>The engineer and society:</strong> Apply reasoning informed by the contextual knowledge to assess societal, health, safety, legal and cultural issues and the consequent responsibilities relevant to the professional engineering practice.</li>
+                                                        <li> <strong>Environment and sustainability:</strong> Understand the impact of the professional engineering solutions in societal and environmental contexts, and demonstrate the knowledge of, and need for sustainable development.</li>
+                                                        <li> <strong>Ethics:</strong> Apply ethical principles and commit to professional ethics and responsibilities and norms of the engineering practice.</li>
+                                                        <li> <strong>Individual and team work:</strong> Function effectively as an individual, and as a member or leader in diverse teams, and in multidisciplinary settings.</li>
+                                                        <li> <strong>Communication:</strong> Communicate effectively on complex engineering activities with the engineering community and with society at large, such as, being able to comprehend and write effective reports and design documentation, make effective presentations, and give and receive clear instructions.</li>
+                                                        <li> <strong>Project management and finance:</strong> Demonstrate knowledge and understanding of the engineering and management principles and apply these to one’s own work, as a member and leader in a team, to manage projects and in multidisciplinary environments.</li>
+                                                        <li> <strong>Life-long learning:</strong> Recognize the need for, and have the preparation and ability to engage in independent and life-long learning in the broadest context of technological change.</li>
+                                                    </ul>
+                                                </div>
+                                                <div role="tabpanel" class="tab-pane fade" id="PSO-CS">
+                                                    <h4 class="inner-headings">Programme Specific Outcomes</h4>
+                                                    <p>Upon completion of the program, student will be able to</p>
+                                                    <dl class="row text-content">
+                                                        <dt class="col-sm-2">PSO-1 :</dt>
+                                                        <dd class="col-sm-10">Apply Software Engineering Principles and Practices to provide software solutions.</dd>
+                                                        <dt class="col-sm-2">PSO-2 :</dt>
+                                                        <dd class="col-sm-10">Design and Develop Network, Mobile and Web-based Computational systems under realistic constraints.</dd>
+
+                                                    </dl>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </section>
+                                <section class="blocks tab-pane tab-electronicsCommunication">
+                                    <p class="text-content text-para">
+                                        The Department of Electronics and Communication Engineering is established in 1998 by the approval of the All India Council for Technical Education (AICTE). The Department has qualified and experienced faculty and excellent infrastructural facilities. It is well equipped with laboratories, audio-visual facilities and software tools such as MultiSim, ModelSim, Lab View, HFSS, MATLAB, and Xilinx. The Department is headed by Dr. A.Maheswar Reddy.
+                                    </p>
+                                    <h6 class="h6 small-headings">Programmes offered by the Department</h6>
+                                    <ul class="text-content">
+                                        <li>B.Tech – Electronics and Communication Engineering with an intake of 360</li>
+                                        <li>M.Tech – VLSI Design with an intake of 30</li>
+                                    </ul>
+                                    <h4 class="inner-headings">Vision</h4>
+                                    <p class="text-content text-para">
+                                        To produce technically competent and research oriented Electronics and Communication Engineers to meet the Industrial and Social requirements.
+                                    </p>
+                                    <h4 class="inner-headings">Mission</h4>
+                                    <ul class="text-content">
+                                        <li>To impart quality technical education in the field of Electronics and Communication Engineering through state-of-the art facilities and effective teaching learning process.</li>
+                                        <li>To enrich the faculty and students with research and consultancy skills through Industry-Interaction and Training in Emerging areas of Electronics and Communication Engineering.</li>
+                                        <li>To develop lifelong learning, leadership qualities and ethical values in learners to meet the societal and industrial needs.</li>
+                                    </ul>
+                                    <div class="inner-tabpanel-navigation">
+                                        <div class="tab" role="tabpanel">
+                                            <!-- Nav tabs -->
+                                            <ul class="nav nav-tabs inner-tabpanel-nav__list-menu" role="tablist">
+                                                <li class="active" role="presentation"><a class="h6" role="tab" href="#PEO-ECE" data-toggle="tab">PEO</a></li>
+                                                <li role="presentation"><a class="h6" role="tab" href="#PO-ECE" data-toggle="tab">PO</a></li>
+                                                <li role="presentation"><a class="h6" role="tab" href="#PSO-ECE" data-toggle="tab">PSO</a></li>
+                                            </ul>
+                                            <!-- Tab panes -->
+                                            <div class="tab-content tabs">
+                                                <div role="tabpanel" class="tab-pane fade active in" id="PEO-ECE" overflow="scroll">
+                                                    <h4 class="inner-headings">Programme Educational Objectives</h4>
+                                                    <dl class="row text-content">
+                                                        <dt class="col-sm-2">PEO-I :</dt>
+                                                        <dd class="col-sm-10">Graduates will have the capabilities to analyze, design and develop innovative solutions for the problems in the field of Electronics and Communication Engineering using core competencies.</dd>
+                                                        <dt class="col-sm-2">PEO-II :</dt>
+                                                        <dd class="col-sm-10">Graduates will have the ability to engage themselves in research and lifelong learning to achieve professional excellence.</dd>
+                                                        <dt class="col-sm-2">PEO-III :</dt>
+                                                        <dd class="col-sm-10">Graduates will have successful career with leadership qualities, ethics and good communication skills in Electronics and Communication Engineering and related fields.</dd>
+                                                    </dl>
+                                                </div>
+                                                <div role="tabpanel" class="tab-pane fade" id="PO-ECE">
+                                                    <h4 class="inner-headings">Programme Outcomes</h4>
+                                                    <p class="text-content">After the graduation, the student will be able to </p>
+                                                    <ul class="text-content">
+                                                        <li> <strong>Engineering knowledge:</strong> Apply the knowledge of mathematics, science, engineering fundamentals, and an engineering specialization to the solution of complex engineering problems.</li>
+                                                        <li> <strong>Problem analysis:</strong> Identify, formulate, review research literature, and analyze complex engineering problems reaching substantiated conclusions using first principles of mathematics, natural sciences, and engineering sciences.</li>
+                                                        <li> <strong>Design/development of solutions:</strong> Design solutions for complex engineering problems and design system components or processes that meet the specified needs with appropriate consideration for the public health and safety, and the cultural, societal, and environmental considerations.</li>
+                                                        <li> <strong>Conduct investigations of complex problems:</strong> Use research-based knowledge and research methods including design of experiments, analysis and interpretation of data, and synthesis of the information to provide valid conclusions.</li>
+                                                        <li> <strong>Modern tool usage:</strong> Create, select, and apply appropriate techniques, resources, and modern engineering and IT tools including prediction and modeling to complex engineering activities with an understanding of the limitations.</li>
+                                                        <li> <strong>The engineer and society:</strong> Apply reasoning informed by the contextual knowledge to assess societal, health, safety, legal and cultural issues and the consequent responsibilities relevant to the professional engineering practice.</li>
+                                                        <li> <strong>Environment and sustainability:</strong> Understand the impact of the professional engineering solutions in societal and environmental contexts, and demonstrate the knowledge of, and need for sustainable development.</li>
+                                                        <li> <strong>Ethics:</strong> Apply ethical principles and commit to professional ethics and responsibilities and norms of the engineering practice.</li>
+                                                        <li> <strong>Individual and team work:</strong> Function effectively as an individual, and as a member or leader in diverse teams, and in multidisciplinary settings.</li>
+                                                        <li> <strong>Communication:</strong> Communicate effectively on complex engineering activities with the engineering community and with society at large, such as, being able to comprehend and write effective reports and design documentation, make effective presentations, and give and receive clear instructions.</li>
+                                                        <li> <strong>Project management and finance:</strong> Demonstrate knowledge and understanding of the engineering and management principles and apply these to one’s own work, as a member and leader in a team, to manage projects and in multidisciplinary environments.</li>
+                                                        <li> <strong>Life-long learning:</strong> Recognize the need for, and have the preparation and ability to engage in independent and life-long learning in the broadest context of technological change.</li>
+                                                    </ul>
+                                                </div>
+                                                <div role="tabpanel" class="tab-pane fade" id="PSO-ECE">
+                                                    <h4 class="inner-headings">Programme Specific Outcomes</h4>
+                                                    <dl class="row text-content">
+                                                        <dt class="col-sm-2">PSO-1 :</dt>
+                                                        <dd class="col-sm-10">Graduates will be able to design and analyze Image Processing and communication systems concepts using appropriate tools.</dd>
+                                                        <dt class="col-sm-2">PSO-2 :</dt>
+                                                        <dd class="col-sm-10">Graduates will be able to design and develop solutions for real world problems by applying the concepts of VLSI & Embedded systems.</dd>
+                                                    </dl>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </section>
+                                <section class="blocks tab-pane tab-electricalElectronics">
+                                    <p class="text-content text-para">
+                                        The Department of Electrical and Electronic Engineering (EEE) at PBR VITS innovates by conducting fundamental and applied research to develop physical technologies, hardware and software systems, and information technologies; it educates future academic and industry leaders; and it prepares students for careers in industry, academic, and research labs
+                                    </p>
+                                    <h6 class="h6 small-headings">Programmes offered by the Department</h6>
+                                    <ul class="text-content">
+                                        <li>B.Tech – Electrical and Electronic Engineering with an intake of 60</li>
+                                        <li>M.Tech - Power Electronics with intake of 18</li>
+
+                                    </ul>
+                                    <h4 class="inner-headings">Vision</h4>
+                                    <p class="text-content text-para">
+                                        “To be recognized for producing meritorious electrical engineers with research proficiency and social commitment”
+                                    </p>
+                                    <h4 class="inner-headings">Mission</h4>
+                                    <ul class="text-content">
+                                        <li>Impart quality education with practice-based learning in producing electrical engineers with ethical values.</li>
+                                        <li>Encourage the faculty and students to acquire mastery in cutting edge technologies.</li>
+                                        <li>Implement research activities with social commitment.</li>
+                                    </ul>
+                                    <div class="inner-tabpanel-navigation">
+                                        <div class="tab" role="tabpanel">
+                                            <!-- Nav tabs -->
+                                            <ul class="nav nav-tabs inner-tabpanel-nav__list-menu" role="tablist">
+                                                <li class="active" role="presentation"><a class="h6" role="tab" href="#PEO-EEE" data-toggle="tab">PEO</a></li>
+                                                <li role="presentation"><a class="h6" role="tab" href="#PO-EEE" data-toggle="tab">PO</a></li>
+                                                <li role="presentation"><a class="h6" role="tab" href="#PSO-EEE" data-toggle="tab">PSO</a></li>
+                                            </ul>
+                                            <!-- Tab panes -->
+                                            <div class="tab-content tabs">
+                                                <div role="tabpanel" class="tab-pane fade active in" id="PEO-EEE" overflow="scroll">
+                                                    <h4 class="inner-headings">Programme Educational Objectives</h4>
+                                                    <dl class="row text-content">
+                                                        <dt class="col-sm-2">PEO-I :</dt>
+                                                        <dd class="col-sm-10">: Acquire a profound knowledge for a successful career in electrical engineering and allied fields.</dd>
+                                                        <dt class="col-sm-2">PEO-II :</dt>
+                                                        <dd class="col-sm-10">Pursue higher education and involve in research activities of electrical and electronics engineering.</dd>
+                                                        <dt class="col-sm-2">PEO-III :</dt>
+                                                        <dd class="col-sm-10">Exhibit intellectual skills ethically and pursue life-long learning with social commitment.</dd>
+                                                    </dl>
+                                                </div>
+                                                <div role="tabpanel" class="tab-pane fade" id="PO-EEE">
+                                                    <h4 class="inner-headings">Programme Outcomes</h4>
+                                                    <p class="text-content">After the graduation, the student will be able to </p>
+                                                    <ul class="text-content">
+                                                        <li> <strong>Engineering knowledge:</strong> Apply the knowledge of mathematics, science, engineering fundamentals, and an engineering specialization to the solution of complex engineering problems.</li>
+                                                        <li> <strong>Problem analysis:</strong> Identify, formulate, review research literature, and analyze complex engineering problems reaching substantiated conclusions using first principles of mathematics, natural sciences, and engineering sciences.</li>
+                                                        <li> <strong>Design/development of solutions:</strong> Design solutions for complex engineering problems and design system components or processes that meet the specified needs with appropriate consideration for the public health and safety, and the cultural, societal, and environmental considerations.</li>
+                                                        <li> <strong>Conduct investigations of complex problems:</strong> Use research-based knowledge and research methods including design of experiments, analysis and interpretation of data, and synthesis of the information to provide valid conclusions.</li>
+                                                        <li> <strong>Modern tool usage:</strong> Create, select, and apply appropriate techniques, resources, and modern engineering and IT tools including prediction and modeling to complex engineering activities with an understanding of the limitations.</li>
+                                                        <li> <strong>The engineer and society:</strong> Apply reasoning informed by the contextual knowledge to assess societal, health, safety, legal and cultural issues and the consequent responsibilities relevant to the professional engineering practice.</li>
+                                                        <li> <strong>Environment and sustainability:</strong> Understand the impact of the professional engineering solutions in societal and environmental contexts, and demonstrate the knowledge of, and need for sustainable development.</li>
+                                                        <li> <strong>Ethics:</strong> Apply ethical principles and commit to professional ethics and responsibilities and norms of the engineering practice.</li>
+                                                        <li> <strong>Individual and team work:</strong> Function effectively as an individual, and as a member or leader in diverse teams, and in multidisciplinary settings.</li>
+                                                        <li> <strong>Communication:</strong> Communicate effectively on complex engineering activities with the engineering community and with society at large, such as, being able to comprehend and write effective reports and design documentation, make effective presentations, and give and receive clear instructions.</li>
+                                                        <li> <strong>Project management and finance:</strong> Demonstrate knowledge and understanding of the engineering and management principles and apply these to one’s own work, as a member and leader in a team, to manage projects and in multidisciplinary environments.</li>
+                                                        <li> <strong>Life-long learning:</strong> Recognize the need for, and have the preparation and ability to engage in independent and life-long learning in the broadest context of technological change.</li>
+                                                    </ul>
+                                                </div>
+                                                <div role="tabpanel" class="tab-pane fade" id="PSO-EEE">
+                                                    <h4 class="inner-headings">Programme Specific Outcomes</h4>
+                                                    <dl class="row text-content">
+                                                        <dt class="col-sm-2">PSO-1 :</dt>
+                                                        <dd class="col-sm-10">Analyze industrial electrical challenges by applying knowledge of fundamental electrical circuits, electronics and drives.</dd>
+                                                        <dt class="col-sm-2">PSO-2 :</dt>
+                                                        <dd class="col-sm-10">Apply standard practices in electrical power and control systems with safety and societal considerations.</dd>
+                                                    </dl>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </section>
+                                <section class="blocks tab-pane tab-mechanical">
+                                    <p class="text-content text-para">
+                                        The  mission of the undergraduate program in Mechanical Engineering is to provide students with a balance of intellectual and practical experiences that enable them to address a variety of societal needs. The curriculum encompasses elements from a wide array of disciplines built around the themes of biomechanical engineering, computational engineering, design, energy, materials, and multiscale engineering. Course work may include mechatronics, computational simulation, solid and fluid dynamics, microelectromechanical systems, biomechanical engineering, energy science and technology, propulsion, sensing and control, nano- and micro-mechanics, and design. The program prepares students for entry-level work as mechanical engineers and for graduate studies in either an engineering discipline or another field where a broad engineering background is useful.
+                                    </p>
+                                    <h6 class="h6 small-headings">Programmes offered by the Department</h6>
+                                    <ul class="text-content">
+                                        <li>B.Tech – Mechanical Engineering with Intake of 30</li>
+                                        <li>M.Tech – Machine Design with intake of 12</li>
+                                    </ul>
+                                    <h4 class="inner-headings">Vision</h4>
+                                    <p class="text-content text-para">
+                                        “To provide society with centre of learning that makes the youth dynamic professionals with social commitment”
+                                    </p>
+                                    <h4 class="inner-headings">Mission</h4>
+                                    <ul class="text-content">
+                                        <li>Sound knowledge with analytical ability and practical exposure</li>
+                                        <li>Professional competence and creativity</li>
+                                        <li>Efficient capable professionals with ethical values</li>
+                                        <li>Fit for the industry</li>
+                                    </ul>
+                                    <div class="inner-tabpanel-navigation">
+                                        <div class="tab" role="tabpanel">
+                                            <!-- Nav tabs -->
+                                            <ul class="nav nav-tabs inner-tabpanel-nav__list-menu" role="tablist">
+                                                <li class="active" role="presentation"><a class="h6" role="tab" href="#PEO-ME" data-toggle="tab">PEO</a></li>
+                                                <li role="presentation"><a class="h6" role="tab" href="#PO-ME" data-toggle="tab">PO</a></li>
+                                                <li role="presentation"><a class="h6" role="tab" href="#PSO-ME" data-toggle="tab">PSO</a></li>
+                                            </ul>
+                                            <!-- Tab panes -->
+                                            <div class="tab-content tabs">
+                                                <div role="tabpanel" class="tab-pane fade active in" id="PEO-ME" overflow="scroll">
+                                                    <h4 class="inner-headings">Programme Educational Objectives</h4>
+                                                    <dl class="row text-content">
+                                                        <dt class="col-sm-2">PEO-I :</dt>
+                                                        <dd class="col-sm-10">Students are empowered with the knowledge, Skills and innovative thinking in Mechanical engineering.</dd>
+                                                        <dt class="col-sm-2">PEO-II :</dt>
+                                                        <dd class="col-sm-10">Graduates will meet the requirements of industry and become employable.</dd>
+                                                        <dt class="col-sm-2">PEO-III :</dt>
+                                                        <dd class="col-sm-10">Graduates inculcate responsibility with ethical and professional outlook and empathy to social and environmental concerns.</dd>
+                                                    </dl>
+                                                </div>
+                                                <div role="tabpanel" class="tab-pane fade" id="PO-ME">
+                                                    <h4 class="inner-headings">Programme Outcomes</h4>
+                                                    <p class="text-content">After the graduation, the student will be able to </p>
+                                                    <ul class="text-content">
+                                                        <li> <strong>Engineering knowledge:</strong> Apply the knowledge of mathematics, science, engineering fundamentals, and an engineering specialization to the solution of complex engineering problems.</li>
+                                                        <li> <strong>Problem analysis:</strong> Identify, formulate, review research literature, and analyze complex engineering problems reaching substantiated conclusions using first principles of mathematics, natural sciences, and engineering sciences.</li>
+                                                        <li> <strong>Design/development of solutions:</strong> Design solutions for complex engineering problems and design system components or processes that meet the specified needs with appropriate consideration for the public health and safety, and the cultural, societal, and environmental considerations.</li>
+                                                        <li> <strong>Conduct investigations of complex problems:</strong> Use research-based knowledge and research methods including design of experiments, analysis and interpretation of data, and synthesis of the information to provide valid conclusions.</li>
+                                                        <li> <strong>Modern tool usage:</strong> Create, select, and apply appropriate techniques, resources, and modern engineering and IT tools including prediction and modeling to complex engineering activities with an understanding of the limitations.</li>
+                                                        <li> <strong>The engineer and society:</strong> Apply reasoning informed by the contextual knowledge to assess societal, health, safety, legal and cultural issues and the consequent responsibilities relevant to the professional engineering practice.</li>
+                                                        <li> <strong>Environment and sustainability:</strong> Understand the impact of the professional engineering solutions in societal and environmental contexts, and demonstrate the knowledge of, and need for sustainable development.</li>
+                                                        <li> <strong>Ethics:</strong> Apply ethical principles and commit to professional ethics and responsibilities and norms of the engineering practice.</li>
+                                                        <li> <strong>Individual and team work:</strong> Function effectively as an individual, and as a member or leader in diverse teams, and in multidisciplinary settings.</li>
+                                                        <li> <strong>Communication:</strong> Communicate effectively on complex engineering activities with the engineering community and with society at large, such as, being able to comprehend and write effective reports and design documentation, make effective presentations, and give and receive clear instructions.</li>
+                                                        <li> <strong>Project management and finance:</strong> Demonstrate knowledge and understanding of the engineering and management principles and apply these to one’s own work, as a member and leader in a team, to manage projects and in multidisciplinary environments.</li>
+                                                        <li> <strong>Life-long learning:</strong> Recognize the need for, and have the preparation and ability to engage in independent and life-long learning in the broadest context of technological change.</li>
+                                                    </ul>
+                                                </div>
+                                                <div role="tabpanel" class="tab-pane fade" id="PSO-ME">
+                                                    <h4 class="inner-headings">Programme Specific Outcomes</h4>
+                                                    <dl class="row text-content">
+                                                        <dt class="col-sm-2">PSO-1 :</dt>
+                                                        <dd class="col-sm-10">Ability to apply the acquired Mechanical Engineering knowledge for the advancement of society and self.</dd>
+                                                        <dt class="col-sm-2">PSO-2 :</dt>
+                                                        <dd class="col-sm-10">Ability to implement the learned principles of Mechanical Engineering to analyze, evaluate and create more advanced mechanical systems or processes.</dd>
+                                                        <dt class="col-sm-2">PSO-3 :</dt>
+                                                        <dd class="col-sm-10">Develop and implement new ideas on product design and development with the help of modern CAD/CAM tools, while ensuring best manufacturing practices.</dd>
+                                                        
+                                                    </dl>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                                <section class="blocks tab-pane tab-civil">
+                                    <p class="text-content text-para">
+                                    Our students and faculty at PBR Vits engage in a two-year intellectual conversation — a journey of discovery — that begins in the classroom and extends into the institutions, laboratories, communities and further reaches to the globe.
+                                       
+                                    </p>
+                                    <h4 class="inner-headings">Vision</h4>
+                                    <p class="text-content text-para">
+                                        “Imparting knowledge of Computer Applications bringing out globally competent pioneering computing professionals, researchers, innovators and entrepreneurs and there by succeed and contribute value to the knowledge-based economy and society”
+                                    </p>
+                                    <h4 class="inner-headings">Mission</h4>
+                                    <ul class="text-content">
+                                        <li>To offer high-grade, value-based Post-graduate and Doctoral programmers in the field of Computer Applications.</li>
+                                        <li>To provide conducive environment so as to achieve excellence in teaching-learning, and research and development activities.</li>
+                                        <li>To bridge the gap between industry and academia by framing curricula and syllabi based on industrial and societal needs.</li>
+                                        <li>To offer tasks for experiential technology-intensive knowledge through collaborative and interdisciplinary activities.</li>
+                                        <li>To provide appropriate forums to develop innovative talents, practice ethical values and inculcate as enduring learners.</li>
+                                        <li>To facilitate students to nurture skills to practice their professions competently to meet the ever-changing needs of society.</li>
+                                    </ul>
+                                    <div class="inner-tabpanel-navigation">
+                                        <div class="tab" role="tabpanel">
+                                            <!-- Nav tabs -->
+                                            <ul class="nav nav-tabs inner-tabpanel-nav__list-menu" role="tablist">
+                                                <li class="active" role="presentation"><a class="h6" role="tab" href="#PEO-mca" data-toggle="tab">PEO</a></li>
+                                                <li role="presentation"><a class="h6" role="tab" href="#PO-mca" data-toggle="tab">PO</a></li>
+                                                <li role="presentation"><a class="h6" role="tab" href="#PSO-mca" data-toggle="tab">PSO</a></li>
+                                            </ul>
+                                            <!-- Tab panes -->
+                                            <div class="tab-content tabs">
+                                                <div role="tabpanel" class="tab-pane fade active in" id="PEO-mca" overflow="scroll">
+                                                    <h4 class="inner-headings">Programme Educational Objectives</h4>
+                                                    <dl class="row text-content">
+                                                        <dt class="col-sm-2">PEO-I :</dt>
+                                                        <dd class="col-sm-10">To progress their career productively in software industry, academia, research, entrepreneurial pursuit, government, consulting firms and other Information Technology enabled services.</dd>
+                                                        <dt class="col-sm-2">PEO-II :</dt>
+                                                        <dd class="col-sm-10">To achieve peer-recognition; as an individual or in a team; by adopting ethics and professionalism and communicate effectively to excel well in cross culture and inter-disciplinary teams</dd>
+                                                        <dt class="col-sm-2">PEO-III :</dt>
+                                                        <dd class="col-sm-10">To continue a lifelong professional development in computing that contributes in self and societal growth.</dd>
+                                                    </dl>
+                                                </div>
+                                                <div role="tabpanel" class="tab-pane fade" id="PO-mca">
+                                                    <h4 class="inner-headings">Programme Outcomes</h4>
+                                                    <p class="text-content">After the graduation, the student will be able to </p>
+                                                    <ul class="text-content">
+                                                        <li>Apply the knowledge of mathematics and computing fundamentals to various real life applications for any given requirement</li>
+                                                        <li>Design and develop applications to analyze and solve all computer science related problems</li>
+                                                        <li>Design applications for any desired needs with appropriate considerations for any specific need on societal and environmental aspects</li>
+                                                        <li>Analyze and review literatures to invoke the research skills to design, interpret and make inferences from the resulting  data</li>
+                                                        <li>Integrate and apply efficiently the contemporary IT tools to all  computer applications</li>
+                                                        <li>Solve and work with a professional context pertaining to ethics, social, cultural and cyber regulations</li>
+                                                        <li>Involve in perennial learning for a continued career development and progress as a computer professional</li>
+                                                        <li>Function effectively both as a team leader and team member on multi disciplinary projects to demonstrate computing and management skills</li>
+                                                        <li>Communicate effectively and present technical information in oral and written reports</li>
+                                                        <li>Utilize the computing knowledge efficiently in projects with concern for societal, environmental, and cultural aspects</li>
+                                                        <li>Function competently as an individual and as a leader in multidisciplinary projects</li>
+                                                        <li>Create and design innovative methodologies to solve complex problems for the betterment of the society</li>
+                                                        <li>Apply the inherent skills with  absolute focus to function as an successful entrepreneur</li>
+                                                    </ul>
+                                                </div>
+                                                <div role="tabpanel" class="tab-pane fade" id="PSO-mca">
+                                                    <h4 class="inner-headings">Programme Specific Outcomes</h4>
+                                                    <dl class="row text-content">
+                                                        <dt class="col-sm-2">PSO-1 :</dt>
+                                                        <dd class="col-sm-10">Design, develop and implement interdisciplinary application software projects to meet the demands of industry requirements using modern tools and technologies</dd>
+                                                        <dt class="col-sm-2">PSO-2 :</dt>
+                                                        <dd class="col-sm-10">Analyze the societal needs to provide novel solutions through technological based research.</dd>
+                                                    </dl>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                                <section class="blocks tab-pane tab-mba">
+                                    @*<h6 class="h6 small-headings">Programmes offered by the Department</h6>
+                                    <p class="text-content text-para">
+                                        ??????????????????????????????????????????????????????????????????
+                                    </p>*@
+                                    <h4 class="inner-headings">Vision</h4>
+                                    <p class="text-content text-para">
+                                        “To be a centre of learning in management education with social commitment"
+                                    </p>
+                                    <h4 class="inner-headings">Mission</h4>
+                                    <ul class="text-content">
+                                        <li>Impart quality teaching - learning practices in management education.</li>
+                                        <li>Involve the faculty and students in acquiring current developments.</li>
+                                        <li>Inculcate innovative ideas and implement research activities in management discipline with social commitment.</li>
+                                    </ul>
+                                    <div class="inner-tabpanel-navigation">
+                                        <div class="tab" role="tabpanel">
+                                            <!-- Nav tabs -->
+                                            <ul class="nav nav-tabs inner-tabpanel-nav__list-menu" role="tablist">
+                                                <li class="active" role="presentation"><a class="h6" role="tab" href="#PEO-mba" data-toggle="tab">PEO</a></li>
+                                                <li role="presentation"><a class="h6" role="tab" href="#PO-mba" data-toggle="tab">PO</a></li>
+                                                <li role="presentation"><a class="h6" role="tab" href="#PSO-mba" data-toggle="tab">PSO</a></li>
+                                            </ul>
+                                            <!-- Tab panes -->
+                                            <div class="tab-content tabs">
+                                                <div role="tabpanel" class="tab-pane fade active in" id="PEO-mba">
+                                                    <h4 class="inner-headings">Programme Educational Objectives</h4>
+                                                    <dl class="row text-content">
+                                                        <dt class="col-sm-2">PEO-I :</dt>
+                                                        <dd class="col-sm-10">To equip students with excellent academic environment to demonstrate high levels of communication skills, creativity, strategic thinking, multi tasking, teamwork and leadership in their career..</dd>
+                                                        <dt class="col-sm-2">PEO-II :</dt>
+                                                        <dd class="col-sm-10">To enable students to apply management principles and practices for a successful career in the corporate world.</dd>
+                                                        <dt class="col-sm-2">PEO-III :</dt>
+                                                        <dd class="col-sm-10">To solve complex business problems and to develop leadership skills to handle business uncertainties and crisis with a rational approach.</dd>
+                                                        <dt class="col-sm-2">PEO-IV :</dt>
+                                                        <dd class="col-sm-10">To create managers to understand national as well as international business environment and to assimilate updated information.</dd>
+                                                    </dl>
+                                                </div>
+                                                <div role="tabpanel" class="tab-pane fade active in" id="PO-mba">
+                                                    <h4 class="inner-headings">Programme Outcomes</h4>
+                                                    <p class="text-content">After the graduation, the student will be able to </p>
+                                                    <ul class="text-content">
+                                                        <li>An ability to apply knowledge, skills and right attitude necessary to provide effective leadership in a global environment.</li>
+                                                        <li>An ability to develop competent management professionals with strong ethical values, capable of assuming a pivotal role in various sectors of the Indian Economy & Society, aligned with the national priorities. </li>
+                                                        <li>An ability to develop proactive thinking so as to perform effectively in the dynamic socio-economic and business ecosystem.</li>
+                                                        <li>An ability to communicate effectively</li>
+                                                        <li>To train the students to take up marketing, finance, human resource function of various/ different organizations.</li>
+                                                    </ul>
+                                                </div>
+                                                <div role="tabpanel" class="tab-pane fade" id="PSO-mba">
+                                                    <h4 class="inner-headings">Programme Specific Outcomes</h4>
+                                                    <dl class="row text-content">
+                                                        <dt class="col-sm-2">PSO-1 :</dt>
+                                                        <dd class="col-sm-10">To apply the fundamental knowledge of management sciences to optimally solve the complex business problems.</dd>
+                                                        <dt class="col-sm-2">PSO-2 :</dt>
+                                                        <dd class="col-sm-10">To inculcate in students the ability to gain multidisciplinary knowledge through simulated problems, case analysis, projects and industrial training.</dd>
+                                                        <dt class="col-sm-2">PSO-3 :</dt>
+                                                        <dd class="col-sm-10">To demonstrate the practice of professional ethics and standards for societal and environmental well-being.</dd>
+                                                        <dt class="col-sm-2">PSO-4 :</dt>
+                                                        <dd class="col-sm-10">To develop proactive thinking among students so as to perform effectively in the dynamic business environment</dd>
+                                                    </dl>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                            <div id="arrow-bouncing">
+                                <div class="arrow bounce">
+                                    <span class="fa-stack">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-chevron-down fa-stack-1x"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <aside id="right-side-nav-menu">
+                    <div class="col-md-4">
+                        <div id="content-block__side-menu">
+                            @Html.Partial("_AcadamicsQuickLinks")
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </article>
+    </div>
+</div>
+
+@section Scripts{
+    <script src="https://cdn.jsdelivr.net/gh/cant89/gianni-accordion-js/dist/gianniAccordion.min.js"></script>
+    <script src="~/js/academics.js"></script>
+    <script>
+ //        $("li#@(ViewContext.RouteData.Values["Controller"])-@(ViewContext.RouteData.Values["Action"])")).addClass("active");
+
+        $('#Department > blockquote').show();
+
+        $('[href=".tab-main"]').tab('show');
+        $('[href=".tab-main"]').parent().remove();
+
+        $('#currentpageBreadcrum').click(function () {
+            $('[href=".tab-main"]').tab('show');
+            $('#currentpageBreadcrum').html("Departments");
+            $('#breadcrumb-nav-section li').last().hide();
+        });
+
+        $('#Department > blockquote li, .tab-content .tab-main .href-links').click(function () {
+            $('#currentpageBreadcrum').html("<a class=\"href-links\" href=\".tab-main\" data-toggle=\"tab\">Departments</a>");
+        });
+
+        $('.tab-content .tab-main .href-links').click(function () {
+            var txt = $(this).text();
+            var elementID = $(this).attr('id');
+
+            $("#breadcrumb-nav-section > li:not(.current)").remove();
+            var ul = document.getElementById("breadcrumb-nav-section");
+            var li = document.createElement("li");
+            li.appendChild(document.createTextNode(txt));
+            ul.appendChild(li);
+        });
+
+        $('#content-block__main .tab-content').scroll(function () {
+            if ($(this).scrollTop() + $(this).innerHeight() >= $(this)[0].scrollHeight - 1) {
+                $('.arrow').fadeOut();
+            }
+            else {
+                $('.arrow').fadeIn();
+            }
+        });
+
+
+    </script>
+}
+

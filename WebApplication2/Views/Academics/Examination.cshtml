@@ -1,0 +1,21 @@
+﻿
+@{
+    ViewData["Title"] = "Examination";
+}
+
+@section Styles{
+    <link rel="stylesheet" href="~/css/Academics.css" />
+    <link rel="stylesheet" href="~/css/shared/comingSoon.css" />
+}
+
+@Html.Partial("_ComingSoon", ViewData["Title"])
+
+@section Scripts{
+    <script src="~/js/academics.js"></script>
+    <script>
+        $('#Examination > blockquote').show();
+    </script>
+}
+
+
+

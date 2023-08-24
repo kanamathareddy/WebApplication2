@@ -1,0 +1,1466 @@
+﻿@using Microsoft.AspNetCore.Mvc.Rendering
+@{
+    ViewData["Title"] = "Cells";
+}
+
+@section Styles{
+    <link rel="stylesheet" href="~/css/accreditation.css" />
+}
+
+
+<div id="accreditation-content">
+    <section id="inner-banner">
+        @Html.Partial("_innerBanner")
+    </section>
+    <div class="row">
+        <aside id="left-side-nav-menu" class="col-md-3 col-sm-4 box hidden-xs">
+            @Html.Partial("_AccreditationSideBar")
+        </aside>
+        <article id="core-content" class="col-md-9 col-sm-8 box ">
+            <div class="col-xs-12">
+                <div id="content-title">
+                    <div class="page-header">
+                        <h1 class="h1 main-headings">Cells</h1>
+                    </div>
+                </div>
+                <section id="content-block">
+                    <div id="content-block__main">
+                        <div class="inner-tabpanel-navigation">
+                            <div class="tab" role="tabpanel">
+                                <!-- Nav tabs -->
+                                <ul class="nav nav-tabs inner-tabpanel-nav__list-menu" role="tablist">
+                                    <li role="presentation" class="active"><a class="h6" role="tab" href="#GRC" data-toggle="tab">GRC</a></li>
+                                    <li role="presentation"><a class="h6" role="tab" href="#IQAC" data-toggle="tab">IQAC</a></li>
+                                    <li role="presentation"><a class="h6" role="tab" href="#WGRC" data-toggle="tab">WGRC</a></li>
+                                    <li role="presentation"><a class="h6" role="tab" href="#WEC" data-toggle="tab">WEC</a></li>
+                                    <li role="presentation"><a class="h6" role="tab" href="#EDC" data-toggle="tab">EDC</a></li>
+                                    <li role="presentation"><a class="h6" role="tab" href="#RDC" data-toggle="tab">RDC</a></li>
+                                    <li role="presentation"><a class="h6" role="tab" href="#TPC" data-toggle="tab">TPC</a></li>
+                                    <li role="presentation"><a class="h6" role="tab" href="#CGC" data-toggle="tab">CGC</a></li>
+                                    <li role="presentation"><a class="h6" role="tab" href="#SCC" data-toggle="tab">SCC</a></li>
+                                    <li role="presentation"><a class="h6" role="tab" href="#ARC" data-toggle="tab">ARC</a></li>
+                                    <li role="presentation"><a class="h6" role="tab" href="#ICC" data-toggle="tab">ICC</a></li>
+
+                                </ul>
+                                <!-- Tab panes -->
+                                <div class="tab-content tabs">
+                                    <div role="tabpanel" class="tab-pane fade  in active" id="GRC">
+                                        <h1 class="h1 main-headings">Grievance and Redressal Cell</h1>
+                                        <p class="text-para">
+                                            The main aim of the Student Grievance and Redressal Cell is to develop a responsive and accountable attitude among all the stakeholders in order to maintain harmonious educational atmosphere in the Institute. High Priority is given by the Management to address the complaints/grievances of the students and they are resolved at the earliest.
+                                            Suggestions/Complaint Boxes are placed in prominent places for the students.
+                                            The grievances of the students are a matter of top most priority for the college and the matter is resolved within the stipulated time.
+                                            Grievances with regard to Ragging are redressed through Anti-Ragging Cell and those concerned to Girl students are handled by Women Grievance and Redressal Cell
+                                            The grievances pointed out by the students such as repairs and maintenance in the college and hostel, water purifiers, canteen and improving sports facility are forwarded to and amicably resolved by the Infrastructure In-Charge failing which are handled by SGRC.
+                                            The function of the cell is to look into the complaints lodged by any student, and judge its merit. The Grievance cell is also empowered to look into matters of harassment. Anyone with a genuine grievance may approach the department members in person, or in consultation with the member of the Grievance Cell.
+                                            In case the person is unwilling to appear in self, grievances may be dropped in writing at the letterbox/ suggestion box of the Grievance Cell at Administrative Block. Grievances may also be sent through e-mail to the Students’ Grievance Cell.
+                                        </p>
+                                        <h4 class="h4 inner-headings">Objectives</h4>
+                                        <p>
+                                            A Grievance Cell should be constituted for the Redressal of the problems reported by the Students of the College with the following objectives:
+                                        </p>
+                                        <ul class="global-custom-unordered-list">
+                                            <li>
+                                                Upholding the dignity of the College by ensuring strife free atmosphere in the College through promoting cordial Student-Student relationship and Student-teacher relationship etc.
+                                            </li>
+                                            <li>
+                                                Encouraging the Students to express their grievances / problems freely and frankly, without any fear of being victimized.
+                                            </li>
+                                            <li>
+                                                Suggestion / complaint Box is installed in front of the Principal’s room, and at all Department HOD Rooms, in which the Students, who want to remain anonymous, put in writing their grievances and their suggestions for improving the Academics / Administration in the College.
+                                            </li>
+                                            <li>
+                                                Advising Students of the College to respect the right and dignity of one another and show utmost restraint and patience whenever any occasion of rift arises.
+                                            </li>
+                                            <li>
+                                                Advising All the Students to refrain from inciting Students against other Students, teachers and College administration
+                                            </li>
+                                            <li>
+                                                Advising all staffs to be affectionate to the Students and not behave in a vindictive manner towards any of them for any reason.
+                                            </li>
+                                            <li>
+                                                Ragging in any form is strictly prohibited in and outside the institution. Any violation of ragging and disciplinary rules should be urgently brought to the notice of Students’ Grievance Cell.
+                                            </li>
+                                        </ul>
+                                        <h4 class="h4 inner-headings">Functions</h4>
+                                        <p>
+                                            Complaint Boxes have been installed in front of the Principal’s room, and at all Department HOD Rooms, in which the Students, who want to remain anonymous, can put in writing their grievances and their suggestions for improving the academics/administration in the College.
+                                        </p>
+                                        <ul class="global-custom-unordered-list">
+                                            <li>
+                                                Students can lodge a complaint.
+                                            </li>
+                                            <li>
+                                                The person concerned can personally approach to any member of the Cell
+                                            </li>
+                                            <li>
+                                                The issues will be attended promptly on receipt of grievances from the students
+                                            </li>
+                                            <li>
+                                                The cases will be attended promptly on receipt of written grievances from the students
+                                            </li>
+                                            <li>The cell formally will review all cases and will act accordingly as per the Management policy</li>
+                                            <li>
+                                                The cell will give report to the authority about the cases attended and will forward severe cases to the college level Discipline Committee.
+                                            </li>
+                                        </ul>
+                                        <h4 class="h4 inner-headings">Exclusions</h4>
+                                        <p>
+                                            SGRC shall not entertain following issues.
+                                        </p>
+                                        <ol class="global-custom-ordered-list">
+                                            <li>
+                                                Decisions of the administrative committees constituted by the college.
+                                            </li>
+                                            <li>
+                                                Decisions with regard to award of scholarships / fee concessions / awards / medals.
+                                            </li>
+                                            <li>
+                                                Decisions made by college under the Discipline Rules and Misconduct.
+                                            </li>
+                                            <li>
+                                                Academic Matters: Related to timely issue of duplicate Mark-sheets, Transfer Certificates, Conduct Certificates or other examination related matters,
+                                            </li>
+                                            <li>
+                                                Financial Matters: Related to dues and payments for various items from library, hostels etc.
+                                            </li>
+                                        </ol>
+                                        <h5 class="h5 small-headings">Procedure for lodging complaint</h5>
+                                        <ul class="global-custom-unordered-list">
+                                            <li>The students may feel free to put up a grievance in writing/or in the format available in the admin dept. and drop it in boxes.</li>
+                                            <li>
+                                                The Grievance Cell will act upon those cases which have been forwarded along with the necessary documents.
+                                            </li>
+                                        </ul>
+                                        <h5 class="h5 small-headings">
+                                            Complaints can be given to
+                                        </h5>
+                                        <ol class="global-custom-ordered-list">
+                                            <li>
+                                                Dr. D.Srujan Chandra Reddy	Professor,     Dept. of CSE	csvits@gmail.com, 7013866680	Chairperson
+                                            </li>
+                                            <li>
+                                                Dr.V.Madhu Sudhan Reddy	Professor,    Dept. of EEE	vmsreddy898317@gmail.com, 9666005035	Member Secretary
+                                            </li>
+                                            <li>
+                                                P.Srinivasulu	Assoc. Professor,  Dept. of CSE	srinivas.nlr2004cw@gmail.com, 9849956249	Member
+                                            </li>
+                                            <li>
+                                                P.Sankaraiah	Asst. Professor, Dept. of H&S	Sankaraiah206@gmail.com, 9666005037	Member
+                                            </li>
+                                            <li>
+                                                Sk.Rasool	Asst. Professor, Dept. of ECE	shaikrasool446@gmail.com, 9248786213	Member
+                                            </li>
+                                            <li>A.Ramanjaneyulu	Asst. Professor, Dept. of ME	ramu.amara100@gmail.com 8885380788	Member</li>
+                                        </ol>
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane fade" id="IQAC" overflow="scroll">
+                                        <h1 class="h1 main-headings">Internal Quality Assurance Cell</h1>
+                                        <p class="text-para">
+                                            Internal Quality Assurance Cell (IQAC) was established at PBR VITS on 19th August, 2015. Since quality enhancement is a continuous process, the IQAC is a part of the institution’s system and work towards realizing the goals of quality enhancement and sustenance. The IQAC will make a significant and meaningful contribution through channelizing the efforts and measures of an institution towards academic excellence.
+                                        </p>
+                                        <h4 class="h4 inner-headings">Vision</h4>
+                                        <p class="text-para">
+                                            To ensure quality culture as the prime concern for the Higher Education Institutions through institutionalizing and internalizing all the initiatives taken with internal and external support.
+                                            To initiate, sustain and enhance quality of academics and administration at PBR Visvodaya Institute of Technology and Science.
+                                        </p>
+                                        <h4 class="h4 inner-headings">Objective</h4>
+                                        <ul class="global-custom-unordered-list">
+                                            <li>To develop a system for conscious, consistent and catalytic action to improve the academic and administrative performance of the institution.</li>
+                                            <li>To promote measures for institutional functioning towards quality enhancement through internalization of quality culture and institutionalization of best practices.</li>
+                                        </ul>
+                                        <h4 class="h4 inner-headings">Strategies</h4>
+                                        <p>IQAC shall evolve mechanisms and procedures for:</p>
+                                        <ul class="global-custom-unordered-list">
+                                            <li>Ensuring timely, efficient and progressive performance of academic, administrative and financial tasks;</li>
+                                            <li>Relevant and quality academic/ research programmes;</li>
+                                            <li>Equitable access to and affordability of academic programmes for various sections of society;</li>
+                                            <li>Optimization and integration of modern methods of teaching and learning;</li>
+                                            <li>The credibility of assessment and evaluation process;</li>
+                                            <li>Ensuring the adequacy, maintenance and proper allocation of support structure and services;</li>
+                                            <li>Sharing of research findings and networking with other institutions in India and abroad.</li>
+                                        </ul>
+                                        <h4 class="h4 inner-headings">Functions</h4>
+                                        <p>Some of the functions expected of the IQAC are:</p>
+                                        <ul class="global-custom-unordered-list">
+                                            <li>Development and application of quality benchmarks </li>
+                                            <li>Parameters for various academic and administrative activities of the institution; </li>
+                                            <li>Facilitating the creation of a learner-centric environment conducive to quality education and faculty maturation to adopt the required knowledge and technology for participatory teaching and learning process; </li>
+                                            <li>Collection and analysis of feedback from all stakeholders on quality-related institutional processes; </li>
+                                            <li>Dissemination of information on various quality parameters to all stakeholders; </li>
+                                            <li>Organization of inter and intra institutional workshops, seminars on quality related themes and promotion of quality circles; </li>
+                                            <li>Documentation of the various programmes/activities leading to quality improvement; </li>
+                                            <li>Acting as a nodal agency of the Institution for coordinating quality-related activities, including adoption and dissemination of best practices; </li>
+                                            <li>Development and maintenance of institutional database through MIS for the purpose of maintaining /enhancing the institutional quality; </li>
+                                            <li>Periodical conduct of Academic and Administrative Audit and its follow-up </li>
+                                            <li>Preparation and submission of the Annual Quality Assurance Report (AQAR) as per guidelines and parameters of NAAC</li>
+                                        </ul>
+                                        <h4 class="h4 inner-headings">Benefits</h4>
+                                        <p>IQAC will facilitate/contribute to:</p>
+                                        <ul class="global-custom-unordered-list">
+                                            <li>Ensure clarity and focus in institutional functioning towards quality enhancement;</li>
+                                            <li>Ensure internalization of the quality culture;</li>
+                                            <li>Ensure enhancement and coordination among various activities of the institution and institutionalize all good practices;</li>
+                                            <li>Provide a sound basis for decision-making to improve institutional functioning;</li>
+                                            <li>Act as a dynamic system for quality changes in HEIs;</li>
+                                            <li>Build an organised methodology of documentation and internal communication</li>
+                                        </ul>
+                                        <h4 class="h4 inner-headings"> Quality Policy</h4>
+                                        <p class="text-para">
+                                            PBR Visvodaya Institute of Technology and Science is committed to achieve the stakeholder’s satisfaction (Students/Parents) by providing quality education in different streams of Engineering and Management. It is also committed to inculcate leadership qualities among the students with sound academic growth by consistent use of modern teaching process with relevant teaching aids. Our goal is to exceed Parents/Students expectations by implementation of Quality Management System. PBRVITS shall strive for continual improvement in meeting statutory and regulatory requirement timely.
+                                        </p>
+                                        <h4 class="h4 inner-headings">Composition of the IQAC</h4>
+                                        <p>
+                                            IQAC is constituted under the Chairmanship of the Head of the institution with heads of important academic and administrative units and a few teachers and a few distinguished educationists and representatives of local management and stakeholders.
+                                        </p>
+                                        <ol class="global-custom-ordered-list">
+                                            <li>
+                                                Chairperson: Head of the Institution - Dr. B Dattatraya Sarma, Principal
+                                            </li>
+                                            <li>
+                                                Teachers to represent all level
+                                                <ol class="global-custom-ordered-list__first-child">
+                                                    <li>Dr D Srujan Chandra Reddy</li>
+                                                    <li>Dr A Maheswara Reddy</li>
+                                                    <li>Dr. S.Prakash</li>
+                                                    <li>Mr. A.Bhakthavachala</li>
+                                                    <li>Dr. A.Venkaiah</li>
+                                                    <li>Mr. R.Ranjith Kumar</li>
+                                                    <li>Mr. B.Murali Krishna</li>
+                                                    <li>Ms. G.Neelima</li>
+                                                </ol>
+                                            </li>
+                                            <li>One member from the Management	- Mrs. K. Reshma</li>
+                                            <li>
+                                                Few Senior administrative officers
+                                                <ol class="global-custom-ordered-list__first-child">
+                                                    <li>	Mr. K. Chandrasekhar </li>
+                                                    <li>Mr. K.Rama Krishna</li>
+                                                </ol>
+                                            </li>
+                                            <li>
+                                                One nominee each from local society, Students and Alumni
+                                                <ol class="global-custom-ordered-list__first-child">
+                                                    <li>Mr. S.Penchal Reddy</li>
+                                                    <li>Ms. P.Sai Karthika </li>
+                                                </ol>
+                                            </li>
+                                            <li>
+                                                One nominee each from Employers /Industrialists/ Stakeholders
+                                                <ol class="global-custom-ordered-list__first-child">
+                                                    <li>Dr. M.Bhaskar Reddy, External member</li>
+                                                    <li>Mr I. Sasmith Reddi, Industry</li>
+                                                    <li>Mr. P.Malakonda Reddy, Parent</li>
+                                                </ol>
+                                            </li>
+                                            <li>
+                                                One of the senior teachers as the coordinator/Director of the IQAC	Mr. A. Suman Kumar Reddy
+                                            </li>
+                                        </ol>
+                                        @*
+            <h4 class="h4 inner-headings">Role of the Coordinator</h4>
+            <p class="text-para">
+                Role of the coordinator of the IQAC is crucial in ensuring the effective functioning of all the members. The coordinator of the IQAC may be a senior/competent person with experience and exposure in quality aspects. She/he may be a full-time functionary or, to start with, she/he may be a senior academic /administrator entrusted with the IQAC as an additional responsibility. Secretarial assistance may be facilitated by the administration. It is essential that the coordinator may have sound knowledge about the computer, data management and its various functions such as usage for effective communication
+            </p>
+            <h4 class="h4 inner-headings">Plan of Action: </h4>
+            <ul class="global-custom-unordered-list">
+                <li>To conduct the regular meetings (Twice in a Semester).</li>
+                <li>Prime agenda of the meeting would be review based planning of academic policies for the sustainable growth of the Institute.</li>
+                <li>To develop a monitoring system for quality assurance of the policies.</li>
+                <li>To prepare a detailed Annual Quality Assurance Report (AQAR) at the end of the academic year and submit the same to NAAC / UGC.</li>
+            </ul>
+            <h4 class="h4 inner-headings">Academic Activities </h4>
+            <p>
+                To organize an interactive session with faculty members, following are the guidelines given by Governing Body, College Academic Council (CAC) and Departmental Advisory Committee (DAC) to strengthen the Teaching Learning process.
+            </p>
+            <ul class="global-custom-unordered-list">
+                <li>Preparation and release of guidelines regarding all Academic activities before the commencement of Semester.</li>
+                <li>Uploading of Academic plans prepared by respective faculty members on CAMS portal for easy access to the students.</li>
+                <li>Preparation of  attendance registers by Academic section and distribution of the same to respective Departments.</li>
+                <li>
+                    Preparation of list of faculty coordinators at Department level for various academic activities and compilation of the same
+                    <ul class="global-custom-unordered-list__first-child">
+                        <li>To conduct the meeting of faculty coordinators for various academic tasks to discuss the plan of action for their respective responsibilities</li>
+                        <li>Preparation of  list of faculty mentors at Department level and distribution of mentoring registers along with guidelines to follow</li>
+                        <li>To conduct interactive session with all faculty mentors regarding mentoring of students based on three parameters-Attendance, Performance and Attitude</li>
+                        <li>Preparation of common slots for AV classes, seminars, sports, and Value added programs (VAP) and communicate the same to the respective Department  for inclusion in their timetable</li>
+                        <li>Collection and compilation of attendance at the end of every month through CAMS and to send the list of students having less attendance to the respective mentors</li>
+                        <li>To help the Departments in monitoring the mentoring process</li>
+                        <li>To coordinate the process of online feedback from students about Teaching-Learning process in respective classes and communicate the assessment of the same to respective faculty members and Departments
+                    </ul>
+                </li>
+                <li>
+                    To help the Departments in monitoring following activities
+                    <ol class="global-custom-ordered-list__first-child">
+                        <li>Tutorials</li>
+                        <li>Assignments</li>
+                        <li>Seminars</li>
+                        <li>Add on content-Theory & Lab</li>
+                        <li>Remedial classes</li>
+                        <li>Make up tests</li>
+                    </ol>
+                </li>
+                <li> Collection of all required data and documents at the end of the semester</li>
+                <li>Collection of teaching outcome feedback (course assessment) from students at the end of the semester</li>
+                <li>Collection of exit feedback from final year students at the end of the academic year</li>
+                <li>
+                    To help the Departments in collection and analysis of feedback from:
+                    <ol class="global-custom-ordered-list__first-child">
+                        <li>Parents</li>
+                        <li>Industry Experts/ Academicians who are visiting the college</li>
+                        <li>Executives of professional bodies.</li>
+                        <li>Alumni</li>
+                    </ol>
+                </li>
+                <li>To help the Department in the preparation regarding feedback from students, stakeholders, regarding examination results, Course assessment, placements etc. Based on this, provide various statistical inputs to respective DAC at the beginning of each semester to chalk out the policy for that semester</li>
+                <li>To suggest various value added programs to T&P cell and to coordinate the execution of the same</li>
+                <li>To organize the review/audit of all the academic activities by a team of internal experts and presents and the observations in the meeting of GB/CAC/DAC for further guidelines</li>
+                <li>To consolidate the information about funding agencies, their norms and passing the same to R&D centre and respective Departments.</li>
+                <li>Collection and compilation of self appraisal forms from faculty members at the end of academic year</li>
+            </ul>
+            <h4 class="h4 inner-headings"> Administrative Activities</h4>
+            <ul class="global-custom-unordered-list">
+                <li>
+                    To help the Principal Office in the preparation of schedule of following meetings:
+                    <ul class="global-custom-unordered-list__first-child">
+                        <li>Governing Body (once in a semester)</li>
+                        <li>College Academic Council (Once in a week/two weeks)</li>
+                    </ul>
+                </li>
+                <li>
+                    To help the  principal Office (PO) in constituting following central committees for decentralization of work and effective functioning of the Institute:
+                    <ol class="global-custom-ordered-list__first-child">
+                        <li>Discipline and Anti-ragging</li>
+                        <li>Central facilities</li>
+                        <li>Grievance redressal</li>
+                        <li>Student Activity Centre</li>
+                        <li>Training and Placement, Career guidance and Entrepreneurship development</li>
+                        <li>Purchase</li>
+                    </ol>
+                </li>
+                <li>To help the P.O. in the preparation of guidelines and schedule of periodic meetings of these Committees</li>
+                <li>To help the P.O. in the process of record maintenance  and documentation (nomenclature of Departmental and central files</li>
+                <li>To coordinate the activity of budget allocation based on the requirement of the Departments</li>
+                <li>To coordinate the activity of printing of various stationery items based on the requirements of Department and Laboratories</li>
+                <li>To prepare/modify various application/information formats at least once in a year</li>
+                <li>To prepare the Activity calendar of the Institute based on the individual plans submitted by Departments/various forums</li>
+                <li>To coordinate the flow of information to the website administrator from various forums/Departments before and after the activities/achievements</li>
+                <li>To coordinate the process of preparation and submission of Activity Record files by various forums after the activity</li>
+                <li>To coordinate the process of audio-visual recording of all the major activities and submission of the CD at the central library</li>
+                <li>To help the P.O. in periodic review of policy book of the Institute</li>
+                <li>To collect all the files/documents from all the Departments/ P.O. at the end of the academic year</li>
+                <li>To give periodic inputs to website incharge/administrator regarding updating of information</li>
+                <li>To discuss innovative concepts and ways of execution with coordinators of various forums</li>
+                <li>To help the P.O.in the preparation of schedule of stock verification of various laboratories/Library at the end of the year.</li>
+            </ul>
+                                        *@
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane fade" id="WGRC">
+                                        <h1 class="h1 main-headings">Women Grievance and Redressal Cell</h1>
+                                        <p>
+                                            The women grievances and redressal cell has been established in the Institution to take care of women grievances and provide immediate solutions. The major aim of the Women Grievance and Redressal Cell is to develop a responsive and accountable attitude among all the women in order to maintain harmonious educational atmosphere in the Institute. High Priority is given by the Management to address the grievances of the women employees and girl students and they are resolved at the earliest. With the help of the Head of the Departments, the Principal, Director and Deans, this cell provides timely support and help to girl students regarding their grievances.
+                                        </p>
+                                        <h4 class="h4 inner-headings">OBJECTIVES</h4>
+                                        <ul class="global-custom-unordered-list">
+                                            <li>To Create an environment of good culture and respect for women.</li>
+                                            <li>To Create an atmosphere where women can be released into their gifting.</li>
+                                            <li>To promote a culture of respect and equality for female gender.</li>
+                                            <li>To create a conducive counselling environment for female gender to share their problems.</li>
+                                            <li>To help women students understand their strength and potential.</li>
+                                            <li>To highlight the importance of spirituality, health, hygiene and safety.</li>
+                                            <li>To bring about attitudinal and behavioural change in adolescent youth of the opposite gender.</li>
+                                            <li>To provide a harassment free working atmosphere for women in all areas.</li>
+                                        </ul>
+                                        <h4 class="h4 inner-headings">WOMEN GRIEVANCES</h4>
+                                        <ul class="global-custom-unordered-list">
+                                            A grievance is a formal complaint that is raised by a women against another student or staff whenever they are hurt or abused. The following are some of the grievances identified regarding the girl students and women employee in our institution.
+                                            <li>Sexual harassment</li>
+                                            <li>Eve teasing</li>
+                                            <li>Gender Partiality</li>
+                                            <li>Social Media posters</li>
+                                        </ul>
+                                        <p class="inner-headings">
+                                            The following approach is used to deal with the grievances
+                                        </p>
+                                        <ul class="global-custom-unordered-list">
+                                            <li>Any girl student or women employee can lodge a complaint.</li>
+                                            <li>The person concerned can personally approach to any member of the Cell.</li>
+                                            <li>The issues will be attended promptly on receipt of grievances from the girl students and women employees.</li>
+                                            <li>The cell will review all complaints and will act formally accordingly as per the policy.</li>
+                                            <li>The cell will give report to the principal about the issues attended to and the number of pending issues, if any, which require direction and guidance from the principal.</li>
+                                        </ul>
+                                        <h4 class="h4 inner-headings">GRIVNCES RESOLVING PROCESS</h4>
+                                        <ul class="global-custom-unordered-list">
+                                            <li>Complaint Boxes have been installed in front of the principal’s room, and in front of all Hod’s rooms. The girl students, who want to remain anonymous, can put in writing their grievances in the College.</li>
+                                            <li>
+                                                Any women employee or female student will have the right to lodge a complaint concerning sexual harassment against a male student or the employee of the institute by writing a letter or putting the complaint in the Principal’s office.
+                                            </li>
+                                            <li>
+                                                The complaint will be afforded full confidentiality at this stage.  After receiving the complaint, the chairman shall convene the meeting of the cell.
+                                            </li>
+                                            <li>
+                                                The chairman will appoint investigation committee, Coordinator will convene the meetings.
+                                            </li>
+                                            <li>The investigation committee shall then decide the course of action to proceed. </li>
+                                            <li>The complaint will stand dropped if in accordance to the committee the complaint has not been able to disclose prima-facie an offence of sexual harassment by complainer /her representative. In case the investigation committee decides to proceed with the complaint, the wishes of the complainer shall be ascertained and if the complainer wishes that a warning will suffice then alleged offender shall be called to the meeting of the committee, heard and if satisfied that a warning is just and proper, he will be warned about his behaviour and non-occurrence of it. In case the complainer requests that the complaint should be proceeded with beyond mere a warning, the same may be proceeded with in the manner prescribed hereafter.</li>
+                                            <li>Other women grievances are also in addressed in the similar manner.</li>
+                                        </ul>
+                                        <h4 class="h4 inner-headings">Commitee Members</h4>
+                                        <table class="table table-hover table-bordered table-striped customTable">
+                                            <tbody class="table-row-header">
+                                                <tr>
+                                                    <th rowspan="2">External members</th>
+                                                    <td> 1 </td>
+                                                    <td>Dr. K. Padmaja</td>
+                                                    <td>Doctor</td>
+                                                </tr>
+                                                <tr>
+                                                    <td> 2 </td>
+                                                    <td>Y. Koteswaramma</td>
+                                                    <td>Advisor</td>
+                                                </tr>
+                                                <tr>
+                                                    <th rowspan="2">Internal members</th>
+                                                    <td> 1 </td>
+                                                    <td>Dr.B.Vamsee Mohan</td>
+                                                    <td>Advisor</td>
+                                                </tr>
+                                                <tr>
+                                                    <td> 2 </td>
+                                                    <td>Dr. D. Prathyusha Reddi</td>
+                                                    <td>Advisor</td>
+                                                </tr>
+                                                <tr>
+                                                    <th rowspan="6">Supporting Staff</th>
+                                                    <td> 1 </td>
+                                                    <td>V. Krishna Veni</td>
+                                                    <td>Coordinator</td>
+                                                </tr>
+                                                <tr>
+                                                    <td> 2 </td>
+                                                    <td>T. Manjula</td>
+                                                    <td>Assistant Professor</td>
+                                                </tr>
+                                                <tr>
+                                                    <td> 3 </td>
+                                                    <td>P. Thanuja</td>
+                                                    <td>Assistant Professor</td>
+                                                </tr>
+                                                <tr>
+                                                    <td> 4 </td>
+                                                    <td>S. Madhuri</td>
+                                                    <td>Assistant Professor</td>
+                                                </tr>
+                                                <tr>
+                                                    <td> 5 </td>
+                                                    <td>Z. Triveni</td>
+                                                    <td>Assistant Professor</td>
+                                                </tr>
+                                                <tr>
+                                                    <td> 6 </td>
+                                                    <td>N. Rajya Lakshmi</td>
+                                                    <td>Assistant Professor</td>
+                                                </tr>
+                                                <tr>
+                                                    <th rowspan="4">Students</th>
+                                                    <td> 1 </td>
+                                                    <td>M. Aparna</td>
+                                                    <td>CSE</td>
+                                                </tr>
+                                                <tr>
+                                                    <td> 2 </td>
+                                                    <td>A.Sivani</td>
+                                                    <td>MBA</td>
+                                                </tr>
+                                                <tr>
+                                                    <td> 3 </td>
+                                                    <td>Sk Afrin</td>
+                                                    <td>MCA</td>
+                                                </tr>
+                                                <tr>
+                                                    <td> 4 </td>
+                                                    <td>CH. Vineetha</td>
+                                                    <td>ECE</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane fade" id="WEC">
+                                        <h1 class="h1 main-headings">Women Empowerment Cell</h1>
+                                        <p class="text-para">
+                                            WEC was established in our college on 9th July, 2013. Women Empowerment Cell (WEC) has been constituted for students to enhance the understanding of issues related to women, to develop, promote and disseminate knowledge about their role in society. It provides a platform to share their experiences and voices regarding their status in society and suggests ways to improve and empower themselves. It also helps to safeguard the rights of women students and faculty members of College.
+                                            The Constitution of India provides for “Gender Equality” and the “Right to life and liberty” to all persons under Articles 14, 19 and 21. It is thus the duty and mandate of every organization to provide maintenance of the fundamental rights to live and work with dignity for all employees: male and female.
+                                            Due to the historical reasons, working women, often face difficulties and challenges at the work place, thereby necessitating the need for protective measures that safeguard women’s rights and safety.
+                                            Women Empowerment Cell strives to maintain and augment the gender-neutral atmosphere of college. The Cell encourages the girls to come forward to talk about women related issues and tries to sensitize the youth about gender reality as the goal to emancipate and empower women. Focus of the Cell is to eliminate the discrimination and all forms of violence against women and girl child in Indian Society.
+                                        </p>
+                                        <h4 class="h4 inner-headings">Vision</h4>
+                                        <p class="text-para">
+                                            Empowered women living with dignity and contributing as equal partners in developed an environment free from violence and discrimination. And, well care for children with full opportunities for growth and development in a safe and protective environment.
+                                        </p>
+                                        <h4 class="h4 inner-headings">Mission</h4>
+                                        <p class="text-para">
+                                            Promoting social and economic empowerment of women through cross-cutting policies and programmes, mainstreaming gender concerns, creating awareness about their rights and facilitating institutional and legislative support for enabling them realize their human rights and develop to their full potential. Ensuring development, care and protection of girl students through cross-cutting policies and programmes, spreading awareness about their rights and facilitating access to learning, nutrition, institutional and legislative support for enabling them to grow and develop to their full potential.
+                                        </p>
+                                        <h4 class="h4 inner-headings">Objectives</h4>
+                                        <ul class="global-custom-unordered-list">
+                                            <li>To identify and promote the strong leadership and growth of women as individuals in their own right.</li>
+                                            <li>
+                                                To develop the self-confidence of women in building their capacity.
+                                            </li>
+                                            <li>
+                                                Training the women to impart knowledge of opportunities and resources available to get backing support.
+                                            </li>
+                                            <li>
+                                                To educate girl students on women specific health issues and measures to be taken.
+                                            </li>
+                                            <li>
+                                                Creating social awareness about the problems of women, gender equity and prevention of sexual harassment.
+                                            </li>
+                                            <li>
+                                                To promote a culture of respect and equality for female gender.
+                                            </li>
+                                            <li>
+                                                The provision of opportunities and programs for girls and women to be financially, mentally and emotionally empowered to promote their growth as individuals in their own right.
+                                            </li>
+                                            <li>
+                                                To highlight the importance of spirituality, health, hygiene and safety.
+                                            </li>
+                                            <li>
+                                                To inculcate entrepreneurial attitude among young girls, scientists at the earliest so that they can be “job providers” rather than “job seekers”.
+                                            </li>
+                                            <li>
+                                                To resolve issues pertaining to girls/ women’s sexual harassment.
+                                            </li>
+                                        </ul>
+                                        <h4 class="h4 inner-headings">Roles and Responsibilities of WEC:</h4>
+                                        <ul class="global-custom-unordered-list">
+                                            <li>To create the awareness and spread the objectives of WEC among the girl students.</li>
+                                            <li>To participate actively in the events and competitions organized by the cell and encourage other girl students to participate.</li>
+                                            <li>To organize enthusiastically the events of WEC under the guidance of the cell.</li>
+                                            <li>To interact regularly with the girl students of the class.</li>
+                                            <li>To empower female faculty, staff and students about general economic and social issues.</li>
+                                            <li>To review safety and security measures for female employees and girl students at PBR VITS campus.</li>
+                                        </ul>
+                                        <h4 class="h4 inner-headings">Responsibilities of Institute:</h4>
+                                        <ul class="global-custom-unordered-list">
+                                            <li>Ensure a safe environment free from Sexual Harassment for women including prevention and deterrence of Sexual Harassment.</li>
+                                            <li>Prepare and prominently display the policy for the prevention and prohibition of Sexual Harassment.</li>
+                                            <li>Maintain a proactive program to educate all members as to the definition of sexual harassment and procedures for redressal.</li>
+                                            <li>Undertake workshops and training programmes at regular intervals for sensitizing the members.</li>
+                                            <li>Prominently display notices in various places spreading awareness about the issue of “Sexual Harassment at the Workplace” and giving information for the redressal mechanism that has been put in place and encouraging women to file their grievances.</li>
+                                            <li>Facilitate initiation of proceedings under this Policy through the institution of Committee against Sexual Harassment for redressal of an act/s of sexual harassment. Institute shall constitute committee for this purpose and it shall be named “Women Empowerment Cell”.</li>
+                                        </ul>
+                                        <h4 class="h4 inner-headings">Action plan of WEC:</h4>
+                                        <ul class="global-custom-unordered-list">
+                                            <li>All the girl students will be made aware about the guidelines and the safety measures by Members of Women Empowerment Cell.</li>
+                                            <li>A Session by women achievers of different fields to motivate the girl students of PBR VITS.</li>
+                                            <li>A session with resourceful support of renowned Doctors on health issues.</li>
+                                            <li>Workshop on employability.</li>
+                                            <li>Innovative Plays will be held on the college premises on social issues.</li>
+                                            <li>Session on privacy issues about the social websites and other computer related knowledge.</li>
+                                            <li>Women Cell subunit in each department will be formed.</li>
+                                            <li>A mail ID to be generated regarding eve teasing, problem arising in campus and hostels.</li>
+                                            <li>Provision of girls’ common room.</li>
+                                            <li>Appointment of lady doctor in college campus to look after health issues of girl students.</li>
+                                        </ul>
+                                        <h4 class="h4 inner-headings">General activities:</h4>
+                                        <ul class="global-custom-unordered-list">
+                                            <li>Place slogans, quotes and writings in the favor of respect for women in key areas in the college.</li>
+                                            <li>
+                                                Rallies and public awareness campaigns on women education and women related issues.
+                                            </li>
+                                            <li>Invite successful women personnel from varied sectors like education, justice’s culture, health, journalism, to deliver talks strengthening leader ship qualities in women and positive attitude to life.</li>
+                                            <li>Conduct seminars, paper presentations, workshops to highlights the power of women and their contribution to society.</li>
+                                            <li>Organize health camp/checkups and creates proper health awareness and measures to combat deadly infectious diseases.</li>
+                                            <li>Encourage study projects, surveys and discussion forum to better the ability to create new ideas, think innovatively and logically.</li>
+                                        </ul>
+                                        <p>
+                                            In order to have effective functioning, one lady faculty member from every department is nominated as the department representative of the Women Empowerment Cell.
+                                        </p>
+                                        <h4 class="h4 inner-headings">Some measures taken by Women Empowerment Cell:</h4>
+                                        <ul class="global-custom-unordered-list">
+                                            <li>A link to Women Cell has been created on the homepage of the PBR Visvodaya institute website for easy access of all female employees and students.
+                                            <li>The institute has deployed women security staff for the facilitation of the female employees and students.
+                                            <li>Girls’ counselors are nominated from the lady faculty members from each department for the assistance of girl students and to encourage them to report the cases of sexual assault without fear.
+                                            <li>A feedback form has been prepared by the Women Cell to take feedback from girl students regarding their safety and security on the campus, to further improve the mechanism.
+                                        </ul>
+                                        <h4 class="h4 inner-headings">The following is the list of WEC members representing their department</h4>
+                                        <table class="table table-hover table-bordered table-striped customTable">
+                                            <thead>
+                                                <tr class="table-header">
+                                                    <th>S.No</th>
+                                                    <th>Name of the Committee Member</th>
+                                                    <th>Designation</th>
+                                                    <th>Department</th>
+                                                    <th>Role</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>Dr.D.Prathyusha Reddi  </td>
+                                                    <td>Academic Director</td>
+                                                    <td>ECE</td>
+                                                    <td>Adviser</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2</td>
+                                                    <td>Ms. M. Pavitra</td>
+                                                    <td>Cordinator</td>
+                                                    <td>ECE</td>
+                                                    <td>Member</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>3</td>
+                                                    <td>Ms. P.V.N Rajeswari	</td>
+                                                    <td>Associate Professor</td>
+                                                    <td>CSE</td>
+                                                    <td>Member</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>4</td>
+                                                    <td>Ms.CH. Swapna</td>
+                                                    <td>Assistant Professor</td>
+                                                    <td>EEE</td>
+                                                    <td>Member</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>5</td>
+                                                    <td>Mr. SK. Shabbir	</td>
+                                                    <td>Assistant Professor</td>
+                                                    <td>H & S</td>
+                                                    <td>Member</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane fade" id="EDC">
+                                        <h1 class="h1 main-headings">Entrepreneurship Development Cell</h1>
+                                        <p class="text-para">
+                                            The prosperity of any nation depends upon Industrial Development of that country. Industrial Development in turn hinges on entrepreneurial competencies possessed by human resources of the country. Even Govt. of India, cognizant of this fact has introduced various programs related to entrepreneurship and skill development like Make in India, Start up India.
+                                        </p>
+                                        <p class="text-para">Entrepreneurship Development Cell (EDC) at PBR VITS was established on 5-6-2012 with an initiative to foster entrepreneurial attitude among the students so that the job seekers are transformed into job creators and become self-reliant. The cell is functioning as central facility for the entire institution. The main objective is to bridge the gap between academics and current industry demands. The College is well equipped with latest infrastructure and State of Art technology facilities. </p>
+                                        <p class="text-para">The EDC provides various inputs to budding technocrats and managers so that their creative ideas are changed to reality. The EDC is playing a pivot role in converging youth talent with available entrepreneurial opportunities. The system for the working of EDC is followed in which different departmental student coordinators are selected, who takes the initiative to spread the awareness among the students, to conduct seminars and workshops, helps in arranging the industrial visits. Emphasis is given on the skill development of the students so that they can cope up with the current trends in the market. The EDC also assists all the aspirants with mentoring, planning and execution of their startup ideas. The cell helps the students on complying with legal and regulatory practices.</p>
+                                        <h4 class="h4 inner-headings">Scope of EDC</h4>
+                                        <p class="text-para">The EDC arranges for, seminars, guest lectures, panel discussions, motivational and expert talks to develop competencies and right attitude among the students. The long term plan of EDC is to motivate students to start their own ventures, develop business incubator and create corpus fund to seed ventures. The cell organizes Biz Idea exhibitions every year on regular basis. Students from MBA department attend the programs organized by MSME’s and collect very useful information about small scale and tiny industries. </p>
+                                        <h4 class="h4 inner-headings">Objectives </h4>
+                                        <ul class="global-custom-unordered-list">
+                                            <li>To nurture entrepreneurial zeal among the students so that they choose entrepreneurship as one of their career options. </li>
+                                            <li>To produce entrepreneurs who will not only upscale their businesses but also become the part of national development.</li>
+                                            <li>To train Faculty members in order to guide & motivate students towards entrepreneurship.</li>
+                                            <li>To create awareness about various financial schemes available for Start-up’s in both private and public sector.</li>
+                                            <li>To inform students about emerging challenges and opportunities with reference to small scale Industries.</li>
+                                            <li>To get insight to entrepreneurial theory and practice through activities and workshops.</li>
+                                        </ul>
+                                        <h4 class="h4 inner-headings">Vision</h4>
+                                        <p class="text-para">To be apex ED Cell in generating successful entrepreneurs with ethical business practices across the globe.</p>
+                                        <h4 class="h4 inner-headings">Mission</h4>
+                                        <p class="text-para">To inculcate entrepreneurial culture, spirit, in the minds of young people, drive them towards self-employment opportunities and fabricate knowledgeable entrepreneurs so that they become vital contributors to the national economy.</p>
+                                        <p>
+                                            Need for EDC in College:
+                                        </p>
+                                        <ol class="global-custom-ordered-list">
+                                            <li>To create entrepreneurship drive among the students.</li>
+                                            <li>Motivate students to think out of box so that they come up with novel ideas.</li>
+                                            <li>To bridge the gap between industry and academics.</li>
+                                            <li>To encourage the students start their enterprise in their native place.</li>
+                                            <li>To arrange interaction with successful entrepreneurs.</li>
+                                            <li>To arrange interaction with banks and financial institutions and creating awareness about financial options available for entrepreneurs.</li>
+                                            <li>To maintain database about various commercial opportunities available for entrepreneurs.</li>
+                                            <li>To help the students in conducting feasibility studies and guide them studies in the preparation of project report.</li>
+                                            <li>To render advise to sick industries and help them in rehabilitation.</li>
+                                        </ol>
+                                        <h4 class="h4 inner-headings">Key Highlights</h4>
+                                        <ul class="global-custom-unordered-list">
+                                            <li>The EDC activities for the year 2018-19 were inaugurated by Mr.Amit Ashok Sagar, Principal, HR-Manager, Gamesa.</li>
+                                            <li>Every year EDC conducts BIZ-Idea exhibition, wherein students     showcase their talent with creative ideas.</li>
+                                            <li>EDC takes the students for a visit to various Industries like Coca- Cola,Amaraja Batteries. Vijaya Diary, SHAR, AP Power generation corporation LTD etc. </li>
+                                        </ul>
+                                        <h4 class="h4 inner-headings">Organization Structure of EDC:</h4>
+                                        <table class="table table-hover table-bordered table-striped customTable">
+                                            <thead>
+                                                <tr class="table-header">
+                                                    <th>S.No</th>
+                                                    <th>Name of the Committee Member</th>
+                                                    <th>Designation</th>
+                                                    <th>Role</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>Mr.Vidyanarain</td>
+                                                    <td>Industrial Person</td>
+                                                    <td>Convener</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2</td>
+                                                    <td>Mrs.T.Nagalaxmi</td>
+                                                    <td>Assistant Professor</td>
+                                                    <td>Member</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>3</td>
+                                                    <td>Mrs.J. Sujitha</td>
+                                                    <td>Assistant Professor</td>
+                                                    <td>Member</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>4</td>
+                                                    <td>Mrs.I.Saptami</td>
+                                                    <td>Assistant Professor</td>
+                                                    <td>Member</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>5</td>
+                                                    <td>Mr.Ravi Kumar</td>
+                                                    <td>Assistant Professor</td>
+                                                    <td>Member</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>6</td>
+                                                    <td>Mr.K.Madhava</td>
+                                                    <td>Assistant Professor</td>
+                                                    <td>Member</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane fade" id="RDC">
+                                        <h1 class="h1 main-headings">Research and Development Cell</h1>
+                                        <p class="text-para">
+                                            The phrase “Research and Development” has a special significance apart from its conventional coupling of scientific research and technological development. “Research and Development” normally refers to future-oriented, longer-term activities in science or technology, using techniques with or without predetermined outcomes and with broad forecasts of commercial yields.
+                                            Research is the backbone of academics. It simplifies concept building and transforms new ideas into innovations in pursuance of a new era of passion for researches. Each finding gives immense pleasure and multiplies enthusiasm towards achieving target.
+                                            Research is a precursor to discovery and innovation. PBRVITS recognizing the importance of research, has initiated rigorous Research and Development (R&D) activities in campus. PBRVITSRDC envisioned becoming a well-known name in R&D activities. Our immediate goal is to encourage excellence in research and publication activities at Department as well as Institute level. To enrich the Learning Process among the faculty members and students, RDC host Seminars and Workshops of well-known personalities from Academia, R&D organization and Industries. The R&D Cell is also getting inputs from R&D organization, Industries and Funding Agencies. R&D Cell, invite all the students joining the Institute at graduate, post graduate and doctorate level to make use of the facilities and resources offered by the Institute to nurture their talent and contribute their ideas for the growth of R&D Culture.
+                                        </p>
+                                        <h4 class="h4 inner-headings">VISION AND MISSION:</h4>
+                                        <p class="text-para">
+                                            The vision of R&D cell is to empower the faculty and students in the area of Research & Development by providing seed funds for implementing their innovative research and product development ideas.
+                                            R&D Cell mission is to achieve excellence in R&D, Technology Innovation and Business start-ups. The institute promotes interdisciplinary culture, ethical conduct of research and compliance among students and teaching community, which will be able to produce exceptional scientific results.
+                                        </p>
+                                        <h4 class="h4 inner-headings">OBJECTIVES</h4>
+                                        <ul class="global-custom-unordered-list">
+                                            <li>To create zeal amongst faculty and students towards research and innovation.</li>
+                                            <li>To promote research activities in frontier areas of science and technology.</li>
+                                            <li>To enhance the research output of the institute by research paper publication in referred journals and reputed conferences.</li>
+                                            <li>To promote Institute- R&D Organization- Industry Collaboration.</li>
+                                            <li>To encourage Core Competence and Consultancy work.</li>
+                                            <li>To organize various workshops/ seminar/ trainings related to promotion of research.</li>
+                                            <li>To create awareness about filing Patents & IPR.</li>
+                                            <li>Effective management Ph.D. Program.</li>
+                                            <li>The significant factors indicating potential growth in the research activities includes the enhancement in the research publications in peer reviewed journals, Research Projects/ grants, Patents, Collaborations, Doctoral program and Faculty development.</li>
+                                        </ul>
+                                        <h4 class="h4 inner-headings">R&D CELL FOCUS ON FOLLOWING ACTIVITIES</h4>
+                                        <ul class="global-custom-unordered-list">
+                                            <li>To officially represent all the students in the Institute. Assists faculty, research scholars and students in filing research proposals for grants from various funding agencies like DST, AICTE and MHRD etc.</li>
+                                            <li>Allocates funds for in-house R & D projects of the faculty, research scholars and students.</li>
+                                            <li>Assists the faculty, research scholars and students in filing of IPRs like patents and copy rights.</li>
+                                            <li>Creating awareness and motivating researchers to work in emerging domains of engineering and technology.</li>
+                                        </ul>
+                                        <h4 class="h4 inner-headings">ACTION PLAN</h4>
+                                        <ul class="global-custom-unordered-list">
+                                            <li>Discussion on Staff & Student proposals (Department wise with department committee members).</li>
+                                            <li>Identification of good project proposals.</li>
+                                            <li>Assists faculty, research scholars and students in filing research proposals for grants from various funding agencies like DST, AICTE and MHRD etc.</li>
+                                            <li>Allocates funds for in-house R & D projects of the faculty, research scholars and students.</li>
+                                            <li>Possible implementation of proposals.</li>
+                                            <li>Review on completed proposals by departmental committee.</li>
+                                        </ul>
+                                        <h4 class="h4 inner-headings">R&D CELL CONSTITUTION & ITS MEMBERS</h4>
+                                        <table class="table table-hover table-bordered table-striped customTable">
+                                            <thead>
+                                                <tr class="table-header">
+                                                    <th>S.No</th>
+                                                    <th>Name of the Faculty</th>
+                                                    <th>Department</th>
+                                                    <th>DESIGNATION IN R&D CELL</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>Mr R.S.PRATAP SINGH</td>
+                                                    <td>ECE</td>
+                                                    <td>Convener</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2</td>
+                                                    <td>Mr D.UMA MAHESWAR REDDY</td>
+                                                    <td>ECE</td>
+                                                    <td>Member</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>3</td>
+                                                    <td>Mr P.SRINIVASULU</td>
+                                                    <td>CSE</td>
+                                                    <td>Member</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>4</td>
+                                                    <td>Mr P.ANIL KUMAR REDDY</td>
+                                                    <td>EEE</td>
+                                                    <td>Member</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>5</td>
+                                                    <td>Mr N.C.K.PRASAD</td>
+                                                    <td>ME</td>
+                                                    <td>Member</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>6</td>
+                                                    <td>Mr B.TIRUMALA RAO</td>
+                                                    <td>H&S</td>
+                                                    <td>Member</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane fade" id="TPC">
+                                        <h1 class="h1 main-headings">Training & Placement Cell</h1>
+                                        <p class="text-para">
+                                            Training & Placement (T&P) cell of the PBR VITS frequently interacts with various companies and invites them for campus interviews. The Placement cell arranges training programs in honing the skill sets, required for facing the interview, group discussion etc. It also invites HR managers from various organizations to conduct training programs for the final year students.
+                                            At PBR VITS, Personality Development programme is a part of the curriculum. Thoughtfully designed multi faceted Personality Development modules enable students to identify and overcome their limitations and thereby transform themselves into competent technocrats and highly employable engineers.
+                                            The (T&P) Cell has been playing the dual role of assessing the ever-changing industrial requirements and estimating inherent talents of the students. The students are guided for Off-campus and On-campus interviews. It also organizes Personality development programs and Entrepreneurship programs periodically.
+                                        </p>
+                                        <h4 class="h4 inner-headings">Objectives</h4>
+                                        <ul class="global-custom-unordered-list">
+                                            <li>To train the students in personality development and   communication skill. </li>
+                                            <li>To conduct placement drives and Pool Campuses for recruitment.</li>
+                                            <li>To provide available updated information about jobs positions / opportunities.</li>
+                                            <li>To conduct career development seminars and workshops. </li>
+                                            <li>To provide necessary literature /brochure/information. </li>
+                                            <li> To mobilize resources for needy students to apply for jobs.</li>
+                                            <li>To organize lectures on career development by subject experts for students.</li>
+                                        </ul>
+                                        <h4 class="h4 inner-headings">Scope</h4>
+                                        <p>
+                                            This policy is applicable to all students enrolled in Engineering, Management & other courses wherein;
+                                        </p>
+                                        <ol class="global-custom-ordered-list">
+                                            <li>The students need is to be assessed.</li>
+                                            <li>Course Completion is required for an award of the Institution degree.</li>
+                                            <li>Campus recruitment is meant only for the students of Final year.</li>
+                                        </ol>
+                                        <h4 class="h4 inner-headings">Roles and Responsibilities </h4>
+                                        <ul class="global-custom-unordered-list">
+                                            <li>Conduct Soft Skills sessions & Campus Recruitment Training on regular basis.</li>
+                                            <li>Develop contacts with recruiters and convince them to hire students from PBR VITS for their training & final placement needs.</li>
+                                            <li>Regularly updating the Company database and maintaining necessary communications with company during recruitment drive. </li>
+                                            <li>Identify and recruit genuine placement agents to facilitate major recruitment drives on Campus. </li>
+                                            <li>Identify and recruit reputable psychometric test assessors to assess our students and generate appropriate reports to enable trainers to work on student’s weak areas.</li>
+                                            <li>Identify and recruit reputable Subject matter experts/ trainers for the purpose of Campus recruitment training.</li>
+                                            <li>Coordinate with CRT team (Campus recruitment Training) team and lead them to guide students in customizing their resume and train them according to the company’s requirements.</li>
+                                            <li>Selection of Placement Coordinators (PCs) .</li>
+                                            <li>Finalizing a suitable date for campus placements in consultation with respective academic departments and inform Placement Coordinators (PCs) .</li>
+                                            <li>Update the management w.r.t. the company’s response on visiting the campus. </li>
+                                            <li>Maintaining the records of students(studying as we as passed out) including their resumes, marks, areas of interest, etc. for jobs.</li>
+                                            <li>Arrange to get company Representatives to fill a feedback form (Please refer Annexure 2) before they leave the Campus. </li>
+                                            <li>Issuing warning/debarment letters, if required, to students on non compliance.</li>
+                                            <li>Update the management at regular intervals on the progress in T&P activities.</li>
+                                        </ul>
+                                        <h4 class="h4 inner-headings">PLACEMENT COORDINATORS </h4>
+                                        <p>
+                                            In order to achieve the objectives mentioned above placement coordinators are identified with the following tasks.
+                                        </p>
+                                        <ul class="global-custom-unordered-list">
+                                            <li>Collect the resume from students.</li>
+                                            <li>Profile them and make necessary corrections (if any) and then punch it in students’ file and deliver it to T&P Cell team.</li>
+                                            <li>Act as a Channel of communication between students and T&P Cell.</li>
+                                            <li>Verification & compilation of students’ company references.</li>
+                                            <li>Communicate with students on the companies visiting the campus for recruitment and arrange for initial preparatory interactions with T&P Cell.</li>
+                                            <li>Collate the list of students who were absent in Pre Placement Talks (PPTs) delivered by the company and those who did not attend the interview after getting registered for the interview process.</li>
+                                            <li>Inform the students about their results and attendance.</li>
+                                            <li>Support in any other placement function as per needs & requirements and the directions of the management.</li>
+                                        </ul>
+                                        <h4 class="h4 inner-headings">Eligibility</h4>
+                                        <p>
+                                            All graduating students shall be eligible to receive placement assistance with the following exceptions:
+                                        </p>
+                                        <ul class="global-custom-unordered-list">
+                                            <li>Did not register for placement assistance with the T&P Cell.</li>
+                                            <li>Secured less than the minimum passing marks in their program.</li>
+                                            <li>Secured less than 75% attendance in regular lectures at the College.</li>
+                                            <li>Secured less than 80% attendance in communication skills / Campus recruitment training (CRT) Program.</li>
+                                            <li>Non completion of Summer Training/other academic requirements.</li>
+                                            <li>Breach of discipline and general misconduct.</li>
+                                            <li>Non-payment of fees or any other dues.</li>
+                                        </ul>
+                                        <p>
+                                            It will be in the interest of all concerned in the Final Placement Process, to adhere to this Policy document, and act in the best interest of the students and the Institution.
+                                        </p>
+                                        <h4 class="h4 inner-headings">Registration for Placement Assistance </h4>
+                                        <p class="text-para">
+                                            All students seeking Placement Assistance are required to register for the same by providing additional information as required by T&P Cell and also sign an undertaking in the prescribed format annexed at the end of this Document.
+                                        </p>
+                                        <h4 class="h4 inner-headings">RULES & GUIDELINES FOR THE CANDIDATES </h4>
+                                        <ol class="global-custom-ordered-list">
+                                            <li>
+                                                BEFORE –PLACEMENT
+                                                <ul class="global-custom-unordered-list__first-child">
+                                                    <li>The attendance for pre placement trainings will be a pre requisite for the placement process. Pre Placement talks will be given on subjects related to job interviews, Resume and the Requirement of minimum criteria.</li>
+                                                    <li>If a student is not appearing for the placement even after the registration for the same, he/she should give a valid explanation to the concerned Dept. Coordinator. Otherwise, their candidature will be suspended for further placements.</li>
+                                                    <li>The registration for each placement process should be done by interested students.</li>
+                                                    <li>Individually at placement cell site before the due date as per the notice. If any registered Student withdraws from the placement process without informing the placement cell with valid reason he/she will be disqualified for further placements.</li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                PRE-PLACEMENT TALKS (PPT)
+                                                <ul class="global-custom-unordered-list__first-child">
+                                                    <li>Notices of the PPT will be notified by department placement coordinator well in advance. Students should occupy the venue 15-mintues before the scheduled start of the PPT.</li>
+                                                    <li>Students interested in a particular company, must attend its PPT without fail.</li>
+                                                    <li>Attendance will be taken and only those students who have attended a particular PPT will be eligible to apply for that company.</li>
+                                                    <li>Students must clarify details regarding salary break-up, job profile, place of work, bond details etc. with the companies during PPT (pre-placement talk).</li>
+                                                    <li>	Students cannot decide on their own (voluntarily) to drop from the selection process of a particular company, after sitting through its PPT without informing the placement cell unless the student deregisters from the placements.</li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                PLACEMENT PROCESS
+                                                <ol class="global-custom-ordered-list__first-child">
+                                                    <li>
+                                                        RESPONSIBILITY:
+                                                        <p class="text-para">
+                                                            It is the responsibility of the student to check announcements/notices/ updated information/shortlisted names etc. in the notice boards of Placement Office/Department. Students are expected to be in time as per the announcements.
+                                                        </p>
+                                                    </li>
+                                                    <li>
+                                                        PLACEMENT POLICY:
+                                                        <ul class="global-custom-unordered-list__second-child">
+                                                            <li>There should not be any interference between Placement Company and students other than during pre-placement talk.</li>
+                                                            <li>The rules framed by the company for placement is final. No negotiations are entertained on this issue during the placement day.</li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>
+                                                        ATTENDANCE & PUNCTUALITY
+                                                        <ul class="global-custom-unordered-list__second-child">
+                                                            <li>A student who applies and gets shortlisted is bound to go through the entire selection process unless rejected midway by the company. Any student who withdraws deliberately in the midst of a selection process will be disqualified from placement for the rest of the academic year.</li>
+                                                            <li>LATE COMERS for aptitude test/GD / interview may not be allowed to appear for the selection process.</li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>
+                                                        DISCIPLINE
+                                                        <ul class="global-custom-unordered-list__second-child">
+                                                            <li>Students should maintain discipline and show ethical behavior in every action they take during the placement process. Any student found violating the discipline rules set by the company or defaming the institute name will be disqualified from the placements for the rest of the academic year. </li>
+                                                            <li>Students found cheating or misbehaving in the selection process (PPT/Test/GD/Interview) will be disqualified from the placements for the rest of the academic year.</li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>
+                                                        JOINING STATUS
+                                                        <p class="text-para">
+                                                            In case, students decide not to join the company, they should inform the company in writing with valid reasons as early as possible. They are also required to submit a copy of that letter to the Placement Office.
+                                                        </p>
+                                                    </li>
+                                                    <li>
+                                                        DRESS CODE
+                                                        <p class="text-para">
+                                                            Students must be dressed in Proper Dress code and should wear college ID card whenever they participate in any sort of interaction with a company.
+                                                            NB: This office reserves the right to refuse permission to a student to attend the selection process, if their attire is unsatisfactory.
+                                                        </p>
+                                                    </li>
+                                                    <li>
+                                                        IDENTITY CARDS
+                                                        <p class="text-para">
+                                                            Students must bring their identity cards with them whenever they go through a placement process.
+                                                        </p>
+                                                    </li>
+                                                    <li>
+                                                        BELONGINGS
+                                                        <ul class="global-custom-unordered-list__second-child">
+                                                            <li>Bring all the relevant documents which are required for interview/test.</li>
+                                                            <li>Always keep 2 passport size colour photographs, original/attested copies of certificates & 2 copies of resume with you.</li>
+                                                        </ul>
+                                                        <strong>
+                                                            Any violation on the above said rules will make you disqualified from attending the present and further placements.
+                                                            The decision of the TPO will be final in all these matters.
+                                                        </strong>
+                                                    </li>
+                                                    <li>
+                                                        SHORT LISTING
+                                                        <p class="text-para">
+                                                            Companies may short list students themselves on the basis of information furnished by the students in their registration profile or CVs/ Resumes.
+                                                            In case a company insists on short listing to be done by the Institution without explicitly citing any criteria, it will be done on the basis of Criteria determined in consultation with the HODs by the Head-T&P Cell.
+                                                        </p>
+                                                    </li>
+                                                    <li>
+                                                        INTERVIEW PROCEDURE
+                                                        <p class="text-para">
+                                                            Interview schedules as decided by the T&P Cell shall be given to the visiting executives. Thereafter, no modifications shall be entertained, except under very unusual circumstances.
+                                                        </p>
+                                                        <h6 class="small-headings">Students shall-</h6>
+                                                        <ul class="global-custom-unordered-list__second-child">
+                                                            <li>Keep record of organizations and positions for which they apply. </li>
+                                                            <li>Keep notes on the job details announced. These are useful at the time Of interview. </li>
+                                                            <li>Prepare completely for attending the various Written Tests, Group Discussions and Interviews, particularly in respect of the specific Company for which they are appearing. </li>
+                                                            <li>Students shall not, at the time of interview, negotiate with the employer about salary and terms different from what is announced earlier, unless the announcement specifies that the salary is negotiable. </li>
+                                                            <li> While attending interviews, students must be punctual and appear only in formal dress.</li>
+                                                        </ul>
+                                                    </li>
+                                                </ol>
+                                            </li>
+                                        </ol>
+                                        <h4 class="h4 inner-headings">Withdrawal Procedure</h4>
+                                        <p class="text-para">
+                                            Student who has applied for a particular company can withdraw from the company after the Pre Placement Talk. In case of the students going directly to the company premises for the selection process, if the profile/package communicated to them by the T&P Cell is not the same, the students can withdraw from the selection process.
+                                            Once the selection procedure has started, students cannot withdraw at any stage, unless they have a final offer from another organization. It is presumed that students would apply for a position after careful consideration of all the relevant aspects.
+                                            If a student does not appear for interview after giving the nomination and confirmation after PPT, he/she is deemed to have withdrawn. Only in very exceptional circumstances, shall a student be permitted to withdraw from the selection procedure of attending preliminary interview if short listed by the organization at any stage, i.e. if-
+                                        </p>
+                                        <ul class="global-custom-unordered-list">
+                                            <li>He/she explains in writing to the Head - T&P Cell, valid reasons for and the unusual circumstances that need his/her withdrawal, and that the Head - T&P Cell accepts these as truly exceptional and legitimate grounds for withdrawal. </li>
+                                            <li>The Head - T&P Cell is of the view that the interviewing organization would not feel offended.</li>
+                                            <li>It might be necessary for the student to meet personally the organization's executive and explain the reasons why he/she does not wish to be considered further by the organization. The same will be routed through the T&P Cell. </li>
+                                        </ul>
+                                        <p class="text-para">
+                                            Subject to permission as above, a student can withdraw a maximum two times from the selection processes provided by the Institution. The moment he/she refuses to sit for the interview for the third time, he will be out of the Placement Process.
+                                            The students should not negotiate the package/salary with the company unless specified in the Job Post. All the negotiations regarding the package and profile are done by the T&P Cell
+                                        </p>
+                                        <h4 class="h4 inner-headings">Job Offers </h4>
+                                        <p class="text-para">
+                                            Students are permitted to receive a maximum of one job offer only in each category. A student shall be allowed to go through the selection processes, based on specified criteria, till he/she secures a job offer.
+                                            Students shall not request any organization to keep an offer pending. Any such request shall be considered as a serious breach of the placement norms. They shall also not request their future employers to allow extension of deadline for communication of their decision regarding offers made by an organization. Such a job offer shall be treated as a final offer and the student shall not be eligible for placement assistance, thereafter.
+                                            All offers of a particular company shall be announced at the end of the selection process of that company. All offers shall be routed through the T&P only.
+                                        </p>
+                                        <h4 class="h4 inner-headings">Final Thoughts </h4>
+                                        <ol class="global-custom-ordered-list">
+                                            <li>T&P Cell shall aim to facilitate placement drive for all the students. Placement is a privilege extended to the students not a right. </li>
+                                            <li>The guidelines are framed to ensure equality and fairness of opportunities to all the students. All students who opt for placement through the T&P shall abide by the guidelines prescribed herein above. </li>
+                                            <li>Any breach of the rules specified above by any student, shall be taken up seriously by the T&P Cell, that in turn will view the matter and take action against the student, as deem fit. </li>
+                                            <li>If, in the judgment of the T&P Cell Team, a student has behaved in a manner unbecoming of a graduate of the institute, the T&P Cell team would be free to impose a suitable penalty to the extent of withdrawing further placement assistance to the concerned student and taking other action as necessary. </li>
+                                            <li>Final authority in case of any dispute would be the Principal and his/her decision will be final.</li>
+                                        </ol>
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane fade" id="CGC">
+                                        <h1 class="h1 main-headings">Career Guidance Cell</h1>
+                                        <div class="container">
+                                            <p class="text-para">
+                                                Most of the students are in a state of confusion to choose their career ahead after engineering. The choice are many, advises galore all adding up to the grand confusion. He or she feels everyone else is right except himself or herself. We do not want our students to get entangled such situation and make their decision uncertain and complicated .For this reason we set up the Career Guidance Cell. The cell treats each student differently. “Each according to his aptitude and talent” is our slogan here. The student’s desires and abilities are evaluated individually and are advised the way forward accordingly. A wrong choice of career could be a career lost. And it is very difficult to regain the lost ground in life later.The possible career choices could be higher education abroad, immediate job in hand, being an entrepreneur, doing an MBA, doing an M. Tech etc.
+                                                A dedicated Career Guidance Cell is established to guide the students to prospective careers. This cell is to collect the career options from the students, create Awareness and importance of higher studies in India & Abroad by conducting coaching classes on CAT, TOEFL, GATE, GRE etc. The Main function of the CGC is to encourage the young professionals for achieving the dreams of higher education
+                                                The cell functions like a bridge between the institution and industry. It holds career-oriented lectures by senior managers and successful consultants. It also arranges for companies to facilitating pre-placement talks, written tests, group discussions and interviews & Mock Tests for GATE & CAT .The Cell acts as a liaison between the students of our college and the Foreign Universities to assist them in admission procedure and all other related Informational aspects so as to make their further study.
+                                            </p>
+                                            <h4 class="h4 inner-headings">About Visvodaya</h4>
+                                            <p class="text-para">
+                                                Visvodaya is a reputed academic brand in the state of Andhra Pradesh with over 65 years of rich experience in imparting quality education. Visvodaya Society was founded in the year 1951 by Dr.Dodla Ramachandra Reddy, a Philanthropist who was moved by the plight of the people of his time and chose education as his weapon to dispel the darkness of ignorance. Today, Visvodaya is a conglomeration of academic institutions with 2 Engineering Collages, 1 Arts & Science Degree and PG College, 1 Junior College and 2 Schools spread over 120 acres of lush green campus.
+                                                Visvodaya Educational Society was strongly patronized by celebrities like Justice P.V.Rajamannar Devi Prasad Roy Choudary, Dilip Kumar Roy , AMC.G. Tampose, I.C.S (Retd) and a few others. Its Visitor was SR.Sankaran, I.A.S(Retd). The Society was conceived not only as a center of education but also as an instrument of Social-Service. Its Chief objectives are academic excellence, social justice, cultural richness and human ennoblement.
+                                                Visvodaya Manages several educational institutions-Boys High School,Girls High School, Jawahar Bharati Junior College, Jawahar Bharathi Degree College and the centre for Post-Graduation Studies. The college is selected for COSIP,COHSIP and CPE by the UGC. It is accrediated with 'A' Grade by the NAAC. To cap all these,The PBR VITS(Engineering College) was founded during the Golden Jubliee year of the Institution.
+                                                Visvodaya promotes cultural excellence. Doyens like Bhanumathi, Vempati, Ghantasala, Manggalampalli and S.P.Bhalasubramanyam were honoured by Visvodaya. The institution conferred Life - membership on celebrities such as Dr. Jakir Hussain, Koka Subbarao, Albert Franklin, Deshmukhs and a host of governors, ministers, Vice-Chancellors, social servants, writers, poets, savants and celebrities in Fine Arts .
+                                                Social service has been an inseparable part of Visvodaya . The Visvodaya Seva Society founded in 1952 has blossomed into Dr. Ram Centre for Social Service and Culture. It is named after the famous social servant late Dr. Putchalapalli Ramachandra Reddy of the Peoples Poly-clinic, Nellore. Dr. Ram Centre provides medical services not only for the students of Visvodaya institutions but also for the people of Kavali and the surrounding villages.
+                                            </p>
+                                            <h4 class="h4 inner-headings">Vision</h4>
+                                            <p class="text-para">To Provide the society with a center of learining that motivates, supports and encourages the youth to evolve into dynamic professional with a social commitment.</p>
+                                            <h4 class="h4 inner-headings">Mission</h4>
+                                            <p class="text-para">
+                                                Achieving self sufficiency on all fronts to ensure qualitative Teaching-Learning Practices.
+                                                Providing Quality Education, Student-Centered Teaching-Learning Processes and State-of-the-art infrastructure for professional aspirants hailing from both rural and urban areas.
+                                                Imparting Technical Education that encourages independent thinking, develops strong domain knowledge, hones contemporary skills and positive attitudes towards holistic growth of youg minds.
+                                                Evolving this Organization into a center of Academy and Research Excellence.
+                                            </p>
+                                            <h4 class="h4 inner-headings">Functions of CGC</h4>
+                                            <ul class="global-custom-unordered-list">
+                                                <li>To conduct a survey among students on their career options.</li>
+                                                <li>To organise programmes to create awareness about the importance of higher studies in India and Abroad.</li>
+                                                <li>To organize diagnostic tests for the competitive exams such as GATE,CAT,GRE,GMAT and to counsel them for higher studies.</li>
+                                                <li>To organize coaching classes on GATE,CAT, TOEFL,GRE etc. towards higher studies.</li>
+                                                <li>To provide available updated information about jobs /positions/opportunities.</li>
+                                                <li>To conduct career development seminars and workshops to provide necessary literature /brochure/information.</li>
+                                                <li>To mobilize resources for needy students to apply for jobs.</li>
+                                                <li>To organize lectures on career development by subject experts.</li>
+                                            </ul>
+                                            <h4 class="h4 inner-headings">GRE/TOEFL</h4>
+                                            <p class="text-para">
+                                                Special training is provided to students who are aspiring for higher education abroad. It focuses on Verbal, Quantitative and Reasoning skills along with Analytical Writing Assessment. A good number of students from different branches utilize the services and are progressing in different universities abroad.
+                                            </p>
+                                            <h4 class="h4 inner-headings">GATE</h4>
+                                            <p class="text-para">
+                                                Higher Educational pursuits are one of the major goals of most of the students. To help them in realizing their goals the institution is offering regularly GATE training classes.
+                                            </p>
+                                            <h4 class="h4 inner-headings">IES, IFS & IAS</h4>
+                                            <p class="text-para">
+                                                With the academic commitment of the student fraternity PBR VITS always brings forward any initiative that widens the scope of the career of the students. Eventually a special training for the students who are interested in taking up a career at IES, IAS, IAF, etc. has been started recently and completed the required formative training.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane fade" id="SCC">
+                                        <h1 class="h1 main-headings">Students Council Cell</h1>
+                                        <p class="text-para">
+                                            Counselling is the integral part of the total educational enterprise.The Students Council (SC) is the representative body of the entire student community of the college. It acts as a liaison between the students and the management. It is a forum for the students to develop their attitude, leadership qualities, social skills, cultural talents and focuses on the overall development of the individual. The SC seeks to contribute to the development of students' leadership skills and experience, program planning and development andvolunteering.The council organizes all the celebrations, technical & cultural fest, Sports day and College day.
+                                            <h4 class="h4 inner-headings">VISION AND MISSION</h4>
+                                        <p class="text-para">
+                                            The vision of Student Counseling cell is to provide comprehensive guidance programs and services that will equip students with necessary knowledge, attitude and skills to become mature and socially responsible individuals. It aims to promote a just and humane society.
+                                            Student Council’s mission is to encourage and promote the values that represent good character in all students and build responsible leaders within student’s community. Together with Faculty, Staff and Alumni and University support the SCC seek to inspire for a more ethical world through exchange of ideas and information.
+                                        </p>
+                                        <h4 class="h4 inner-headings">OBJECTIVES</h4>
+                                        <ul class="global-custom-unordered-list">
+                                            <li>To provide skills that will enable the students to deal effectively with aspects of environment.</li>
+                                            <li>To train students in self control of emotions.</li>
+                                            <li>To conduct orientation program for freshers.</li>
+                                            <li>To conduct counselling sessions for the needy students through staff/student/external expert counsellors.</li>
+                                            <li>To provide with variety of opportunities to participate in Dept./College activities leading towards the acceptance of responsibilities.</li>
+                                            <li>To provide practical exposure and experience to the willing students, through various activities conducted during course duration, on and off campus.</li>
+                                        </ul>
+                                        <h4 class="h4 inner-headings">Roles of the Student Council</h4>
+                                        <ol class="global-custom-ordered-list">
+                                            <li>To officially represent all the students in the Institute.</li>
+                                            <li>To identify and help solve problems encountered by students in the Institute.</li>
+                                            <li>To communicate its opinion to the Institute administration on any subject that concerns students and on which the council wishes to be consulted.</li>
+                                            <li>To promote and encourage the involvement of students in organizing Institute activities.</li>
+                                        </ol>
+                                        <h4 class="h4 inner-headings">Responsibilities of the Student Council</h4>
+                                        <ol class="global-custom-ordered-list">
+                                            <li>To promote the interests of students among the Institute administration, staff and parents.</li>
+                                            <li>To inform students about any subject that concerns them.</li>
+                                            <li>To identify and help solve problems encountered by students in the Institute.</li>
+                                            <li>To consult students on any issue of importance.</li>
+                                            <li>To organize educational and recreational activities for students.</li>
+                                            <li>To participate in developing the Institute’s educational projects and to promote it to students.</li>
+                                            <li>To organize an activity to recognize the efforts of students involved in organizing Institute activities.</li>
+                                            <li>To propose activities to the Institute administration that would improve the quality of life in the Institute.</li>
+                                            <li>To maintain good relations, out of mutual respect, with the Institute staff (the Director, teaching and non-teaching personnel) and parents.</li>
+                                            <li>Suggesting the administration to improve the student amenities to improve their career and personality building.</li>
+                                        </ol>
+                                        <h4 class="h4 inner-headings">Counseling Cell Constitution & Its Members</h4>
+                                        <p class="text-para">As per the directions of UGC the College Students Council for each institution shall consist the following members, namely:</p>
+                                        <table class="table table-hover table-bordered table-striped customTable">
+                                            <thead>
+                                                <tr class="table-header">
+                                                    <th>S.No</th>
+                                                    <th>Name of the Committee Member</th>
+                                                    <th>Department</th>
+                                                    <th>Role</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>V.PHANI BHUSHAN	</td>
+
+                                                    <td>ECE</td>
+                                                    <td>COORDINATOR </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2</td>
+                                                    <td>D.SRINIVASALU REDDY</td>
+
+                                                    <td>CSE</td>
+                                                    <td>SECRETARY</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>3</td>
+                                                    <td>M.VENKATA RATHNAM</td>
+
+                                                    <td>ECE</td>
+                                                    <td>JOINT SECRETARY</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>4</td>
+                                                    <td>S.MUNIRAJA	</td>
+
+                                                    <td>EEE</td>
+                                                    <td>JOINT SECRETARY</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>5</td>
+                                                    <td>P.FERIDOZ KHAN</td>
+                                                    <
+                                                    <td>H&S</td>
+                                                    <td>JOINT SECRETARY</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <p>
+                                            STUDENT MEMBERS
+                                        </p>
+                                        <ol class="global-custom-unordered-list">
+                                            <li>SK.AFNAN -		IV ECE</li>
+                                            <li>G.PRAVEEN  		IV EEE</li>
+                                            <li>K.PRASANTHI 		IV CSE</li>
+                                            <li>I.RAKESH			IV MECH</li>
+                                            <li>B.JAGADEESHKUMAR 	III ECE</li>
+                                            <li>JHANSI.G 		III EEE</li>
+                                            <li>B.JEEVANTEJA  		III CSE</li>
+                                            <li>T.KRISHNA SAI		III MECH</li>
+                                            <li>CH.SAIRAM NAVEEN 	II ECE</li>
+                                            <li>HARIPRASAD.P  		II EEE</li>
+                                            <li>CH.MANOJKUMAR 	II CSE</li>
+                                            <li>R.ASWIN RAJ	II MECH</li>
+                                            <li>D.MAHENDRAREDDY	I ECE</li>
+                                            <li>CHANDRAMOULI.N 	I EEE</li>
+                                            <li>B.VENKATESH REDDY 	I CSE</li>
+                                            <li>P.CHAITANYA KUMAR	I MECH</li>
+                                        </ol>
+                                        <h4 class="h4 inner-headings">
+                                            ACTION PLAN - proposed by SCC
+                                        </h4>
+                                        <ul class="global-custom-unordered-list">
+                                            <li>Special classes to improve academic talents.</li>
+                                            <li>Conduction of Yoga Classes.</li>
+                                            <li>Classes to expose the students on Communication Skills.</li>
+                                            <li>Classes on Professional Ethics.</li>
+                                            <li>Tutor - Ward system.</li>
+                                            <li>Stress Management.</li>
+                                            <li>Student Counseling.</li>
+                                        </ul>
+                                        <h4 class="h4 inner-headings">RULES & REGULATIONS</h4>
+                                        <ul class="global-custom-unordered-list">
+                                            <li>All the SCC staff are responsible for proper functioning of all events.</li>
+                                            <li>It is the responsibility of SCC staff to motivate students and make them learn in an interactive manner.</li>
+                                            <li>SCC staff should conduct events which will enhance student’s creativity.</li>
+                                            <li>All the Student Council members should follow Professional Ethics.</li>
+                                            <li>The cell will counsel the students at least once in a month about the problems of adolescents and will also guide them in new phase of life.</li>
+                                            <li>The cell will meet immediately if there is an urgent matter relating to adolescents and redress the problem.</li>
+
+                                        </ul>
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane fade" id="ARC">
+                                        <h1 class="h1 main-headings">Anti Ragging Cell</h1>
+                                        <p class="text-para">
+                                            The Institution has a committee on anti-ragging since 2001. Considering the determination of the Central Government and the University Grants Commission to prohibit, prevent and eliminate the scourge of ragging of any type and the gravity of the issue, the Institution had constituted the formal Anti – ragging Cell comprising of the Anti-ragging Committee and the Anti –ragging Squad way back in 2009-10 in compliance with the UGC regulations on Curbing the menace of ragging in higher educational institutions, 2009 and the suggestive guidelines listed under Clauses 6.1, 6.2 and 6.3. The Committee  includes members (Senior Professors, Associate/ Asst. Professors) representing all the Faculties with the Principal as the Chairperson and Vice Principal as the Secretary. The committee meets often and when needed to discuss directives received from UGC / AICTE and put them into action.
+                                            Committee and the Squad are reconstituted every two years. The anti- ragging squad ensures the implementation of the preventive measure and undertakes field visits to ensure ragging free campus.
+                                        </p><h4 class="h4 inner-headings">Objectives</h4>
+                                        <ul class="global-custom-unordered-list">
+                                            <li>
+                                                To take necessary	measures to achieve the objectives of eliminating the menace of ragging within the Institution or outside.
+                                            </li>
+                                            <li>To act on the defaulters who are found guilty of ragging and /or abetting ragging, actively or passively, or being part of a conspiracy to promote ragging.</li>
+                                            <li>Composition.</li>
+
+                                        </ul>
+                                        <h4 class="h4 inner-headings">Anti – Ragging Committee</h4>
+                                        <p>
+                                            Members
+                                        </p>
+                                        <ol class="global-custom-ordered-list">
+                                            <li>Principal - Chairman</li>
+                                            <li>HOD -ECE - Member</li>
+                                            <li>HOD- CSE - Member</li>
+                                            <li>HOD- ME - Member</li>
+                                            <li>HOD -EEE - Member</li>
+                                            <li>HOD- MBA - Member</li>
+                                            <li>HOD- MCA – Member</li>
+                                            <li>Exam Section I/C, Member</li>
+                                            <li>Physical Director, Member</li>
+                                        </ol>
+                                        <p class="small-headings">Functions</p>
+                                        <ul class="global-custom-unordered-list">
+                                            <li>Meet periodically to discuss important matters, incidences and UGC guidelines on anti ragging.</li>
+                                            <li>Act as a mediator between the Anti ragging squad, administration and the students.</li>
+                                            <li>Prevent incidences of ragging.</li>
+                                            <li>Educate students on the negativity of ragging and inculcate good values which help them refrain from such acts.</li>
+                                            <li>Monitor anti – ragging activities in the Institution.</li>
+                                            <li>Help to maintain the Ragging free campus.</li>
+                                            <li>Meet students in the students’ assembly and brief them about the Institution’s stand about ragging.</li>
+                                            <li>Organize programmes to create awareness.</li>
+                                            <li>Disseminate information on Anti ragging rules & regulations.</li>
+                                            <li>Give heed to the recommendations of the Anti ragging Squad in the right perspective.</li>
+                                        </ul>
+                                        <h4 class="h4 inner-headings"> Anti – Ragging Squad</h4>
+                                        <p class="small-headings">
+                                            Functions
+                                        </p>
+                                        <ul class="global-custom-unordered-list">
+                                            <li>Identify and inspect places of potential ragging</li>
+                                            <li>Make surprise visits in classrooms and in hostels</li>
+                                            <li>Be vigilant for unanticipated events</li>
+                                        </ul>
+                                        <p class="small-headings">Prohibitive measures taken up</p>
+                                        <ul class="global-custom-unordered-list">
+                                            <li>The following measures are an integral part of the administrative mechanism where Management, teaching and supportive staff, seniors and freshers - have roles to play. The measures include the following:</li>
+                                            <li>Declaring the Institution as “Ragging free campus”: public declaration of intent in visual, print and other media</li>
+                                            <li>Adequate impetus given through hoardings/ billboards</li>
+                                            <li>Obtaining affidavits by parents and candidates during admission</li>
+                                            <li>General awareness created through orientation program for parents/ freshers</li>
+                                        </ul>
+                                        <p class="small-headings">Preventive measures taken up (during admission) as per Clause 6.1</p>
+                                        <ul class="global-custom-unordered-list">
+                                            <li>Through media: As stated earlier, has made public declaration of intent in visual, print and other media as a ragging free campus</li>
+                                            <li>Brochures for admission, handbook of the Institution, prospectus have printed matter on these rules and regulations</li>
+                                            <li>Handbook gives details on Who is Who including the Anti ragging Committee and Squad with</li>
+                                        </ul>
+                                        <p class="small-headings"> During admissions:</p>
+                                        <ul class="global-custom-unordered-list">
+                                            <li>Both parents and candidates are requested to fill and sign an Affidavit on Anti ragging</li>
+                                            <li>Maintain good rapport with local police station, hostel wardens in the neighborhood to enable help and share of information in case of an event</li>
+                                            <li>Regular policing by squad, volunteers and student’s council members in the beginning of the odd semester every year</li>
+                                            <li>Assured patrolling by local police outside and by security personnel and supportive staff within the campus</li>
+                                            <li>Maintain records of where students stay if residing in outside hostels and monitoring their actions</li>
+                                        </ul>
+                                        <p class="small-headings">Preventive measures taken up (on Admission) as per Clause 6.2</p>
+                                        <ul class="global-custom-unordered-list">
+                                            <li>Mandated Orientation Programme for freshers and parents to familiarize them with the Institutional rules and regulations inclusive of anti ragging measures, what constitutes ragging and the consequences to be faced</li>
+                                            <li>Prepare freshers not to oblige to such practices if at all they face any but to report boldly</li>
+                                            <li>Have printed the rules and regulations and the consequences to be faced, in the prospectus and Handbook</li>
+                                            <li>Notify the rights to freshers in case of an event – Grievance cell, Anti ragging committee</li>
+                                            <li>
+                                                Assurance to maintain their confidentiality if reported
+                                                <ul class="global-custom-unordered-list">
+                                                    <li>Installation of a complaints box by the local police station</li>
+                                                    <li>Documentation of  complete details of the freshers</li>
+                                                </ul>
+                                            </li>
+                                            <li>Student’s council members to acclimatize the freshers to the campus and the system of the Institution</li>
+                                            <li>Motivate to foster friendly relationships by staff and senior students</li>
+                                            <li>Organizing Fresher’s day as a mark of welcome by Student’s council & seniors</li>
+                                            <li>Organizing Talents day to bring freshers to the forefront and get introduced</li>
+                                            <li>Established C. A. R. E (Centre for Ambitious and Resourceful Endeavours) in 2010-11 to enable freshers with issues to get counseling</li>
+                                            <li>Regular tutor ward meets</li>
+                                            <li>Similar to Student’s council there also exists a hostel student’s council (union) who lend a friendly ear to the issues of the hostel freshers</li>
+                                            <li>Make discreet random surveys</li>
+                                        </ul>
+                                        <p class="small-headings">	Preventive measures taken up as per Clause 6.3</p>
+                                        <ul class="global-custom-unordered-list">
+                                            <li>Constituted Anti ragging committee and squad and they are functional</li>
+                                            <li>Core members address students and direct them in the right path</li>
+                                            <li>An appointed Dean for Student Affairs and a Nodal Officer for International students keep constant vigil over student activities</li>
+                                        </ul>
+                                        <p class="small-headings">Initiatives to prevent the menace of ragging</p>
+                                        <ul class="global-custom-unordered-list">
+                                            <li>
+                                                Anti ragging committee members motivated to attend meetings/ seminars on Anti ragging to keep abreast of recent issues and solutions
+                                            </li>
+                                            <li>
+                                                Posters on Anti ragging received from UGC put up on notice boards
+                                            </li>
+                                            <li>
+                                                Conduct competitions like essay/slogan writing, posters and paintings, oratorical etc on ragging and or anti ragging to create awareness among students on the issues and derive solutions from their own student quarter, which help the Institution to sensitize the young minds on the malefic effects of ragging
+                                            </li>
+                                            <li>
+                                                Organizing rallies within and outside the campus as an awareness generation measure. Students are enthused to prepare placards/ boards and slogans to be vented out during the rally
+                                            </li>
+                                            <li>
+                                                In such competitions and events the entire student community irrespective of Programmes/ Courses studied, NSS, NCC and sports, students also participate. This exercise helps to expose their latent talents in slogan writing, poster preparation etc. Committee and Squad members, Deans and professors belonging to various Schools also join in the endeavour
+                                            </li>
+                                            <li>
+                                                Seminars are organized inviting Police personnel of higher order to address students on what is ragging and eradicating ragging which is the need of the hour and the like. When heard from police officials the impact has been highly positive.
+                                            </li>
+
+                                            <li>
+                                                Students had also participated in Walkathons organized to sensitize students on the same issues
+                                            </li>
+                                            <li>
+                                                Thus the measures taken up include, but not limited to publicizing our motto, dissemination of information and awareness generation, proactive endeavours, stakeholder involvement , providing quarters/ chambers for lodging complaints, mechanisms for redressal, and making all stakeholders custodians of the issue.
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane fade" id="ICC">
+                                        <h1 class="h1 main-headings">Internal Complaint Committee </h1>
+                                        <p class="text-para">
+                                            As per guidelines given by Honorable Supreme Court and with reference to Section 4 All India Council for Technical Education Regulations, 2016 vide no. F AICTE/WH/2016 (Gender sensitization, prevention and prohibition of sexual harassment of women employees and students and Redressal of Grievances in Technical Institutions), Internal Complaint Committee (ICC) has been formed in FAMT to prevent sexual harassment of woman at work place.
+                                        </p>
+
+                                        <p>Internal Complaint Committee sensitizes the female faculty members and students on the prevention and prohibition of sexual harassment of woman at work place. According the Supreme Court’s order, Sexual Harassment is any unwelcome:</p>
+                                        <ul class="global-custom-unordered-list">
+                                            <li>
+                                                Physical contact and advances
+                                            </li>
+                                            <li>Demand or request for sexual favors</li>
+                                            <li>Sexually colored remarks</li>
+                                            <li>Display of pornographic content in any form</li>
+                                        </ul>
+                                        <p>
+                                            Any other unwelcome physical, verbal and non-verbal conduct of a sexual nature.
+                                            In keeping with the Supreme Court guidelines, FAMT established ICC against sexual harassment and atrocities against women at the workplace.
+                                        </p>
+                                        <h4 class="h4 inner-headings">Objectives</h4>
+                                        <ul class="global-custom-unordered-list">
+                                            <li>
+                                                To promote awareness about sexual harassment through educational initiatives that encourages and fosters a dignified and safe environment for women on campus.
+                                            </li>
+                                            <li>To provide a neutral, confidential and supportive environment for the campus community who may have been sexually harassed.</li>
+                                            <li>To ensure fair and timely resolution of complaints about sexual harassment.</li>
+                                            <li>To provide information regarding counseling and support services on the campus.</li>
+                                        </ul>
+                                        <p>To ensure that students, faculty and staff are provided with current and comprehensive information on sexual harassment and assault.</p>
+                                        <h4 class="h5 inner-headings">Download links</h4>
+                                        <p><a class="href-links" href="~/files/Accreditation/Cells/ICORDER.pdf" target="_blank">IC ORDER</a></p>
+                                        <p><a class="href-links" href="~/files/Accreditation/Cells/ICCACT.pdf" target="_blank">IC ACT</a></p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </article>
+    </div>
+</div>
+
+@section Scripts{
+    @*https://www.jqueryscript.net/text/Animated-Text-Truncate-Content-Toggle-Plugin-jQuery-Collapser.html*@
+    <script src="~/js/jquery.collapser.min.js"></script>
+
+    <script src="~/js/accreditation.js"></script>
+    <script>
+
+        $(document).ready(function () {
+
+            //Tag and the text shoudl be at same level for this to work as expected.
+            $(".tab-pane123").collapser({
+                target: 'next',
+                mode: 'words',
+                truncate: 20,
+                speed: 'slow',
+                showText: ' Show More',
+                hideText: ' Hide Text',
+                ellipsis: '...',
+                showClass: 'show-class',
+                hideClass: 'hide-class'
+            });
+
+            //var url = window.location.href;
+            //if (url.indexOf("#") > 0) {
+            //    var activeTab = url.substring(url.indexOf("#") + 1);
+
+            //    //    Remove old active tab class
+            //    $(".tab-pane").removeClass("active in");
+
+            //    //  Add active class to new tab
+            //    $("#" + activeTab).addClass("active in");
+
+            //    //Or directly open tab after getting activeTab.
+            //    $('a[href="#' + activeTab + '"]').tab('show')
+            //}
+
+            $(function () {
+
+                var hash = window.location.hash;
+                if (hash != '') {
+                    hash && $('.inner-tabpanel-navigation a[href="' + hash + '"]').tab('show');
+                }
+
+                $('.inner-tabpanel-navigation .nav-tabs a').click(function (e) {
+                    $(this).tab('show');
+                    var scrollmem = $('body').scrollTop() || $('html').scrollTop();
+                    window.location.hash = this.hash;
+                    $('html,body').scrollTop(scrollmem);
+                });
+            });
+
+            $(window).on('hashchange', function () {
+
+                var hash = window.location.hash;
+                if (hash != '') {
+                    hash && $('.inner-tabpanel-navigation a[href="' + hash + '"]').tab('show');
+                }
+
+                //if (!location.hash) {
+                //    console.log("step 2 first logic");
+                //    $('.tab-pane').tabs('option', 'active', 0); // activate first tab by default
+                //    return;
+                //}
+
+                //$('.inner-tabpanel-navigation .nav-tabs').each(function (index, a) {
+                //    console.log("$(a).attr('href') : " + $(a).attr('href'));
+                //    console.log("location.hash : " + location.hash);
+                //    if ($(a).attr('href') == location.hash) {
+                //        console.log("step 2 second logic");
+                //        $('#tabs').tabs('option', 'active', index);
+                //    }
+                //});
+            });
+
+
+
+
+        });
+
+    </script>
+}

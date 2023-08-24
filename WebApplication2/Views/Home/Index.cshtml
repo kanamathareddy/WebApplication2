@@ -1,0 +1,373 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@section Styles{
+    <link rel="stylesheet" href="~/css/home.css" /> }
+
+<section id="home-slider-placefolder">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="6000">
+        @*
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+                <li data-target="#myCarousel" data-slide-to="3"></li>
+            </ol>*@
+        @*Carasole update images*@
+        <div class="carousel-inner" role="listbox">
+            <div id ="myCarousel-inner" class="item active">
+                <img src="~/images/Home/banner1.jpeg" alt="TCS Placement" class="img-responsive" />
+            </div>
+            <div id ="myCarousel-inner" class="item">
+                <img src="~/images/Home/banner2.jpeg" alt="HCL" class="img-responsive" />
+            </div>
+            <div id ="myCarousel-inner" class="item">
+                <img src="~/images/Home/banner4.jpeg" alt="Emphasis" class="img-responsive" />
+            </div>
+            <div id ="myCarousel-inner" class="item">
+                <img src="~/images/Home/banner3.jpeg" alt="Wipro" class="img-responsive" />
+            </div>
+        </div>
+    </div>
+
+    <ul id="home-slider-placefolder__sub-header" class="nav nav-pills nav-justified hidden-xs">
+        <li class="text-center">Event</li>
+        <li class="text-center">News</li>
+        <li class="text-center">Notice</li>
+    </ul>
+
+    <section id="home-slider-placefolder__curve" class="hidden-xs"></section>
+    @*<section id="home-slider-placefolder__inner-curve" class="visible-sm"></section>*@
+</section>
+<section id="sub-header-content">
+    <div class="row ">
+        <div class="col-sm-6 col-md-3 ">
+            <h1 class="h1 text-center visible-xs">Events</h1>
+            <ul id="sub-header-content__event" class="verticalAutoScroll">
+                <li class="single-height">
+                    <div class="event__full-date col-xs-4 box">
+                        <div class="event__full-date--month">Jan</div>
+                        <div class="event__full-date--date ">
+                            <strong>5</strong>
+                        </div>
+                        <div class="event__full-date--time small">
+                            <em>3:00 pm</em>
+                        </div>
+                    </div>
+                    <div class="event__content col-xs-8 box">
+                        <span class="event__content--text"><a href="~/files/Home/Events/2022.01.05 Parents meet.pdf"> Annual Parents meet </a></span>
+                    </div>
+                </li>
+                <li>
+                    <div class="event__full-date col-xs-4 box">
+                        <div class="event__full-date--month">Jan</div>
+                        <div class="event__full-date--date ">
+                            <strong>3</strong>
+                        </div>
+                        <div class="event__full-date--time small">
+                            <em>9:00 am</em>
+                        </div>
+                    </div>
+                    <div class="event__content col-xs-8 box">
+                        <span class="event__content--text"><a href="~/files/Home/Events/2022.01.03 Workshop on  Web Design With React JS.pdf">Six day Certificate Course on  "Web Design With React JS" from Jan3rd to Jan7th </a></span>
+                    </div>
+                </li>
+                <li>
+                    <div class="event__full-date col-xs-4 box">
+                        <div class="event__full-date--month">Dec</div>
+                        <div class="event__full-date--date ">
+                            <strong>27</strong>
+                        </div>
+                        <div class="event__full-date--time small">
+                            <em>10:30 am</em>
+                        </div>
+                    </div>
+                    <div class="event__content col-xs-8 box">
+                        <span class="event__content--text"><a href="~/files/Home/Events/2021.12.27 Guest lecture on “Engineering Soft Skills”.pdf">Guest lecture on “Engineering Soft Skills”</a></span>
+                    </div>
+                </li>
+                <li>
+                    <div class="event__full-date col-xs-4 box">
+                        <div class="event__full-date--month">Dec</div>
+                        <div class="event__full-date--date ">
+                            <strong>22</strong>
+                        </div>
+                        <div class="event__full-date--time small">
+                            <em>10:30 am</em>
+                        </div>
+                    </div>
+                    <div class="event__content col-xs-8 box">
+                        <span class="event__content--text"><a href="~/files/Home/Events/2021.12.22 Guest lecture on “Carrier Development”.pdf">Guest lecture on “Carrier Development”</a></span>
+                    </div>
+                </li>
+                <li>
+                    <div class="event__full-date col-xs-4 box">
+                        <div class="event__full-date--month">Dec</div>
+                        <div class="event__full-date--date ">
+                            <strong>21</strong>
+                        </div>
+                        <div class="event__full-date--time small">
+                            <em>9:00 am</em>
+                        </div>
+                    </div>
+                    <div class="event__content col-xs-8 box">
+                        <span class="event__content--text"><a href="~/files/Home/Events/2021.12.21 Training program on Internet of Things.pdf"> 5-Day Training program on” IOT”</a></span>
+                    </div>
+                </li>
+                <li>
+                    <div class="event__full-date col-xs-4 box">
+                        <div class="event__full-date--month">Dec</div>
+                        <div class="event__full-date--date ">
+                            <strong>19</strong>
+                        </div>
+                        <div class="event__full-date--time small">
+                            <em>9:00 pm</em>
+                        </div>
+                    </div>
+                    <div class="event__content col-xs-8 box">
+                        <span class="event__content--text"><a href="~/files/Home/Events/2021.12.19 Industrial Visit - Srisailam Right Bank Power House- APGENCO Plant.pdf">Industrial Visit - Srisailam Right Bank Power House- APGENCO Plant</a></span>
+                    </div>
+                </li>
+                <li>
+                    <div class="event__full-date col-xs-4 box">
+                        <div class="event__full-date--month">Dec</div>
+                        <div class="event__full-date--date ">
+                            <strong>18</strong>
+                        </div>
+                        <div class="event__full-date--time small">
+                            <em>9:00 am</em>
+                        </div>
+                    </div>
+                    <div class="event__content col-xs-8 box">
+                        <span class="event__content--text"><a href="~/files/Home/Events/2021.12.18 Industrial Visit NTTPS.pdf">Industrial Visit to NTTPS</a></span>
+                    </div>
+                </li>
+                <li>
+                    <div class="event__full-date col-xs-4 box">
+                        <div class="event__full-date--month">Dec</div>
+                        <div class="event__full-date--date ">
+                            <strong>17</strong>
+                        </div>
+                        <div class="event__full-date--time small">
+                            <em>9:00 am</em>
+                        </div>
+                    </div>
+                    <div class="event__content col-xs-8 box">
+                        <span class="event__content--text"><a href="~/files/Home/Events/2021.12.17 Workshop on “Micro Grid   Protection & Numerical Protection Relay Testing”.PDF">3-Day Workshop on “ Micro Grid   Protection & Numerical Protection Relay Testing”  </a></span>
+                    </div>
+                </li>
+                <li>
+                    <div class="event__full-date col-xs-4 box">
+                        <div class="event__full-date--month">Dec</div>
+                        <div class="event__full-date--date ">
+                            <strong>16</strong>
+                        </div>
+                        <div class="event__full-date--time small">
+                            <em>10:00 am</em>
+                        </div>
+                    </div>
+                    <div class="event__content col-xs-8 box">
+                        <span class="event__content--text"><a href="~/files/Home/Events/2021.12.16 Guest Lecture on “Electrical Engineering  Education A perspective from a developing Country”.pdf">Guest Lecture on “Electrical Engineering  Education: A perspective from a developing Country”</a></span>
+                    </div>
+                </li>
+                <li>
+                    <div class="event__full-date col-xs-4 box">
+                        <div class="event__full-date--month">Dec</div>
+                        <div class="event__full-date--date ">
+                            <strong>13</strong>
+                        </div>
+                        <div class="event__full-date--time small">
+                            <em>10:00 am</em>
+                        </div>
+                    </div>
+                    <div class="event__content col-xs-8 box">
+                        <span class="event__content--text"><a href="~/files/Home/Events/2021.12.13 Workshop on “Web development with Django”.pdf">2-Day Workshop on “Web development with Django”</a></span>
+                    </div>
+                </li>
+                <li>
+                    <div class="event__full-date col-xs-4 box">
+                        <div class="event__full-date--month">Dec</div>
+                        <div class="event__full-date--date ">
+                            <strong>13</strong>
+                        </div>
+                        <div class="event__full-date--time small">
+                            <em>10:00 am</em>
+                        </div>
+                    </div>
+                    <div class="event__content col-xs-8 box">
+                        <span class="event__content--text"><a href="~/files/Home/Events/2021.12.13 Workshop on “Google cloud”.pdf">7-Day Workshop on “Google cloud”</a></span>
+                    </div>
+                </li>
+                <li>
+                    <div class="event__full-date col-xs-4 box">
+                        <div class="event__full-date--month">Dec</div>
+                        <div class="event__full-date--date ">
+                            <strong>9</strong>
+                        </div>
+                        <div class="event__full-date--time small">
+                            <em>10:30 am</em>
+                        </div>
+                    </div>
+                    <div class="event__content col-xs-8 box">
+                        <span class="event__content--text"><a href="~/files/Home/Events/2021.12.09 Guest Lecture “BIG DATA”.pdf">Guest Lecture “BIG DATA”</a></span>
+                    </div>
+                </li>
+                <li>
+                    <div class="event__full-date col-xs-4 box">
+                        <div class="event__full-date--month">Nov</div>
+                        <div class="event__full-date--date ">
+                            <strong>15</strong>
+                        </div>
+                        <div class="event__full-date--time small">
+                            <em>9:00 am</em>
+                        </div>
+                    </div>
+                    <div class="event__content col-xs-8 box">
+                        <span class="event__content--text"><a href="~/files/Home/Events/2021.11.15 APSSDC Training program on ‘Amazon Web Services - Cloud computing’.pdf">6-Day APSSDC Training program on ‘Amazon Web Services - Cloud computing’</a></span>
+                    </div>
+                </li>
+                <li>
+                    <div class="event__full-date col-xs-4 box">
+                        <div class="event__full-date--month">Nov</div>
+                        <div class="event__full-date--date ">
+                            <strong>12</strong>
+                        </div>
+                        <div class="event__full-date--time small">
+                            <em>9:00 am</em>
+                        </div>
+                    </div>
+                    <div class="event__content col-xs-8 box">
+                        <span class="event__content--text"><a href="~/files/Home/Events/2021.11.12 Industrial visit to Dr.NTTPS, APGENCO.pdf">Industrial visit to DNTTPS, AP Genco, Vijayawada</a></span>
+                    </div>
+                </li>
+                <li>
+                    <div class="event__full-date col-xs-4 box">
+                        <div class="event__full-date--month">Nov</div>
+                        <div class="event__full-date--date ">
+                            <strong>3</strong>
+                        </div>
+                        <div class="event__full-date--time small">
+                            <em>2:30 pm</em>
+                        </div>
+                    </div>
+                    <div class="event__content col-xs-8 box">
+                        <span class="event__content--text"><a href="~/files/Home/Events/2021.11.03 Guest lecture on ‘Engineer and Society’.pdf">Guest lecture on ‘Engineer and Society’</a></span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="col-sm-6 col-md-3 col-md-push-6">
+            <h1 class="h1 text-center visible-xs">Notice</h1>
+            <div id="sub-header-content__notice">
+                <ul class="verticalAutoScroll">
+                    <li>
+                        <a href="https://jntuaresults.ac.in/view-results-56736586.html">R13 B.tech 2-2 Supplementary Results</a> &nbsp;
+                        <span class="h3 label label-danger">link</span>
+                    </li>
+                    <li>
+                        <a href="https://jntuaresults.ac.in/view-results-56736587.html">R15 B.tech 2-2 Supplementary Results</a> &nbsp;
+                        <span class="h3 label label-danger">link</span>
+                    </li>
+                    <li>
+                        <a href="https://jntuaresults.ac.in/view-results-56736588.html">R19 B.tech 2-2 Regular Results</a> &nbsp;
+                        <span class="h3 label label-danger">link</span>
+                    </li>
+                    <li>
+                        <a href="https://jntuaresults.ac.in/view-results-56736583.html">R15 B.tech 3-2 Regular Results</a> &nbsp;
+                        <span class="h3 label label-danger">link</span>
+                    </li>
+                    <li>
+                        <a href="https://jntuaresults.ac.in/view-results-56736574.html">R20 B.tech 1-1 Regular Results</a> &nbsp;
+                        <span class="h3 label label-danger">link</span>
+                    </li>
+                    <li>
+                        <a href="https://jntuaresults.ac.in/view-results-56736576.html">R15 B.tech 1-1 Supplementary Results</a> &nbsp;
+                        <span class="h3 label label-danger">link</span>
+                    </li>
+                    <li>
+                        <a href="https://jntuaresults.ac.in/view-results-56736577.html">R19 B.tech 1-1 Supplementary Results</a> &nbsp;
+                        <span class="h3 label label-danger">doc</span>
+                    </li>
+                    <li>
+                        <a href="https://jntuaresults.ac.in/view-results-56736638.html">R17 MBA II SEM Results</a> &nbsp;
+                        <span class="h3 label label-danger">doc</span>
+                    </li>
+                    <li>
+                        <a href="https://jntuaresults.ac.in/view-results-56736639.html">R20 MCA II SEM Results</a> &nbsp;
+                        <span class="h3 label label-danger">link</span>
+                    </li>
+                    <li>
+                        <a href="https://jntuaresults.ac.in/view-results-56736459.html">R17 M.Tech III Sem Results</a> &nbsp;
+                        <span class="h3 label label-danger">link</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="col-sm-12 col-md-6 col-md-pull-3">
+            <h1 class="h1 text-center visible-xs">News</h1>
+            <div id="sub-header-content__news">
+                <div class="row">
+                    <div class="col-md-12 col-sm-4">
+                        <div class="panel panel-danger">
+                            <div class="panel-heading">
+                                ADANI INNOVATIVE CENTER IN PBRVITS
+                            </div>
+                            <div class="panel-body">
+                                <img class="img-responsive" src="~/images/Home/News/1.jpeg" />
+                            </div>
+                            <div class="panel-footer">
+                                Establishment of ADANI Skill Development Center 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-4">
+                        <div class="panel panel-danger">
+                            <div class="panel-heading">
+                                CONSUMER AWARENESS
+                            </div>
+                            <div class="panel-body">
+                                <img class="img-responsive" src="~/images/Home/News/3.jpeg" />
+                            </div>
+                            <div class="panel-footer">
+                                Awareness Programs in PBRVITS
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-sm-4">
+                        <div class="panel panel-danger">
+                            <div class="panel-heading">
+                                STUDENTS ARE THE FUTURE
+                            </div>
+                            <div class="panel-body">
+                                <img class="img-responsive" src="~/images/Home/News/4.jpeg" />
+                            </div>
+                            <div class="panel-footer">
+                                Blood doanation camps by PBRVITS Students
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+@section Scripts{
+    <script src="~/js/home.js"></script>
+    @*https://www.jqueryscript.net/slider/Infinite-Scroller-Plugin-jQuery.html*@
+    <script src="~/js/infiniteslidev2.js"></script>
+    <script>
+        $(function () {
+            $(".verticalAutoScroll").infiniteslide({
+                speed: 50,
+                direction: 'up',
+                clone: 1,
+                responsive: true
+            });
+        })
+    </script>
+}

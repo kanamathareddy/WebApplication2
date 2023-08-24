@@ -1,0 +1,371 @@
+@using Microsoft.AspNetCore.Mvc.Rendering
+@{
+    ViewData["Title"] = "Laboratories";
+}
+
+@section Styles{
+    <link rel="stylesheet" href="~/css/Research.css" />
+}
+
+<div id="research-content">
+    <section id="inner-banner">
+        @Html.Partial("_innerBanner")
+    </section>
+    <div class="row">
+        <aside id="left-side-nav-menu" class="col-md-3 col-sm-4 box hidden-xs">
+            @Html.Partial("_ResearchSideBar")
+        </aside>
+        <article id="core-content" class="col-md-9 col-sm-8 box ">
+            <div class="col-xs-12">
+                <ul id="breadcrumb-nav-section" class="breadcrumb">
+                    <li class="current"><a class="href-links" asp-controller="Academics" asp-action="Index" id="research">Research</a></li>
+                    <li id="currentpageBreadcrum" class="current">Laboratories</li>
+                </ul>
+                <div id="content-title">
+                    <div class="tab-content">
+                        <section class="blocks tab-pane in active tab-main">
+                            <div class="page-header">
+                                <h1 class="h1 main-headings">Laboratories</h1>
+                            </div>
+                        </section>
+                        <section class="blocks tab-pane tab-Laboratories_computerScience">
+                            <div class="page-header">
+                                <h1 class="h1 main-headings">Department of computer science engineering</h1>
+                            </div>
+                        </section>
+                        <section class="blocks tab-pane tab-Laboratories_electronicsCommunication">
+                            <div class="page-header">
+                                <h1 class="h1 main-headings">Department of electronics and communication engineering</h1>
+                            </div>
+                        </section>
+                        <section class="blocks tab-pane tab-Laboratories_electricalElectronics">
+                            <div class="page-header">
+                                <h1 class="h1 main-headings">Department of electrical and electronics engineering</h1>
+                            </div>
+                        </section>
+                        <section class="blocks tab-pane tab-Laboratories_mechanical">
+                            <div class="page-header">
+                                <h1 class="h1 main-headings">Department of mechanical engineering</h1>
+                            </div>
+                        </section>
+                        <section class="blocks tab-pane tab-Laboratories_mca">
+                            <div class="page-header">
+                                <h1 class="h1 main-headings">Master of Computer Applications</h1>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+                <section id="content-block">
+                    <div class="col-md-8">
+                        <div id="content-block__main">
+                            <div class="tab-content">
+                                <section class="blocks tab-pane in active tab-main">
+                                    <p class="text-content text-para">
+                                        The College has spacious, well-designed and adequately furnished laboratories. All the laboratories of engineering and sciences are provided with latest equipment. The Departments have additional laboratories to meet the industry requirement. The laboratories and workshops are fully equipped with the state-of-the-art facilities; Particularly the Computer labs, CAD/CAM Centre, Internet centre and Language Lab are value added assets to the college.
+                                    </p>
+                                    <p class="text-content text-para">
+                                        Faculty members conduct lab experiments as per lesson plans and lab schedules respectively. To keep students abreast with the latest trends and advancements in the technologies, new sessions and experiments are made a part of teaching-learning process.
+                                    </p>
+                                </section>
+                                <section class="blocks tab-pane tab-Laboratories_computerScience">
+                                    <div id="image-rendering">
+                                        <img class="img-responsive" src="~/images/Research/labs/cse.JPG" />
+                                    </div>
+                                    <h5 class="small headins">Laboratory Facilities (As per Syllabus): </h5>
+                                    <ul class="global-custom-unordered-list">
+                                        <li>
+                                            C-Programming Lab
+                                        </li>
+                                        <li>
+                                            Java Programming Lab
+                                        </li>
+                                        <li>
+                                            Database Management systems Lab
+                                        </li>
+                                        <li>
+                                            UML Lab
+                                        </li>
+                                        <li>
+                                            Linux Programming Lab
+                                        </li>
+                                        <li>
+                                            Object Oriented Analysis and Design Lab
+                                        </li>
+                                        <li>
+                                            Software Testing Lab
+                                        </li>
+                                        <li>
+                                            Operating Systems Lab
+                                        </li>
+                                        <li>
+                                            Web and Internet Technologies Lab
+                                        </li>
+                                        <li>
+                                            Data Warehousing & Mining Lab
+                                        </li>
+                                        <li>
+                                            Mobile Application Development Lab
+                                        </li>
+                                        <li>
+                                            Grid & Cloud Computing Lab
+                                        </li>
+                                    </ul>
+                                    <h4 class="inner-headings">
+                                        Additional Lab facilities:</h5>
+                                        <ul class="global-custom-unorderd-list">
+                                            <li>Android applications</li>
+                                            <li>Multimedia and Web designing</li>
+                                        </ul>
+
+                                </section>
+                                <section class="blocks tab-pane tab-Laboratories_electronicsCommunication">
+                                    <div id="image-rendering">
+                                        <img class="img-responsive" src="~/images/Research/labs/ece.JPG" />
+                                    </div>
+                                    <h5 class="small headins">Laboratory Facilities (As per Syllabus): </h5>
+                                    <ul class="global-custom-unordered-list">
+                                        <li>
+                                            Electronics devices & circuits lab
+                                        </li>
+                                        <li>
+                                            Basic Simulation Lab
+                                        </li>
+                                        <li>
+                                            Electronic Circuits Analysis & Design lab
+                                        </li>
+                                        <li>
+                                            Analog and Digital Communications lab
+                                        </li>
+                                        <li>
+                                            VLSI Lab
+                                        </li>
+                                        <li>
+                                            Micro Processor & Microcontrollers lab
+                                        </li>
+                                        <li>
+                                            Embedded Systems Lab
+                                        </li>
+                                        <li>
+                                            DSP lab
+                                        </li>
+                                        <li>
+                                            Microwave lab & Optical Communication lab
+                                        </li>
+                                        <li>
+                                            IC-applications lab
+                                        </li>
+                                    </ul>
+                                    <h4 class="inner-headings">
+                                        Additional Lab facilities:</h5>
+                                        <ul class="global-custom-unorderd-list">
+                                            <li>LabVIEW</li>
+                                            <li>High Frequency Structure Simulator(HFSS)</li>
+                                            <li>Antenna fabrication & testing</li>
+                                            <li>Software Defined Radio(SDR) system</li>
+                                        </ul>
+
+                                </section>
+                                <section class="blocks tab-pane tab-Laboratories_electricalElectronics">
+                                    <div id="image-rendering">
+                                        <img class="img-responsive" src="~/images/Research/labs/eee.JPG" />
+                                    </div>
+                                    <h5 class="small headins">Laboratory Facilities (As per Syllabus): </h5>
+                                    <ul class="global-custom-unordered-list">
+                                        <li>
+                                            Basic Electrical & Electronics Engineering Lab
+                                        </li>
+                                        <li>
+                                            Electrical Circuits Simulation Lab
+                                        </li>
+                                        <li>
+                                            Electrical Technology Lab
+                                        </li>
+                                        <li>
+                                            AC and DC Electrical Machines Lab
+                                        </li>
+                                        <li>
+                                            Control Systems & Simulation Lab
+                                        </li>
+                                        <li>
+                                            Electrical Measurements Lab
+                                        </li>
+                                        <li>
+                                            Simulation of Electrical Systems
+                                        </li>
+                                        <li>
+                                            Power Electronics & Simulation Lab
+                                        </li>
+                                        <li>
+                                            Power Systems & Simulation Lab
+                                        </li>
+                                        <li>
+                                            Digital Signal Processing Lab
+                                        </li>
+                                        <li>
+                                            Electrical Workshop
+                                        </li>
+                                    </ul>
+                                    <h4 class="inner-headings">
+                                        Additional Lab facilities:</h5>
+                                        <ul class="global-custom-unorderd-list">
+                                            <li>LabVIEW</li>
+                                            <li>Power Converters Lab</li>
+                                            <li>Embedded Systems Lab</li>
+                                        </ul>
+                                </section>
+                                <section class="blocks tab-pane tab-Laboratories_mechanical">
+                                    <div id="image-rendering">
+                                        <img class="img-responsive" src="~/images/Research/labs/me.JPG" />
+                                    </div>
+                                    <h5 class="small headins">Laboratory Facilities (As per Syllabus): </h5>
+                                    <ul class="global-custom-unordered-list">
+                                        <li>
+                                            Thermal Engineering Lab
+                                        </li>
+                                        <li>
+                                            Mechanics of Solids Lab
+                                        </li>
+                                        <li>
+                                            Computer Aided Drafting Lab
+                                        </li>
+                                        <li>
+                                            Fluid Mechanics & Hydraulic Machines
+                                        </li>
+                                        <li>
+                                            Manufacturing Technology Lab
+                                        </li>
+                                        <li>
+                                            Production Technology Lab
+                                        </li>
+                                        <li>
+                                            Machine Tools Lab
+                                        </li>
+                                        <li>
+                                            Metrology Lab
+                                        </li>
+                                        <li>
+                                            Computer Aided Engineering Lab
+                                        </li>
+                                        <li>
+                                            Heat Transfer Lab
+                                        </li>
+                                        <li>
+                                            Engineering Workshop
+                                        </li>
+                                    </ul>
+                                    <h4 class="inner-headings">
+                                        Additional Lab facilities:</h5>
+                                        <ul class="global-custom-unorderd-list">
+                                            <li>Robotics Lab</li>
+                                            <li>Advanced Manufacturing Lab</li>
+                                        </ul>
+                                </section>
+                                <section class="blocks tab-pane tab-Laboratories_mca">
+                                    <h5 class="small headins">Laboratory Facilities (As per Syllabus): </h5>
+                                    <ul class="global-custom-unordered-list">
+                                        <li>
+                                            C-Programming Lab
+                                        </li>
+                                        <li>
+                                            Java Programming Lab
+                                        </li>
+                                        <li>
+                                            Database Management systems Lab
+                                        </li>
+                                        <li>
+                                            UML Lab
+                                        </li>
+                                        <li>
+                                            Linux Programming Lab
+                                        </li>
+                                        <li>
+                                            Object Oriented Analysis and Design Lab
+                                        </li>
+                                        <li>
+                                            Software Testing Lab
+                                        </li>
+                                        <li>
+                                            Operating Systems Lab
+                                        </li>
+                                        <li>
+                                            Web and Internet Technologies Lab
+                                        </li>
+                                        <li>
+                                            Data Warehousing & Mining Lab
+                                        </li>
+                                        <li>
+                                            Mobile Application Development Lab
+                                        </li>
+                                        <li>
+                                            Grid & Cloud Computing Lab
+                                        </li>
+                                    </ul>
+                                    <h4 class="inner-headings">
+                                        Additional Lab facilities:</h5>
+                                        <ul class="global-custom-unorderd-list">
+                                            <li>Android applications</li>
+                                            <li>Multimedia and Web designing</li>
+                                        </ul>
+
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <aside id="right-side-nav-menu">
+                    <div class="col-md-4">
+                        <div id="content-block__side-menu">
+                            @Html.Partial("_AcadamicsQuickLinks")
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </article>
+    </div>
+</div>
+
+@section Scripts{
+    <script src="https://cdn.jsdelivr.net/gh/cant89/gianni-accordion-js/dist/gianniAccordion.min.js"></script>
+    <script src="~/js/research.js"></script>
+    <script>
+ //        $("li#@(ViewContext.RouteData.Values["Controller"])-@(ViewContext.RouteData.Values["Action"])")).addClass("active");
+
+        $('#Laboratories > blockquote').show();
+
+        $('[href=".tab-main"]').tab('show');
+        $('[href=".tab-main"]').parent().remove();
+
+        $('#currentpageBreadcrum').click(function () {
+            $('[href=".tab-main"]').tab('show');
+            $('#currentpageBreadcrum').html("Laboratories");
+            $('#breadcrumb-nav-section li').last().hide();
+        });
+
+        $('#Laboratories > blockquote li, .tab-content .tab-main .href-links').click(function () {
+            $('#currentpageBreadcrum').html("<a class=\"href-links\" href=\".tab-main\" data-toggle=\"tab\">Laboratories</a>");
+        });
+
+        $('.tab-content .tab-main .href-links').click(function () {
+            var txt = $(this).text();
+            var elementID = $(this).attr('id');
+
+            $("#breadcrumb-nav-section > li:not(.current)").remove();
+            var ul = document.getElementById("breadcrumb-nav-section");
+            var li = document.createElement("li");
+            li.appendChild(document.createTextNode(txt));
+            ul.appendChild(li);
+        });
+
+        $('#content-block__main .tab-content').scroll(function () {
+            if ($(this).scrollTop() + $(this).innerHeight() >= $(this)[0].scrollHeight - 1) {
+                $('.arrow').fadeOut();
+            }
+            else {
+                $('.arrow').fadeIn();
+            }
+        });
+
+
+    </script>
+}
+

@@ -1,0 +1,96 @@
+
+@{
+    ViewData["Title"] = "Gym";
+}
+
+
+@{
+    ViewData["Title"] = "Gym";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+@section Styles{
+    <link rel="stylesheet" href="~/css/campuslife.css" />
+}
+
+<div id="campuslife-content">
+    <section id="inner-banner">
+        @Html.Partial("_innerBanner")
+    </section>
+    <div class="row">
+        <aside id="left-side-nav-menu" class="col-md-3 col-sm-4 box hidden-xs">
+            @Html.Partial("_CampusLifeSideBar")
+        </aside>
+        <article id="core-content" class="col-md-9 col-sm-8 box ">
+            <div class="col-xs-12">
+                <ul id="breadcrumb-nav-section" class="breadcrumb">
+                    <li class="current"><a class="href-links" asp-controller="CampusLife" asp-action="Index" id="campuslife">CampusLife</a></li>
+                    <li id="currentpageBreadcrum" class="current">Gym</li>
+                </ul>
+                <div id="content-title">
+                    <div class="page-header">
+                        <h1 class="h1 main-headings">A way of life</h1>
+                    </div>
+                </div>
+                <section id="content-block">
+                    <div class="col-md-8">
+                        <div id="content-block__main">
+                            <p class="text-content text-para">
+                            <div id="image-rendering">
+                                <img class="img-responsive" src="~/images/CampusLife/gym.JPG" />
+                            </div>
+                            <p class="text-content text-para">
+                            The main objective in promoting a gym is to provide the students an alternative to the classroom activity. With the belief that a physical workout helps the student in developing more concentration in his studies, PBR Visvodaya Institute of Technology & Science has set up a well-equipped gym including Treadmills, Weight Bars, Cross Trainers, Rowing Machine, Crunching Pads and Cycling Machines. The students and staff are encouraged to use the gym regularly and improve their fitness. In addition, Yoga sessions are conducted regularly to introduce students and staff to its benefits and help them make it as a part of their daily routine.
+                            </p>
+                            <ul class="global-custom-unordered-list">
+                                
+                                    <li>
+                                Offering a well equipped and accessible gym within an educational facility is a fantastic way to engage students in physical exercise. 
+                                    </li>
+                                <li>
+                                Laying emphasis on the physical activities for the students, the college has an excellent Gym facility. 
+                                </li>
+                                <li>
+                                Full Time Fitness trainers are available in the campus to take care of students.
+                                </li>
+                                <li>
+                                For Students to stay Fit and Healthy, College is equipped with Gym and Fitness centre facilities-Treadmill and more of the latest fitness equipment.
+                                </li>
+                                <li>
+                                The Central Gym for men is equipped with Body Building Equipments.
+                                </li>
+                                <li>
+                                All Gyms and Fitness centers are open both in the Morning and Evening hours.
+                                </li>
+                                <li>
+                                A Healthy Body and a Healthy Mind with Yoga 
+                                </li>
+                                <li>
+                                Yoga sessions are conducted for students to help them maintain both Healthy Mind and Body.
+                                </li>
+                            </ul>
+                            
+                        </div>
+                    </div>
+                </section>
+                <aside id="right-side-nav-menu">
+                    <div class="col-md-4">
+                        <div id="content-block__side-menu">
+                            @Html.Partial("_AcadamicsQuickLinks")
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </article>
+    </div>
+</div>
+
+@section Scripts{
+    <script src="https://cdn.jsdelivr.net/gh/cant89/gianni-accordion-js/dist/gianniAccordion.min.js"></script>
+    <script src="~/js/campusLife.js"></script>
+    @*https://www.jqueryscript.net/text/Animated-Text-Truncate-Content-Toggle-Plugin-jQuery-Collapser.html*@
+    <script src="~/js/jquery.collapser.min.js"></script>
+  
+}
+

@@ -1,0 +1,90 @@
+﻿
+@{
+    ViewData["Title"] = "Academics";
+}
+
+@section Styles{
+    <link rel="stylesheet" href="~/css/academics.css" />
+}
+
+<div id="academics-content">
+    <section id="inner-banner">
+        @Html.Partial("_innerBanner")
+    </section>
+    <div class="row">
+        <aside id="left-side-nav-menu" class="col-md-3 col-sm-4 box hidden-xs">
+            @Html.Partial("_AcadamicsSideBar")
+        </aside>
+        <article id="core-content" class="col-md-9 col-sm-8 box">
+            <div class="col-xs-12">
+                <ul id="breadcrumb-nav-section" class="breadcrumb">
+                    <li class="current"><a id="academics" class="href-links" asp-controller="Academics" asp-action="Index">Academics</a></li>
+                </ul>
+                <div id="content-title">
+                    <div class="page-header">
+                        <h1 class="h1 main-headings">Knowledge is Power</h1>
+                    </div>
+                </div>
+                <div class="academic-stats">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="col-xs-6 text-center academic-stats__counter-block" id="counter1">
+                                <span class="counter-block__symbol"><i class="fas fa-user-graduate" title="Edit"></i></span>
+                                <span class="counter-block__count">10000</span>+
+                                <p class="counter-block__caption">Students Enrolled</p>
+                            </div>
+                            <div class="col-xs-6 text-center academic-stats__counter-block" id="counter2">
+                                <span class="counter-block__symbol"><i class="fas fa-user-tie"></i></span>
+                                <span class="counter-block__count">450</span>+
+                                <p class="counter-block__caption">Certified Teachers</p>
+                            </div>
+                            <div class="col-xs-6 text-center academic-stats__counter-block" id="counter3">
+                                <span class="counter-block__symbol"><i class="fas fa-landmark"></i></span>
+                                <span class="counter-block__count">3600</span>+
+                                <p class="counter-block__caption">Students Recruited</p>
+                            </div>
+                            <div class="col-xs-6 text-center academic-stats__counter-block" id="counter4">
+                                <span class="counter-block__symbol"><i class="fas fa-smile"></i></span>
+                                <span class="counter-block__count">100</span>+
+                                <p class="counter-block__caption">Companies Recruiting</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <section id="content-block">
+                    <div class="col-md-8">
+                        <div id="content-block__main">
+                            <h4 class="inner-headings">Vision</h4>
+                            <p class="text-content text-para">
+                                To be a premier centre of learning in Engineering and Management education that evolves the youth into dynamic professionals with a social commitment
+                            </p>
+                            <h4 class="inner-headings">Mission</h4>
+                            <ul class="text-content">
+                                <li>To provide quality teaching-learning practices in engineering and management education by imparting core instruction and state-of-the-art infrastructure.</li>
+                                <li>To engage the faculty and students in acquiring competency in emerging technologies and research activities through Industry Institute Interaction.</li>
+                                <li>To foster social commitment in learners by incorporating leadership skills and ethical values through value-based education</li>
+                             </ul>
+                            <ul class="text-content">
+                                <li>As an Autonomus Institue we have a strong Academic Council Members helping the Syllubus and student Academics</li>
+                                <li><a href="~/files/About/AcademicCouncil.pdf">Click here to view the Academic Council Members</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                <aside id="right-side-nav-menu">
+                    <div class="col-md-4">
+                        <div id="content-block__side-menu">
+                            @Html.Partial("_AcadamicsQuickLinks")
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </article>
+    </div>
+</div>
+
+@section Scripts{
+
+    <script src="https://cdn.jsdelivr.net/gh/cant89/gianni-accordion-js/dist/gianniAccordion.min.js"></script>
+    <script src="~/js/academics.js"></script>
+}

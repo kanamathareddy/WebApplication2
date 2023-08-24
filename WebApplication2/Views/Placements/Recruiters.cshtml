@@ -1,0 +1,463 @@
+﻿
+@{
+    ViewData["Title"] = "Recruiters";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section Styles{
+    <link rel="stylesheet" href="~/css/placements.css" />
+}
+
+<div id="placements-content">
+    <section id="inner-banner">
+        @Html.Partial("_innerBanner")
+    </section>
+    <div class="row">
+        <aside id="left-side-nav-menu" class="col-md-3 col-sm-4 box hidden-xs">
+            @Html.Partial("_PlacementsSideBar")
+        </aside>
+        <article id="core-content" class="col-md-9 col-sm-8 box ">
+            <div class="col-xs-12">
+                <ul id="breadcrumb-nav-section" class="breadcrumb">
+                    <li class="current"><a class="href-links" asp-controller="Placements" asp-action="Index" id="placements">Placements</a></li>
+                    <li id="currentpageBreadcrum" class="current">Placements Stats</li>
+                </ul>
+                <div id="content-title">
+                    <div class="page-header">
+                        <h1 class="h1 main-headings">Companies Recruiting</h1>
+                    </div>
+                </div>
+                <section id="content-block">
+                    <div class="col-md-8">
+                        <div id="content-block__main">
+
+
+                            <!-- Team -->
+                            <section id="team" class="pb-5">
+                                <div class="row">
+                                    <!-- Team member -->
+                                    <div class="col-xs-6 col-sm-3">
+                                        <div class="image-flip">
+                                            <div class="mainflip flip-0">
+                                                <div class="frontside">
+                                                    <div class="card">
+                                                        <div class="card-body text-center">
+                                                            <p><img class="img-fluid img-responsive" src="~/images/Placements/Companies/infosys.jpg" alt="card image"></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="backside">
+                                                    <div class="card">
+                                                        <div class="card-body text-center mt-4">
+                                                            <h4 class="card-title">Infosys</h4>
+                                                            <p class="card-text">
+                                                                Simple and short
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- ./Team member -->
+                                    <!-- Team member -->
+                                    <div class="col-xs-6 col-sm-3">
+                                        <div class="image-flip">
+                                            <div class="mainflip flip-0">
+                                                <div class="frontside">
+                                                    <div class="card">
+                                                        <div class="card-body text-center">
+                                                            <p><img class="img-fluid img-responsive" src="~/images/Placements/Companies/tech-mahindra.jpg" alt="card image"></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="backside">
+                                                    <div class="card">
+                                                        <div class="card-body text-center mt-4">
+                                                            <h4 class="card-title">Tech Mahindra</h4>
+                                                            <p class="card-text">
+                                                                Simple and short
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- ./Team member -->
+                                    <!-- Team member -->
+                                    <div class="col-xs-6 col-sm-3">
+                                        <div class="image-flip">
+                                            <div class="mainflip flip-0">
+                                                <div class="frontside">
+                                                    <div class="card">
+                                                        <div class="card-body text-center">
+                                                            <p><img class="img-fluid img-responsive" src="~/images/Placements/Companies/cognizant.png" alt="card image"></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="backside">
+                                                    <div class="card">
+                                                        <div class="card-body text-center mt-4">
+                                                            <h4 class="card-title">Cognizant</h4>
+                                                            <p class="card-text">
+                                                                Simple and short
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- ./Team member -->
+                                    <!-- Team member -->
+                                    <div class="col-xs-6 col-sm-3">
+                                        <div class="image-flip">
+                                            <div class="mainflip flip-0">
+                                                <div class="frontside">
+                                                    <div class="card">
+                                                        <div class="card-body text-center">
+                                                            <p><img class="img-fluid img-responsive" src="~/images/Placements/Companies/jasmin_infotech.png" alt="card image"></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="backside">
+                                                    <div class="card">
+                                                        <div class="card-body text-center mt-4">
+                                                            <h4 class="card-title">Jasmin Infotech</h4>
+                                                            <p class="card-text">
+                                                                Simple and short
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- ./Team member -->
+                                    <!-- Team member -->
+                                    <div class="col-xs-6 col-sm-3">
+                                        <div class="image-flip">
+                                            <div class="mainflip flip-0">
+                                                <div class="frontside">
+                                                    <div class="card">
+                                                        <div class="card-body text-center">
+                                                            <p><img class="img-fluid img-responsive" src="~/images/Placements/Companies/jayasree_polymers.jpg" alt="card image"></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="backside">
+                                                    <div class="card">
+                                                        <div class="card-body text-center mt-4">
+                                                            <h4 class="card-title">Jayasree Polymers</h4>
+                                                            <p class="card-text">
+                                                                Simple and short
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- ./Team member -->
+                                    <!-- Team member -->
+                                    <div class="col-xs-6 col-sm-3">
+                                        <div class="image-flip">
+                                            <div class="mainflip flip-0">
+                                                <div class="frontside">
+                                                    <div class="card">
+                                                        <div class="card-body text-center">
+                                                            <p><img class="img-fluid img-responsive" src="~/images/Placements/Companies/juspay.png" alt="card image"></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="backside">
+                                                    <div class="card">
+                                                        <div class="card-body text-center mt-4">
+                                                            <h4 class="card-title">Juspay</h4>
+                                                            <p class="card-text">
+                                                                Simple and short
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- ./Team member -->
+                                    <!-- Team member -->
+                                    <div class="col-xs-6 col-sm-3">
+                                        <div class="image-flip">
+                                            <div class="mainflip flip-0">
+                                                <div class="frontside">
+                                                    <div class="card">
+                                                        <div class="card-body text-center">
+                                                            <p><img class="img-fluid img-responsive" src="~/images/Placements/Companies/lg.jpg" alt="card image"></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="backside">
+                                                    <div class="card">
+                                                        <div class="card-body text-center mt-4">
+                                                            <h4 class="card-title">LG</h4>
+                                                            <p class="card-text">
+                                                                Simple and short
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- ./Team member -->
+                                    <!-- Team member -->
+                                    <div class="col-xs-6 col-sm-3">
+                                        <div class="image-flip">
+                                            <div class="mainflip flip-0">
+                                                <div class="frontside">
+                                                    <div class="card">
+                                                        <div class="card-body text-center">
+                                                            <p><img class="img-fluid img-responsive" src="~/images/Placements/Companies/mind_inventory.png" alt="card image"></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="backside">
+                                                    <div class="card">
+                                                        <div class="card-body text-center mt-4">
+                                                            <h4 class="card-title">Mind Inventory</h4>
+                                                            <p class="card-text">
+                                                                Simple and short
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- ./Team member -->
+                                    <!-- Team member -->
+                                    <div class="col-xs-6 col-sm-3">
+                                        <div class="image-flip">
+                                            <div class="mainflip flip-0">
+                                                <div class="frontside">
+                                                    <div class="card">
+                                                        <div class="card-body text-center">
+                                                            <p><img class="img-fluid img-responsive" src="~/images/Placements/Companies/miracle.png" alt="card image"></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="backside">
+                                                    <div class="card">
+                                                        <div class="card-body text-center mt-4">
+                                                            <h4 class="card-title">Miracle</h4>
+                                                            <p class="card-text">
+                                                                Simple and short
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- ./Team member -->
+                                    <!-- Team member -->
+                                    <div class="col-xs-6 col-sm-3">
+                                        <div class="image-flip">
+                                            <div class="mainflip flip-0">
+                                                <div class="frontside">
+                                                    <div class="card">
+                                                        <div class="card-body text-center">
+                                                            <p><img class="img-fluid img-responsive" src="~/images/Placements/Companies/mobius.png" alt="card image"></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="backside">
+                                                    <div class="card">
+                                                        <div class="card-body text-center mt-4">
+                                                            <h4 class="card-title">Mobius</h4>
+                                                            <p class="card-text">
+                                                                Simple and short
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- ./Team member -->
+                                    <!-- Team member -->
+                                    <div class="col-xs-6 col-sm-3">
+                                        <div class="image-flip">
+                                            <div class="mainflip flip-0">
+                                                <div class="frontside">
+                                                    <div class="card">
+                                                        <div class="card-body text-center">
+                                                            <p><img class="img-fluid img-responsive" src="~/images/Placements/Companies/myphasis.png" alt="card image"></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="backside">
+                                                    <div class="card">
+                                                        <div class="card-body text-center mt-4">
+                                                            <h4 class="card-title">Myphasis</h4>
+                                                            <p class="card-text">
+                                                                Simple and short
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- ./Team member -->
+                                    <!-- Team member -->
+                                    <div class="col-xs-6 col-sm-3">
+                                        <div class="image-flip">
+                                            <div class="mainflip flip-0">
+                                                <div class="frontside">
+                                                    <div class="card">
+                                                        <div class="card-body text-center">
+                                                            <p><img class="img-fluid img-responsive" src="~/images/Placements/Companies/suneratech.png" alt="card image"></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="backside">
+                                                    <div class="card">
+                                                        <div class="card-body text-center mt-4">
+                                                            <h4 class="card-title">Sunera Tech</h4>
+                                                            <p class="card-text">
+                                                                Simple and short
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- ./Team member -->
+                                    <!-- Team member -->
+                                    <div class="col-xs-6 col-sm-3">
+                                        <div class="image-flip">
+                                            <div class="mainflip flip-0">
+                                                <div class="frontside">
+                                                    <div class="card">
+                                                        <div class="card-body text-center">
+                                                            <p><img class="img-fluid img-responsive" src="~/images/Placements/Companies/virtusa_polaris.png" alt="card image"></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="backside">
+                                                    <div class="card">
+                                                        <div class="card-body text-center mt-4">
+                                                            <h4 class="card-title">Virtusa Polaris</h4>
+                                                            <p class="card-text">
+                                                                Simple and short
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- ./Team member -->
+                                    <!-- Team member -->
+                                    <div class="col-xs-6 col-sm-3">
+                                        <div class="image-flip">
+                                            <div class="mainflip flip-0">
+                                                <div class="frontside">
+                                                    <div class="card">
+                                                        <div class="card-body text-center">
+                                                            <p><img class="img-fluid img-responsive" src="~/images/Placements/Companies/thirdware.png" alt="card image"></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="backside">
+                                                    <div class="card">
+                                                        <div class="card-body text-center mt-4">
+                                                            <h4 class="card-title">Thirdware</h4>
+                                                            <p class="card-text">
+                                                                Simple and short
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- ./Team member -->
+                                    <!-- Team member -->
+                                    <div class="col-xs-6 col-sm-3">
+                                        <div class="image-flip">
+                                            <div class="mainflip flip-0">
+                                                <div class="frontside">
+                                                    <div class="card">
+                                                        <div class="card-body text-center">
+                                                            <p><img class="img-fluid img-responsive" src="~/images/Placements/Companies/Sutherland.jpg" alt="card image"></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="backside">
+                                                    <div class="card">
+                                                        <div class="card-body text-center mt-4">
+                                                            <h4 class="card-title">Sutherland</h4>
+                                                            <p class="card-text">
+                                                                Simple and short
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- ./Team member -->
+
+                                </div>
+                            </section>
+                            <!-- Team -->
+                        </div>
+                    </div>
+                </section>
+                <aside id="right-side-nav-menu">
+                    <div class="col-md-4">
+                        <div id="content-block__side-menu">
+                            @Html.Partial("_AcadamicsQuickLinks")
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </article>
+    </div>
+</div>
+
+@section Scripts{
+    <script src="https://cdn.jsdelivr.net/gh/cant89/gianni-accordion-js/dist/gianniAccordion.min.js"></script>
+    <script src="~/js/placements.js"></script>
+    @*https://www.jqueryscript.net/text/Animated-Text-Truncate-Content-Toggle-Plugin-jQuery-Collapser.html*@
+    <script src="~/js/jquery.collapser.min.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            $('#currentpageBreadcrum').click(function () {
+                $('[href=".tab-main"]').tab('show');
+                $('#currentpageBreadcrum').html("Placements");
+                $('#breadcrumb-nav-section li').last().hide();
+            });
+            $('#Faculty > blockquote li, .tab-content .tab-main .href-links').click(function () {
+                $('#currentpageBreadcrum').html("<a class=\"href-links\" href=\".tab-main\" data-toggle=\"tab\">Placements</a>");
+            });
+
+            //Tag and the text shoudl be at same level for this to work as expected.
+            $(".textTruncation").collapser({
+                target: 'next',
+                mode: 'words',
+                truncate: 20,
+                speed: 'slow',
+                showText: ' Show More',
+                hideText: ' Hide Text',
+                ellipsis: '...',
+                showClass: 'show-class',
+                hideClass: 'hide-class'
+            });
+        });
+    </script>
+}

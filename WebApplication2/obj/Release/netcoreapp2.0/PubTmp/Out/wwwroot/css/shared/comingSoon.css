@@ -1,0 +1,178 @@
+﻿#videoClip {
+    position: relative;
+    background-color: black;
+    height: 100vh;
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
+}
+
+    #videoClip video {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        z-index: 0;
+        -ms-transform: translateX(-50%) translateY(-50%);
+        -moz-transform: translateX(-50%) translateY(-50%);
+        -webkit-transform: translateX(-50%) translateY(-50%);
+        transform: translateX(-50%) translateY(-50%);
+    }
+
+    #videoClip .bbb {
+        position: relative;
+        z-index: 2;
+        background: rgba(13,33,48,0.8);
+        height: 100%;
+    }
+
+    #videoClip .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: black;
+        opacity: 0.5;
+        z-index: 1;
+    }
+
+@media (pointer: coarse) and (hover: none) {
+    header {
+        background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
+    }
+
+        header video {
+            display: none;
+        }
+}
+
+.topBottom {
+    letter-spacing: 0.2em;
+    font-size: 19px;
+    text-transform: uppercase;
+    font-family: 'Glyphicons Halflings';
+}
+
+.middleCon {
+    letter-spacing: 0.25em;
+    font-size: 85px;
+    line-height: 1.2em;
+    text-transform: uppercase;
+    font-family: cursive;
+}
+
+.aa {
+    color: white;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%
+}
+
+    .aa p {
+        text-align: inherit;
+    }
+
+.numbers-block svg {
+    width: 100%;
+    height: 100%;
+}
+
+#mid-block .numbers-block {
+    width: 700px;
+    height: 700px;
+}
+
+.pageName {
+    font-style: italic;
+    font-weight: 900;
+}
+/**************************** circle-sketch-highlight ****************************/
+/*https://medium.com/@codingdudecom/highlight-text-css-97331a5b71b5*/
+.circle-sketch-highlight {
+    position: relative;
+}
+
+    .circle-sketch-highlight:before {
+        content: "";
+        z-index: -1;
+        left: -0.5em;
+        top: -0.1em;
+        border-width: 3px;
+        border-style: solid;
+        border-color: red;
+        position: absolute;
+        border-right-color: transparent;
+        width: 100%;
+        height: 2em;
+        transform: rotate(2deg);
+        opacity: 0.7;
+        border-radius: 50%;
+        padding: 0.1em 0.25em;
+    }
+
+    .circle-sketch-highlight:after {
+        content: "";
+        z-index: -1;
+        left: 0.4em;
+        top: 0.1em;
+        padding: 0.1em 0.25em;
+        border-width: 3px;
+        border-style: solid;
+        border-color: red;
+        border-left-color: transparent;
+        border-top-color: transparent;
+        position: absolute;
+        width: 100%;
+        height: 2em;
+        transform: rotate(-1deg);
+        opacity: 0.7;
+        border-radius: 50%;
+    }
+
+/*******************************    realistic-marker-highlight  ******************/
+.realistic-marker-highlight {
+    position: relative;
+}
+
+    .realistic-marker-highlight:before {
+        content: "";
+        background-color: #ff6db7;
+        width: 100%;
+        height: 1em;
+        position: absolute;
+        z-index: -1;
+        filter: url(#marker-shape);
+        left: -0.25em;
+        top: 0.25em;
+        padding: 0 0.25em;
+    }
+
+/*******************************    ribbon-highlight    ******************/
+
+.ribbon-highlight {
+    position: relative;
+    margin: 0.1em;
+}
+
+    .ribbon-highlight:before {
+        content: "";
+        z-index: -1;
+        /*left: -0.8em;*/
+        top: 0.1em;
+        border-width: 0.75em;
+        border-style: double;
+        border-color: rebeccapurple;
+        border-color: blueviolet;
+        border-color: brown;
+        border-color: crimson;
+        position: absolute;
+        /*width: 125%;*/
+        width: 100%;
+        border-left-color: transparent;
+        border-right-color: transparent;
+    }

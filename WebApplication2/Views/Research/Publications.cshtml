@@ -1,0 +1,115 @@
+
+@{
+    ViewData["Title"] = "Publications";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section Styles{
+    <link rel="stylesheet" href="~/css/research.css" />
+}
+
+<div id="research-content">
+    <section id="inner-banner">
+        @Html.Partial("_innerBanner")
+    </section>
+    <div class="row">
+        <aside id="left-side-nav-menu" class="col-md-3 col-sm-4 box hidden-xs">
+            @Html.Partial("_ResearchSideBar")
+        </aside>
+        <article id="core-content" class="col-md-9 col-sm-8 box ">
+            <div class="col-xs-12">
+                <ul id="breadcrumb-nav-section" class="breadcrumb">
+                    <li class="current"><a class="href-links" asp-controller="Research" asp-action="Index" id="research">Research</a></li>
+                    <li id="currentpageBreadcrum" class="current">Publications</li>
+                </ul>
+                <div id="content-title">
+                    <div class="page-header">
+                        <h1 class="h1 main-headings">Publications</h1>
+                    </div>
+                </div>
+                <section id="content-block">
+                    <div class="col-md-8">
+                        <div id="content-block__main">
+                                <table class="table table-hover table-bordered table-striped customTable">
+                                <thead>
+                                    <tr class="table-header">
+                                        <th class="text-center">Publications</th>
+                                        <th class="text-center">Department</th>
+                                        <th class="text-center">Downloads</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Journal publications 2018-19 </td>
+                                        <td class="text-center">ECE</td>
+                                        <td class="text-center"><a class="href-links" href="~/files/Research/ECE.pdf" target="_blank">Download File</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Journal Publications 2018-19  </td>
+                                        <td class="text-center">CSE</td>
+                                        <td class="text-center"><a class="href-links" href="~/files/Research/CSE.pdf" target="_blank">Download File</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Journal publications 2018-19 </td>
+                                        <td class="text-center">EEE</td>
+                                        <td class="text-center"><a class="href-links" href="~/files/Research/EEE.pdf" target="_blank">Download File</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Journal publications 2018-19 </td>
+                                        <td class="text-center">Mechanical</td>
+                                        <td class="text-center"><a class="href-links" href="~/files/Research/ME.pdf" target="_blank">Download File</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Book published</td>
+                                        <td class="text-center">General</td>
+                                        <td class="text-center"><a class="href-links" href="~/files/Research/BOOK.pdf" target="_blank">Download File</a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </section>
+                <aside id="right-side-nav-menu">
+                    <div class="col-md-4">
+                        <div id="content-block__side-menu">
+                            @Html.Partial("_AcadamicsQuickLinks")
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </article>
+    </div>
+</div>
+
+@section Scripts{
+    <script src="https://cdn.jsdelivr.net/gh/cant89/gianni-accordion-js/dist/gianniAccordion.min.js"></script>
+    <script src="~/js/admissions.js"></script>
+    @*https://www.jqueryscript.net/text/Animated-Text-Truncate-Content-Toggle-Plugin-jQuery-Collapser.html*@
+    <script src="~/js/jquery.collapser.min.js"></script>
+   @* <script>
+        $(document).ready(function () {
+
+            $('#currentpageBreadcrum').click(function () {
+                $('[href=".tab-main"]').tab('show');
+                $('#currentpageBreadcrum').html("Placements");
+                $('#breadcrumb-nav-section li').last().hide();
+            });
+            $('#Faculty > blockquote li, .tab-content .tab-main .href-links').click(function () {
+                $('#currentpageBreadcrum').html("<a class=\"href-links\" href=\".tab-main\" data-toggle=\"tab\">Placements</a>");
+            });
+
+            //Tag and the text shoudl be at same level for this to work as expected.
+            $(".textTruncation").collapser({
+                target: 'next',
+                mode: 'words',
+                truncate: 20,
+                speed: 'slow',
+                showText: ' Show More',
+                hideText: ' Hide Text',
+                ellipsis: '...',
+                showClass: 'show-class',
+                hideClass: 'hide-class'
+            });
+        });
+    </script>*@
+}

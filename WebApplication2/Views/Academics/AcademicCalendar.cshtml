@@ -1,0 +1,220 @@
+﻿
+@{
+    ViewData["Title"] = "AcademicCalendar";
+}
+@section Styles{
+    <link rel="stylesheet" href="~/css/Academics.css" />
+}
+
+<div id="academics-content">
+    <section id="inner-banner">
+        @Html.Partial("_innerBanner")
+    </section>
+    <div class="row">
+        <aside id="left-side-nav-menu" class="col-md-3 col-sm-4 box hidden-xs">
+            @Html.Partial("_AcadamicsSideBar")
+        </aside>
+        <article id="core-content" class="col-md-9 col-sm-8 box ">
+            <div class="col-xs-12">
+                <ul class="breadcrumb" id="breadcrumb-nav-section">
+                    <li class="current"><a class="href-links" asp-controller="Academics" asp-action="Index" id="academics">Academics</a></li>
+                    <li id="currentpageBreadcrum" class="current">Academic Calender</li>
+                </ul>
+                <div id="content-title">
+                    <div class="page-header">
+                        <h1 class="main-headings">Academic Calender</h1>
+                    </div>
+                </div>
+                <section id="content-block">
+                    <div id="content-block__main">
+                        <div class="panel-group" id="accordion">
+                            <div class="panel panel-default">
+                                <div class="panel-heading" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                                    <a class="panel-title">B.Tech</a>
+                                </div>
+                                <div id="collapseOne" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <table class="table table-hover table-bordered table-striped customTable">
+                                            <thead>
+                                                <tr class="table-header">
+                                                    <th class="text-center">Title</th>
+                                                    <th class="text-center">Download</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>B.Tech. Sem I 2021-22</td>
+                                                    <td class="text-center"><a class="href-links" href="~/files/AcademicCalendar/2021-22 (I sem) B.Tech. Academic Calendar.pdf" target="_blank">Download File</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>B.Tech. Sem II 2020-21</td>
+                                                    <td class="text-center"><a class="href-links" href="~/files/AcademicCalendar/2020-21 (II sem) B.Tech. Academic Calendar.pdf" target="_blank">Download File</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>B.Tech. Sem I 2020-21</td>
+                                                    <td class="text-center"><a class="href-links" href="~/files/AcademicCalendar/2020-21 (I sem) B.Tech. Academic Calendar.pdf" target="_blank">Download File</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>B.Tech. Sem II 2019-20</td>
+                                                    <td class="text-center"><a class="href-links" href="~/files/AcademicCalendar/2019-20 (II sem) B.Tech. Academic Calendar.pdf" target="_blank">Download File</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>B.Tech. Sem I 2019-20</td>
+                                                    <td class="text-center"><a class="href-links" href="~/files/AcademicCalendar/2019-20 (I sem) B.Tech. Academic Calendar.pdf" target="_blank">Download File</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>B.Tech. Sem II 2018-19</td>
+                                                    <td class="text-center"><a class="href-links" href="~/files/AcademicCalendar/2018-19 (II sem) B.Tech. Academic Calendar.pdf" target="_blank">Download File</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>B.Tech. Sem I 2018-19</td>
+                                                    <td class="text-center"><a class="href-links" href="~/files/AcademicCalendar/2018-19 (I sem) B.Tech. Academic Calendar.pdf" target="_blank">Download File</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>B.Tech. Sem II 2017-18</td>
+                                                    <td class="text-center"><a class="href-links" href="~/files/AcademicCalendar/2017-18 (II sem) B.Tech. Academic Calendar.pdf" target="_blank">Download File</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>B.Tech. Sem I 2017-18</td>
+                                                    <td class="text-center"><a class="href-links" href="~/files/AcademicCalendar/2017-18 (I sem) B.Tech. Academic Calendar.pdf" target="_blank">Download File</a></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                                    <a class="panel-title">M.Tech</a>
+                                </div>
+                                <div id="collapseTwo" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <table class="table table-hover table-bordered table-striped customTable">
+                                            <thead>
+                                                <tr class="table-header">
+                                                    <th class="text-center">Title</th>
+                                                    <th class="text-center">Download</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>M.Tech I and III Sem 2020-21</td>
+                                                    <td class="text-center"><a class="href-links" href="~/files/AcademicCalendar/2020-21 (I & III sem) M.Tech. Academic Calendar.pdf" target="_blank">Download File</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>M.Tech II and IV Sem 2019-20</td>
+                                                    <td class="text-center"><a class="href-links" href="~/files/AcademicCalendar/2019-20 (I & III sem) M.Tech. Academic Calendar.pdf" target="_blank">Download File</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>M.Tech I and III Sem 2019-20</td>
+                                                    <td class="text-center"><a class="href-links" href="~/files/AcademicCalendar/2019-20 (I & III sem) M.Tech. Academic Calendar.pdf" target="_blank">Download File</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>M.Tech II and IV Sem 2018-19</td>
+                                                    <td class="text-center"><a class="href-links" href="~/files/AcademicCalendar/2018-19 (II & IV sem) M.Tech. Academic Calendar.pdf" target="_blank">Download File</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>M.Tech I and III Sem 2018-19</td>
+                                                    <td class="text-center"><a class="href-links" href="~/files/AcademicCalendar/2018-19 (I & III sem) M.Tech. Academic Calendar.pdf" target="_blank">Download File</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>M.Tech II and IV Sem 2017-18</td>
+                                                    <td class="text-center"><a class="href-links" href="~/files/AcademicCalendar/2017-18 (II & IV sem) M.Tech. Academic Calendar.PDF" target="_blank">Download File</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>M.Tech I and III Sem 2017-18</td>
+                                                    <td class="text-center"><a class="href-links" href="~/files/AcademicCalendar/2017-18 (I & III sem) M.Tech. Academic Calendar.PDF" target="_blank">Download File</a></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+                                    <a class="panel-title">MBA</a>
+                                </div>
+                                <div id="collapseThree" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <table class="table table-hover table-bordered table-striped customTable">
+                                            <thead>
+                                                <tr class="table-header">
+                                                    <th class="text-center">Title</th>
+                                                    <th class="text-center">Download</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>MBA II and IV Sem 2019-20</td>
+                                                    <td class="text-center"><a class="href-links" href="~/files/AcademicCalendar/2019-20(II & IV sem) M.B.A. Academic Calendar.pdf" target="_blank">Download File</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>MBA I and III Sem  2019-20</td>
+                                                    <td class="text-center"><a class="href-links" href="~/files/AcademicCalendar/2019-20 (I & III sem) M.B.A. Academic Calendar.pdf" target="_blank">Download File</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>MBA II and IV Sem 2018-19</td>
+                                                    <td class="text-center"><a class="href-links" href="~/files/AcademicCalendar/2018-19 (II & IV sem) M.B.A. Academic Calendar.pdf" target="_blank">Download File</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>MBA I and III Sem  2018-19</td>
+                                                    <td class="text-center"><a class="href-links" href="~/files/AcademicCalendar/2018-19 (I & III sem) M.B.A. Academic Calendar.PDF" target="_blank">Download File</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>MBA II and IV Sem 2017-18</td>
+                                                    <td class="text-center"><a class="href-links" href="~/files/AcademicCalendar/2017-18(II & IV sem) M.B.A. Academic Calendar.pdf" target="_blank">Download File</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>MBA I and III Sem  2017-18</td>
+                                                    <td class="text-center"><a class="href-links" href="~/files/AcademicCalendar/2017-18 (I & III sem) M.B.A. Academic Calendar.pdf" target="_blank">Download File</a></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
+                                    <a class="panel-title">MCA</a>
+                                </div>
+                                <div id="collapseFour" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <table class="table table-hover table-bordered table-striped customTable">
+                                            <thead>
+                                                <tr class="table-header">
+                                                    <th class="text-center">Title</th>
+                                                    <th class="text-center">Download</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>MCA III Sem 2019-20</td>
+                                                    <td class="text-center"><a class="href-links" href="~/files/AcademicCalendar/MCA III Sem 2019-20.pdf" target="_blank">Download File</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>MCA IV Sem 2019-20</td>
+                                                    <td class="text-center"><a class="href-links" href="~/files/AcademicCalendar/MCA IV Sem 2019-20.pdf" target="_blank">Download File</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>MCA VI Sem 2019-20</td>
+                                                    <td class="text-center"><a class="href-links" href="~/files/AcademicCalendar/MCA VI Sem 2019-20.pdf" target="_blank">Download File</a></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </article>
+    </div>
+</div>
+
+@section Scripts{
+    <script src="~/js/academics.js"></script>
+    <script>
+        $('#AcademicCalendar > blockquote').show();
+    </script>
+}

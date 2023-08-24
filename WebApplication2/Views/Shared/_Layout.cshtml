@@ -1,0 +1,208 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]</title>
+    <!--[if lt IE 9]>
+       <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.1/html5shiv.js"></script>
+    <![endif]-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+
+    <environment include="Development">
+        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="~/css/site.css" />
+        <link rel="stylesheet" href="~/css/layout.css" />
+        @RenderSection("Styles", required: false)
+    </environment>
+    <environment exclude="Development">
+        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="~/css/site.css" />
+        <link rel="stylesheet" href="~/css/layout.css" />
+        @RenderSection("Styles", required: false)
+
+    </environment>
+</head>
+<body>
+    <div id="page-container">
+        @*  <div id="loader"></div>*@
+        <header>
+            <section id="site-banner">
+                <div class="row">
+                    <div class="col-xs-3 section-banner__image-section">
+                        <a asp-area="" asp-controller="Home" asp-action="Index" id="home"><img class="img-responsive pull-left" src="~/images/clg_banner_logo.png" alt="VTA" /></a>
+                    </div>
+                    <div class="col-xs-6 section-banner__image-section">
+                        <img class="img-responsive center-block" src="~/images/clg_banner_title.png" alt="VTA" />
+                    </div>
+                    <div class="col-xs-3 section-banner__image-section">
+                        <img class="img-responsive pull-right" src="~/images/clg_banner_founder.png" alt="VTA" />
+                    </div>
+                </div>
+            </section>
+            <nav id="navigation-bar" class="navbar navbar-default" role="navigation">
+                <div class="container-fluid">
+                    <div class="navbar-header navigation-bar__header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <div id="navigation-bar__header--icon-bars">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </div>
+                            <span>Menu</span>
+                        </button>
+                        @*<a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">vta.website</a>*@
+                    </div>
+                    <div id="navigation-bar__inner-nav" class="navbar-collapse collapse">
+                        <div id="navigation-bar__mini-side-nav" class="text-center">
+                            @*Don't format the below code, this is because the white space btw inline-block elemnts*@
+                            <a id="mini-side-nav__home" asp-controller="Home" asp-action="Index"><span class="glyphicon glyphicon-home"></span><span class="mini-side-nav--text"> Home</span></a>
+                            <a id="mini-side-nav__login" href="#"><span class="glyphicon glyphicon-user"></span><span class="mini-side-nav--text"> Login</span></a>
+                        </div>
+                        <ul class="nav nav-pills nav-justified">
+                            <li><a id="about" asp-controller="About" asp-action="Index">About</a></li>
+                            <li><a id="academics" asp-controller="Academics" asp-action="Index">Academics</a></li>
+                            <li><a id="campusLife" asp-controller="CampusLife" asp-action="Index">Campus Life</a></li>
+                            <li><a id="research" asp-controller="Research" asp-action="Index">Research</a></li>
+                            <li><a id="placements" asp-controller="Placements" asp-action="Index">Placements</a></li>
+                            <li><a id="admissions" asp-controller="Admissions" asp-action="Index">Admissions</a></li>
+                            @* <li><a id="accreditation" asp-controller="Accreditation" asp-action="NAAC">SSR <img class="img-responsive" style="display: inline-block;" src="~/images/new.gif" /></a></li>*@
+                            <li><a id="accreditation" asp-controller="Accreditation" asp-action="NAAC">Accreditations</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div id="main-body" class="container-fluid">
+            @RenderBody()
+        </div>
+        <footer>
+            <!--Footer Background Logo Image-->
+            <figure>
+                <img class="img-responsive center-block footer-bg" src="~/images/logo.png" />
+            </figure>
+            <!--Footer Links-->
+            <section id="footer-content" class="container-fluid">
+                <div class="row">
+                    <!--First column-->
+                    <div class="col-md-3">
+                        <div class="rowBlock">
+                            <div class="row">
+                                <div class="col-xs-1">
+                                    <i class="fas fa-map-marker-alt fa-lg"></i>
+                                </div>
+                                <div class="col-xs-10">
+                                    @*<address>
+                                        </address>*@
+                                    Udayagiri Road, Kavali<br />
+                                    SPSR Nellore, AP - 524201
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rowBlock">
+                            <div class="row">
+                                <div class="col-xs-1">
+                                    <i class="fas fa-phone-alt fa-lg"></i>
+                                </div>
+                                <div class="col-xs-10">
+                                    +91-8626242422<br />
+                                    +91-8626243930<br />
+                                    +91-8626240056<br />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rowBlock">
+                            <div class="row">
+                                <div class="col-xs-1">
+                                    <i class="fas fa-envelope fa-lg"></i>
+                                </div>
+                                <div class="col-xs-10">
+                                    <a href="contactus@visvodayata.ac.in">contactus@visvodayata.ac.in</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rowBlock">
+                            <div class="row">
+                                <i class="socialIcon fab fa-facebook-square fa-3x"></i>
+                                <i class="socialIcon fab fa-twitter-square fa-3x"></i>
+                                <i class="socialIcon fab fa-google-plus-square fa-3x"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Second column-->
+                    <div class="col-md-5">
+                        <div class="col-xs-6 collageLinks collageLinks2">
+                            <ul class="list-unstyled">
+                                <li><a asp-controller="Home" asp-action="RTI">RTI</a></li>
+                                <li><a asp-controller="Accreditation" asp-action="Cells">Cells</a></li>
+                                <li><a href="~/files/About/MOU.pdf" target="_blank">MOU's</a></li>
+                                <li><a asp-controller="Home" asp-action="GoverningBody">Governing Body</a></li>
+                                <li><a href="https://docs.google.com/forms/d/16Zs2byr3ti5JSasflxHM3dudPB7ZOiG72hqxCJ6U8Cg/edit?usp=sharing" target="_blank">Register Grevence</a></li>
+                                <li><a href="https://aicte-india.org/feedback/index.php" target="_blank">AICTE Feedback</a></li>
+                                <li><a href="https://www.onlinesbi.sbi/sbicollect/icollecthome.htm" target="_blank">Online Payment Fee</a></li>
+                                <li><a href="~/files/About/PC.pdf" target="_blank">PC,CMM & No Dues</a></li>
+                                <li><a href="~/files/About/code of conduct.pdf" target="_blank">Code Of Conduct</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-xs-6 collageLinks collageLinks1">
+                            <ul class="list-unstyled text-right">
+                                <li><a asp-controller="About" asp-action="Index">About</a></li>
+                                <li><a asp-controller="Home" asp-action="Alumni">Alumni</a></li>
+                                <li><a asp-controller="Home" asp-action="Careers">Careers</a></li>
+                                <li><a asp-controller="Home" asp-action="Contact">Contact US</a></li>
+                                <li><a asp-controller="About" asp-action="Founder" id="founder">Founder</a></li>
+                                <li><a href="~/files/About/Newsletters.pdf" target="_blank">News Letters</a></li>
+                                <li><a asp-controller="About" asp-action="OnlineClasses" id="OnlineClasses">Online Classes</a></li>
+                                <li><a href="~/files/About/MandatoryDisclosure.pdf" target="_blank">Mandatory Disclosure</a></li>
+                                <li><a asp-controller="Home" asp-action="AffiliationsRecognitions">Affiliations & Recognitions</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--Third column-->
+                    <div class="col-md-4">
+                        @*https://maps-website.com/*@
+                        <div class="iframeMap">
+                            @*<iframe height="200" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Udayagiri%20Road,%20Kavali%20SPSR%20Nellore,%20AP%20-%20524201+(VTA)&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+                                </iframe>*@
+                            <iframe id="gmap_canvas" height="275" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=Udayagiri%20Road,%20Kavali%20SPSR%20Nellore+(PBR%20VITS)&amp;t=&amp;z=7&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+                            </iframe>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <hr />
+            <section class="footer-copyright ">
+                <div class="container-fluid">
+                    <div class="row">
+                        <p class="text-center">&copy; @DateTime.Now.Year - PBRVITS by K Reshma Reddy</p>
+                    </div>
+                </div>
+            </section>
+        </footer>
+    </div>
+
+    <environment include="Development">
+        <script src="~/lib/jquery/dist/jquery.js"></script>
+        <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.matchHeight/0.7.0/jquery.matchHeight-min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/plugins/CSSPlugin.min.js"></script>
+        <script src="~/js/site.js" asp-append-version="true"></script>
+    </environment>
+    <environment exclude="Development">
+        <script src="~/lib/jquery/dist/jquery.js"></script>
+        <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.matchHeight/0.7.0/jquery.matchHeight-min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/plugins/CSSPlugin.min.js"></script>
+        <script src="~/js/site.js" asp-append-version="true"></script>
+    </environment>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

@@ -1,0 +1,6 @@
+/***************************************/
+/*        inner banner Properties      */
+/***************************************/
+#section-banner__placeholder--content:before {
+    content: "Research";
+}

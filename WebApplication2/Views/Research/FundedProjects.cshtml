@@ -1,0 +1,114 @@
+
+@{
+    ViewData["Title"] = "FundedProjects";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>FundedProjects</h2>
+
+@section Styles{
+    <link rel="stylesheet" href="~/css/research.css" />
+}
+
+<div id="research-content">
+    <section id="inner-banner">
+        @Html.Partial("_innerBanner")
+    </section>
+    <div class="row">
+        <aside id="left-side-nav-menu" class="col-md-3 col-sm-4 box hidden-xs">
+            @Html.Partial("_ResearchSideBar")
+        </aside>
+        <article id="core-content" class="col-md-9 col-sm-8 box ">
+            <div class="col-xs-12">
+                <ul id="breadcrumb-nav-section" class="breadcrumb">
+                    <li class="current"><a class="href-links" asp-controller="Research" asp-action="Index" id="research">Research</a></li>
+                    <li id="currentpageBreadcrum" class="current">Funded Projects</li>
+                </ul>
+                <section id="content-block">
+                    <div class="col-md-8">
+                        <div id="content-block__main">
+                            <p class="text-content text-para">
+                                All the faculty members are regularly carrying out research work in their respective area of specialization. The college has internal research and development cell to carryout research activities.
+                            </p>
+                            <table class="table table-hover table-bordered table-striped customTable">
+                                <thead>
+                                    <tr class="table-header">
+                                        <th>Year</th>
+                                        <th>Name of the Project</th>
+                                        <th>No of Project</th>
+                                        <th>Amount sanctioned</th>
+                                        <th>Funding Agency</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>2011-12 </td>
+                                        <td>MODROBS</td>
+                                        <td>2</td>
+                                        <td>22.5 Lakhs</td>
+                                        <td>AICTE</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2012-13</td>
+                                        <td>Seminar</td>
+                                        <td>1</td>
+                                        <td>0.3  Lakhs</td>
+                                        <td>DST</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2013-14</td>
+                                        <td>fdp,Minor Research projects</td>
+                                        <td>1,4</td>
+                                        <td>6.65  Lakhs,16.2 Lakhs</td>
+                                        <td>AICTE,UGC</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2014-15</td>
+                                        <td>Minor Research project</td>
+                                        <td>4</td>
+                                        <td>15.7 Lakhs</td>
+                                        <td>UGC</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2015-16</td>
+                                        <td>Major research project</td>
+                                        <td>1</td>
+                                        <td>33.4 Lakhs</td>
+                                        <td>DST</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2016-17</td>
+                                        <td>Minor Research project,Adjunct Faculty</td>
+                                        <td>1,2</td>
+                                        <td>5.95 Lakhs,6 Lakhs</td>
+                                        <td>UGC</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2017-18</td>
+                                        <td>Fund for Improvement of Science and Technology Infrastructure</td>
+                                        <td>1</td>
+                                        <td>80  Lakhs</td>
+                                        <td>DST</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </section>
+                <aside id="right-side-nav-menu">
+                    <div class="col-md-4">
+                        <div id="content-block__side-menu">
+                            @Html.Partial("_AcadamicsQuickLinks")
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </article>
+    </div>
+</div>
+
+
+@section Scripts{
+    <script src="https://cdn.jsdelivr.net/gh/cant89/gianni-accordion-js/dist/gianniAccordion.min.js"></script>
+    <script src="~/js/research.js"></script>
+}

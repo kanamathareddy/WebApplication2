@@ -1,0 +1,118 @@
+﻿
+@{
+    ViewData["Title"] = "Transport";
+}
+
+
+@{
+    ViewData["Title"] = "Transport";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+@section Styles{
+    <link rel="stylesheet" href="~/css/campuslife.css" />
+}
+
+<div id="campuslife-content">
+    <section id="inner-banner">
+        @Html.Partial("_innerBanner")
+    </section>
+    <div class="row">
+        <aside id="left-side-nav-menu" class="col-md-3 col-sm-4 box hidden-xs">
+            @Html.Partial("_CampusLifeSideBar")
+        </aside>
+        <article id="core-content" class="col-md-9 col-sm-8 box ">
+            <div class="col-xs-12">
+                <ul id="breadcrumb-nav-section" class="breadcrumb">
+                    <li class="current"><a class="href-links" asp-controller="CampusLife" asp-action="Index" id="campuslife">CampusLife</a></li>
+                    <li id="currentpageBreadcrum" class="current">Transport</li>
+                </ul>
+                <div id="content-title">
+                    <div class="page-header">
+                        <h1 class="h1 main-headings">Transport</h1>
+                    </div>
+                </div>
+                <section id="content-block">
+                    <div class="col-md-8">
+                        <div id="content-block__main">
+                            <p class="text-content text-para">
+                            PBR Visvodaya Institute of Technology & Science owns a fleet of 30 buses to facilitate the transport of about 1500 students and staff from nearby towns within a radius of 60 km from Kavali. Four of these buses are used for transport of local students. Utmost care is taken to provide all safety measures to the travelling students. The transport in-charge ensures that all the vehicles are maintained in a repair-free condition in compliance with the RTA guidelines. Drivers with a good track record are employed in compliance with the guidelines provided to the academic institutions by RTA.  Each bus is allotted a staff member who regularly monitors the students travelling in the bus and ensures that discipline is maintained in the bus and no inconvenience is caused to any traveller. Also, parents are provided with the mobile number of the bus driver, for their convenience.
+                             </p> 
+                                                                              
+                            <ul class="global-custom-unordered-list">                   
+                                <li>
+                                Transport service is an optional service facilitated by the college for the convenience of its students.
+                                </li>
+                                <li>
+                                The college bus facility available to the student cannot be expected or demanded as a matter of right. The Transport Department at their own discretion has the right to disallow any student from availing the bus facility.
+                                </li>
+                                <li>
+                                Students availing the bus facility will be provided with a bus number, pick up and alighting stop number. 
+                                </li>
+                                <li>
+                                Generally, the bus timings will operate within 10 to 15 minutes of the pickup and alighting time. 
+                                </li>
+                                <li>
+                                Students will have to board and alight the college bus at the respective stops allotted to them only. The Transport Dept reserves the rights to allot the stops.
+                                </li>
+                                <li>
+                                Students while traveling on the college bus must maintain discipline. Any student guilty of misconduct will not be allowed to avail the bus facility.
+                                </li>
+                                <li>
+                                A student shall be refused the bus facility if involved in damage to the bus property. Besides, the damage done will have to be compensated by the student. 
+                                </li>
+                                <li>
+                                Discontinuation of bus facility will only be allowed term wise. Bus facility cannot be discontinued for any month.
+                                </li>
+                                <li>
+                                No transport facility shall be available for other activities / events that college may plan on holidays / vacations.
+                                </li>
+                                <li>
+                                The college has taken utmost care for the safety and convenience of the students.
+                                </li>
+                                <li>
+                                Any suggestion/ complaint regarding the transport service is to be made in writing strictly to the Transport Department and the same shall be entertained by the Transport Department only.
+                                </li>
+                                <li>
+                                All the buses follow the RTA guidelines.
+                                </li>
+                                <li>
+                                Recruitment of drivers and attendants is withal scrutinized in compliance with the guidelines provided to academic institutions by RTA.
+                                </li>
+                                <li>
+                                Speedometers and regular maintenance are done to check the buses are in good condition.
+                                </li>
+                                <li>
+                                Faculty members who also commute in the college buses keep an eye on the discipline inside the vehicles.
+                                </li>
+                                <li>
+                                For connectivity, parents are provided with the mobile numbers of all drivers. 
+                                </li>
+                                <li>
+                                Please cooperate with the drivers and attendants. 
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                <aside id="right-side-nav-menu">
+                    <div class="col-md-4">
+                        <div id="content-block__side-menu">
+                            @Html.Partial("_AcadamicsQuickLinks")
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </article>
+    </div>
+</div>
+
+@section Scripts{
+    <script src="https://cdn.jsdelivr.net/gh/cant89/gianni-accordion-js/dist/gianniAccordion.min.js"></script>
+    <script src="~/js/campusLife.js"></script>
+    @*https://www.jqueryscript.net/text/Animated-Text-Truncate-Content-Toggle-Plugin-jQuery-Collapser.html*@
+    <script src="~/js/jquery.collapser.min.js"></script>
+  
+}
+

@@ -1,0 +1,68 @@
+﻿
+@{
+    ViewData["Title"] = "Research";
+}
+
+@section Styles{
+    <link rel="stylesheet" href="~/css/research.css" />
+}
+
+<div id="research-content">
+    <section id="inner-banner">
+        @Html.Partial("_innerBanner")
+    </section>
+    <div class="row">
+        <aside id="left-side-nav-menu" class="col-md-3 col-sm-4 box hidden-xs">
+            @Html.Partial("_ResearchSideBar")
+        </aside>
+        <article id="core-content" class="col-md-9 col-sm-8 box">
+            <div class="col-xs-12">
+                <ul id="breadcrumb-nav-section" class="breadcrumb">
+                    <li class="current"><a id="academics" class="href-links" asp-controller="Research" asp-action="Index">Research</a></li>
+                </ul>
+                <div id="content-title">
+                    <div class="page-header">
+                        <h1 class="h1 main-headings">Research</h1>
+                    </div>
+                </div>
+                <section id="content-block">
+                    <div class="col-md-8">
+                        <div id="content-block__main">
+                            <p class="text-content text-para">
+                            The institute has good research facilities required for top class engineering education. A Research and Development laboratory aims to look beyond the horizon to make a transformational impact on the world and students and faculty are encouraged to do research inspired learning. JNTUA has recognized ECE Department as a Research centre in 2017-18 for full time Ph.D. Program and presently 7- full Time research scholars are pursuing Ph.D in Electronics and Communication Engineering.
+                            </p>
+                            <h6 class="inner-headings">
+                               R & D Facilities:
+                            </h6>
+                            <ul class="global-custom-unordered-list">
+                                <li>HFSS software to design and simulate complex RF electronic circuit element.</li>
+                                <li>Antenna fabrication and test facility to realize and test low profile antennas.</li>
+                                <li>Software Defined Radio system to simulate wireless transmission and reception.</li>
+                                <li>Los Angeles Abrasion Testing Machine</li>
+                                <li>Compression Testing Machine</li>
+                                <li>Accelerating Curing Tanks, Marshall’s Stability Apparatus</li>
+                                <li>CNC Milling Machine, Electrical Discharge Machine (EDM)</li>
+                                <li>3-D Tool dynamometer, Laser Doppler Vibrometer</li>
+                                <li>LabVIEW with associated hardware</li>
+                            </ul>                           
+                        </div>
+                    </div>
+                </section>
+                <aside id="right-side-nav-menu">
+                    <div class="col-md-4">
+                        <div id="content-block__side-menu">
+                            @Html.Partial("_AcadamicsQuickLinks")
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </article>
+    </div>
+</div>
+
+@section Scripts{
+      <script src="https://cdn.jsdelivr.net/gh/cant89/gianni-accordion-js/dist/gianniAccordion.min.js"></script>
+    <script src="~/js/research.js"></script>
+
+}
+

@@ -1,0 +1,90 @@
+﻿
+@{
+    ViewData["Title"] = "GuestHouse";
+}
+
+
+@{
+    ViewData["Title"] = "GuestHouse";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+@section Styles{
+    <link rel="stylesheet" href="~/css/campuslife.css" />
+}
+
+<div id="campuslife-content">
+    <section id="inner-banner">
+        @Html.Partial("_innerBanner")
+    </section>
+    <div class="row">
+        <aside id="left-side-nav-menu" class="col-md-3 col-sm-4 box hidden-xs">
+            @Html.Partial("_CampusLifeSideBar")
+        </aside>
+        <article id="core-content" class="col-md-9 col-sm-8 box ">
+            <div class="col-xs-12">
+                <ul id="breadcrumb-nav-section" class="breadcrumb">
+                    <li class="current"><a class="href-links" asp-controller="CampusLife" asp-action="Index" id="campuslife">CampusLife</a></li>
+                    <li id="currentpageBreadcrum" class="current">GuestHouse</li>
+                </ul>
+                <div id="content-title">
+                    <div class="page-header">
+                        <h1 class="h1 main-headings">GuestHouse</h1>
+                    </div>
+                </div>
+                <section id="content-block">
+                    <div class="col-md-8">
+                        <div id="content-block__main">
+                            
+                            <p class="text-content text-para">
+                            <bold>All for you, the guest.
+                            </bold>PBR Visvodaya Institute of Technology & Science values every guest on its campus. The guest rooms have been built within the campus and are designed to provide both comfort and convenience to the guests. The rooms are air conditioned and are equipped with all the basic facilities required. Several academicians and visitors, when on an official visit to the institution, have availed the use of these guest rooms.  
+                            </p>
+                            <ul class="global-custom-unordered-list">                             
+                                <li>
+                                PBR VITS always welcomes everyone to its campus with open arms. 
+                                </li>
+                                <li>
+                                It’s not only a customary but also mandatory to provide the most heart-warming experience for the special visitors to our campus. 
+                                </li>
+                                <li>
+                                Our Guests are always held in high esteem and are treated with the best of the facilities. 
+                                </li>
+                                <li>
+                                To accommodate the Guests, Academicians and other experts, the college has good A/C guest rooms in the campus. 
+                                </li>
+                                <li>
+                                Boys specially dedicated to attend on the guests are available 24/7 on the campus to provide a pleasant and tension-free stay for our guests
+                                </li>
+                                <li>
+                                Breakfast, lunch, dinner and snacks are well served for our guests along with coffee / tea when demanded
+                                </li>
+                            </ul>
+                            <div id="image-rendering">
+                                <img class="img-responsive" src="~/images/CampusLife/guesthouse.JPG" />
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <aside id="right-side-nav-menu">
+                    <div class="col-md-4">
+                        <div id="content-block__side-menu">
+                            @Html.Partial("_AcadamicsQuickLinks")
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </article>
+    </div>
+</div>
+
+@section Scripts{
+    <script src="https://cdn.jsdelivr.net/gh/cant89/gianni-accordion-js/dist/gianniAccordion.min.js"></script>
+    <script src="~/js/campusLife.js"></script>
+    @*https://www.jqueryscript.net/text/Animated-Text-Truncate-Content-Toggle-Plugin-jQuery-Collapser.html*@
+    <script src="~/js/jquery.collapser.min.js"></script>
+  
+}
+
+

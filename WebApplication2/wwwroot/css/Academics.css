@@ -1,0 +1,128 @@
+﻿/***************************************/
+/*        inner banner Properties      */
+/***************************************/
+#section-banner__placeholder--content:before {
+    content: "Academics";
+}
+
+/*************************************/
+/*     academic stats Properties     */
+/*************************************/
+.academic-stats {
+    background: #e8eaf6;
+}
+
+.academic-stats__counter-block {
+    padding: 10px;
+}
+
+.counter-block__symbol {
+    color: green;
+}
+
+.counter-block__count, .counter-block__symbol {
+    font-size: 30px;
+}
+
+.counter-block__caption {
+    font-size: 20px;
+}
+
+.academic-stats p {
+    text-align: center;
+}
+/************************************/
+/*    faculty cards with images     */
+/************************************/
+.cards .card {
+    margin: 10px 0px;
+    background: #e8eaf6;
+    padding: 10px 0px;
+    border-radius: 5px;
+}
+
+    .cards .card:nth-child(even) {
+        border-right: 5px red solid;
+    }
+
+    .cards .card:nth-child(odd) {
+        border-left: 5px red solid;
+    }
+
+
+/************************   Make the Page with a height and no scrollbar    ********************************/
+
+#content-block__main > .tab-content {
+    height: 600px;
+    overflow-y: scroll;
+}
+    /* width */
+    #content-block__main > .tab-content::-webkit-scrollbar {
+        width: 5px;
+    }
+
+    /* Track */
+    #content-block__main > .tab-content::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 5px grey;
+        border-radius: 10px;
+    }
+
+    /* Handle */
+    #content-block__main > .tab-content::-webkit-scrollbar-thumb {
+        background: #d84153;
+        border-radius: 10px;
+    }
+
+        /* Handle on hover */
+        #content-block__main > .tab-content::-webkit-scrollbar-thumb:hover {
+            background: #aa2333;
+        }
+
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    #content-block__main > .tab-content::-webkit-scrollbar {
+        /*display: none;*/
+    }
+
+/* Hide scrollbar for IE, Edge and Firefox respectively*/
+#content-block__main > .tab-content {
+    /*-ms-overflow-style: none;*/
+    /*scrollbar-width: none;*/
+}
+/************************   bouncing arrow at the bottom     ********************************/
+#arrow-bouncing {
+    height: 10px;
+    padding: 10px;
+}
+
+.arrow {
+    text-align: center;
+    margin: 4% 0;
+}
+
+i.fa-circle {
+    color: red;
+}
+
+i.fa-chevron-down {
+    color: white;
+}
+
+.bounce {
+    -moz-animation: bounce 2s infinite;
+    -webkit-animation: bounce 2s infinite;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%,20%,50%,80%,100% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-10px);
+    }
+
+    60% {
+        transform: translateY(-10px);
+    }
+}

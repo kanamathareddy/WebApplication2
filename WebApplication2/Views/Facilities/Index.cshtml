@@ -1,0 +1,41 @@
+﻿
+@{
+    ViewData["Title"] = "Facilities";
+}
+
+@section Styles{
+    <link rel="stylesheet" href="~/css/facilities.css" />
+}
+
+<div class="row">
+
+    @Html.Partial("_Facilities")
+
+    <article class="col-md-9 col-sm-8 box" id="coreContent">
+
+        <div class="col-xs-12">
+            <ul class="breadcrumb" id="breadcrumb-nav-section">
+                <li class="current"><a asp-area="" asp-controller="CampusLife" asp-action="Index" id="facilities">Facilities</a></li>
+            </ul>
+            <div class="col-md-11">
+                <section id="facilities-section">
+                    <div class="page-header">
+                        <h1 class="h1">Facilities</h1>
+                        <h2 class="h2">Knowledge is Power</h2>
+                    </div>
+                   <p>
+                        Lorem ipsum tempus dapibus suscipit massa faucibus tempus ut convallis sodales donec, sapien nisi nec ipsum vulputate hendrerit class viverra at diam etiam pulvinar, himenaeos et eget nibh ante ultrices dapibus sed pulvinar massa viverra mi sagittis mi pulvinar sapien vitae, lorem mollis mauris class quisque netus, accumsan id leo massa in per duis praesent sed at dictum himenaeos tortor dolor, fames donec quam erat senectus vestibulum malesuada nibh lectus, nunc ultrices nullam ornare tincidunt consectetur rhoncus accumsan nec libero inceptos leo eu enim orci iaculis, tellus quisque proin vel ipsum himenaeos fermentum, lorem aliquet congue taciti fringilla suscipit lectus.
+
+                        Tristique sociosqu non metus scelerisque volutpat tempor in, augue quisque enim ipsum nisi tristique semper nulla, taciti eleifend tortor curabitur pharetra eu eros consectetur hac convallis dictum mauris arcu scelerisque mollis mauris, auctor tempus facilisis fermentum suspendisse sodales mi iaculis fermentum eu, ultricies euismod mattis duis class ut habitant pretium mollis est ultricies phasellus at viverra diam sit egestas, ante etiam sollicitudin ac iaculis nunc cubilia sodales, lectus leo arcu integer ultricies sit malesuada interdum habitant massa habitasse lacus aenean donec volutpat lorem curabitur, dapibus feugiat donec sapien ipsum sapien tempor turpis, quisque semper sit class aliquam etiam augue hendrerit.
+                    </p>
+                    
+                </section>
+            </div>
+        </div>
+    </article>
+
+</div>
+
+@section Scripts{
+    <script src="~/js/facilities.js"></script>
+}

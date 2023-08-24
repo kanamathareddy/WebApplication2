@@ -1,0 +1,162 @@
+﻿/***************************************/
+/*        inner banner Properties      */
+/***************************************/
+#section-banner__placeholder--content:before {
+    content: "Placements";
+}
+
+/*************************************/
+/*     academic stats Properties     */
+/*************************************/
+.placements-stats {
+    background: #e8eaf6;
+}
+
+.placements-stats__counter-block {
+    padding: 10px;
+}
+
+.counter-block__symbol {
+    color: green;
+}
+
+.counter-block__count, .counter-block__symbol {
+    font-size: 30px;
+}
+
+.counter-block__caption {
+    font-size: 20px;
+}
+
+.placements-stats p {
+    text-align: center;
+}
+/************************************/
+/*    faculty cards with images     */
+/************************************/
+.cards .card {
+    margin: 10px 0px;
+    background: #e8eaf6;
+    padding: 10px 0px;
+    border-radius: 5px;
+}
+
+    .cards .card:nth-child(even) {
+        border-right: 5px red solid;
+    }
+
+    .cards .card:nth-child(odd) {
+        border-left: 5px red solid;
+    }
+
+/************************************/
+/*    faculty cards with images     */
+/************************************/
+#team {
+    background: #eee !important;
+    padding: 30px 0;
+}
+
+    #team .card {
+        border: none;
+        background: #ffffff;
+    }
+
+.image-flip:hover .backside,
+.image-flip.hover .backside {
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    border-radius: .25rem;
+}
+
+.image-flip:hover .frontside,
+.image-flip.hover .frontside {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+.mainflip {
+    -webkit-transition: 1s;
+    -webkit-transform-style: preserve-3d;
+    -ms-transition: 1s;
+    -moz-transition: 1s;
+    -moz-transform: perspective(1000px);
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transition: 1s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.frontside {
+    position: relative;
+    -webkit-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    z-index: 2;
+    margin-bottom: 30px;
+}
+
+.backside {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: white;
+    -webkit-transform: rotateY(-180deg);
+    -moz-transform: rotateY(-180deg);
+    -o-transform: rotateY(-180deg);
+    -ms-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+    -webkit-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+    -moz-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+    box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+}
+
+.frontside,
+.backside {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition: 1s;
+    -webkit-transform-style: preserve-3d;
+    -moz-transition: 1s;
+    -moz-transform-style: preserve-3d;
+    -o-transition: 1s;
+    -o-transform-style: preserve-3d;
+    -ms-transition: 1s;
+    -ms-transform-style: preserve-3d;
+    transition: 1s;
+    transform-style: preserve-3d;
+}
+
+    .frontside .card,
+    .backside .card {
+        min-height: 145px;
+        padding: 5px;
+    }
+
+        .backside .card a {
+            font-size: erw 18px;
+            color: #007b5e !important;
+        }
+
+        .frontside .card .card-title,
+        .backside .card .card-title {
+            color: #007b5e !important;
+        }
+
+        .frontside .card .card-body img {
+            width: 125px;
+            height: 125px;
+            border-radius: 5px;
+        }
+
+    .backside .card-text {
+        text-align: justify;
+        font-size: small;
+    }

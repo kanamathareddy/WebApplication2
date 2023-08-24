@@ -1,0 +1,287 @@
+﻿
+@{
+    ViewData["Title"] = "TempView";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section Styles{
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.3.0/codemirror.min.css">
+    <!-- Include TUI CSS. -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tui-image-editor@3.2.2/dist/tui-image-editor.css">
+    <link rel="stylesheet" href="https://uicdn.toast.com/tui-color-picker/latest/tui-color-picker.css">
+
+
+    <link rel="stylesheet" href="~/css/froala_editor.min.css" />
+
+    <link rel="stylesheet" href="~/css/third_party/froala/themes/dark.min.css">
+    <link rel="stylesheet" href="~/css/third_party/froala/froala_editor.css">
+    <link rel="stylesheet" href="~/css/third_party/froala/froala_style.css">
+    <link rel="stylesheet" href="~/css/third_party/froala/plugins/code_view.css">
+    <link rel="stylesheet" href="~/css/third_party/froala/plugins/draggable.css">
+    <link rel="stylesheet" href="~/css/third_party/froala/plugins/colors.css">
+    <link rel="stylesheet" href="~/css/third_party/froala/plugins/emoticons.css">
+    <link rel="stylesheet" href="~/css/third_party/froala/plugins/image_manager.css">
+    <link rel="stylesheet" href="~/css/third_party/froala/plugins/image.css">
+    <link rel="stylesheet" href="~/css/third_party/froala/plugins/line_breaker.css">
+    <link rel="stylesheet" href="~/css/third_party/froala/plugins/table.css">
+    <link rel="stylesheet" href="~/css/third_party/froala/plugins/char_counter.css">
+    <link rel="stylesheet" href="~/css/third_party/froala/plugins/video.css">
+    <link rel="stylesheet" href="~/css/third_party/froala/plugins/fullscreen.css">
+    <link rel="stylesheet" href="~/css/third_party/froala/plugins/file.css">
+    <link rel="stylesheet" href="~/css/third_party/froala/plugins/quick_insert.css">
+    <link rel="stylesheet" href="~/css/third_party/froala/plugins/help.css">
+    <link rel="stylesheet" href="~/css/third_party/froala/plugins/special_characters.css">
+    <link rel="stylesheet" href="~/css/third_party/froala/third_party/image_tui.css">
+
+    <!-- Include TUI Froala Editor CSS. -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/froala-editor@3.1.0/css/third_party/image_tui.min.css">
+
+    <style>
+        #action-group {
+            height: 40px;
+        }
+
+            #action-group button {
+                margin: 0px 20px;
+                font-size: larger;
+                font-weight: 900;
+                color: black;
+            }
+    </style>
+}
+
+<h1 class="main-headings text-center">Content Editor</h1>
+
+@*https://froala.com/wysiwyg-editor/examples/getHTML/*@
+<div class="container">
+    <div id="action-group">
+        <button id="upload" class="btn btn-primary pull-right" type="button">Upload</button>
+        <button id="destroy" class="btn btn-warning pull-right" type="button">Hide Editor</button>
+        <button id="init" class="btn btn-success pull-right" type="button">Initialize Editor</button>
+    </div>
+    <div id="editor">
+        <form>
+            <div id='edit' style="margin-top: 30px;">
+                <h1>Full Featured</h1>
+
+                <p>This is the full featured Froala WYSIWYG HTML editor.</p>
+
+                <img class="fr-fir fr-dii" src="~/images/About/1.jpg" alt="Old Clock" width="300" />Lorem <strong>ipsum</strong>
+                dolor sit amet, consectetur <strong>adipiscing <em>elit.</em> Donec</strong> facilisis diam in odio iaculis
+                blandit. Nunc eu mauris sit amet purus <strong>viverra</strong><em> gravida</em> ut a dui.<br />
+
+                <ul>
+                    <li>
+                        Vivamus nec rutrum augue, pharetra faucibus purus. Maecenas non orci sagittis, vehicula lorem et, dignissim
+                        nunc.
+                    </li>
+                    <li>
+                        Suspendisse suscipit, diam non varius facilisis, enim libero tincidunt magna, sit amet iaculis eros libero
+                        sit amet eros. Vestibulum a rhoncus felis.<ol>
+                            <li>
+                                Nam lacus nulla, consequat ac lacus sit amet, accumsan pellentesque risus. Aenean viverra mi at urna
+                                mattis fermentum.
+                            </li>
+                            <li>
+                                Curabitur porta metus in tortor elementum, in semper nulla ullamcorper. Vestibulum mattis tempor tortor
+                                quis gravida. In rhoncus risus nibh. Nullam condimentum dapibus massa vel fringilla. Sed hendrerit sed est
+                                quis facilisis. Ut sit amet nibh sem. Pellentesque imperdiet mollis libero.
+                            </li>
+                        </ol>
+                    </li>
+                </ul>
+
+                <a href="http://google.com" title="Aenean sed hendrerit">Aenean sed hendrerit</a> velit. Nullam eu mi dolor.
+                Maecenas et erat risus. Nulla ac auctor diam, non aliquet ante. Fusce ullamcorper, ipsum id tempor lacinia, sem
+                tellus malesuada libero, quis ornare sem massa in orci. Sed dictum dictum tristique. Proin eros turpis, ultricies
+                eu sapien eget, ornare rutrum ipsum. Pellentesque eros nisl, ornare nec ipsum sed, aliquet sollicitudin erat.
+                Nulla tincidunt porta <strong>vehicula.</strong><br />
+
+            </div>
+        </form>
+
+    </div>
+</div>
+
+@*https://www.jqueryscript.net/text/wysiwyg-editor-bootstrap.html
+    https://froala.com/wysiwyg-editor/examples/toolbar-buttons-2/*@
+
+@section Scripts{
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.3.0/codemirror.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.3.0/mode/xml/xml.min.js"></script>
+    <!-- Include TUI and Fabric JS. -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/1.6.7/fabric.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/tui-code-snippet@1.4.0/dist/tui-code-snippet.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/tui-image-editor@3.2.2/dist/tui-image-editor.min.js"></script>
+
+    <!-- Include Froala TUI plugin JS -->
+    <script src="https://cdn.jsdelivr.net/npm/froala-editor@3.1.0/js/third_party/image_tui.min.js"></script>
+
+
+
+    <script type="text/javascript" src="~/js/third_party/froala/froala_editor.min.js"></script>
+    <script type="text/javascript" src="~/js/third_party/froala/plugins/align.min.js"></script>
+    <script type="text/javascript" src="~/js/third_party/froala/plugins/char_counter.min.js"></script>
+    <script type="text/javascript" src="~/js/third_party/froala/plugins/code_beautifier.min.js"></script>
+    <script type="text/javascript" src="~/js/third_party/froala/plugins/code_view.min.js"></script>
+    <script type="text/javascript" src="~/js/third_party/froala/plugins/colors.min.js"></script>
+    <script type="text/javascript" src="~/js/third_party/froala/plugins/draggable.min.js"></script>
+    <script type="text/javascript" src="~/js/third_party/froala/plugins/emoticons.min.js"></script>
+    <script type="text/javascript" src="~/js/third_party/froala/plugins/entities.min.js"></script>
+    <script type="text/javascript" src="~/js/third_party/froala/plugins/file.min.js"></script>
+    <script type="text/javascript" src="~/js/third_party/froala/plugins/font_size.min.js"></script>
+    <script type="text/javascript" src="~/js/third_party/froala/plugins/font_family.min.js"></script>
+    <script type="text/javascript" src="~/js/third_party/froala/plugins/fullscreen.min.js"></script>
+    <script type="text/javascript" src="~/js/third_party/froala/plugins/image.min.js"></script>
+    <script type="text/javascript" src="~/js/third_party/froala/plugins/image_manager.min.js"></script>
+    <script type="text/javascript" src="~/js/third_party/froala/plugins/line_breaker.min.js"></script>
+    <script type="text/javascript" src="~/js/third_party/froala/plugins/inline_class.min.js"></script>
+    <script type="text/javascript" src="~/js/third_party/froala/plugins/inline_style.min.js"></script>
+    <script type="text/javascript" src="~/js/third_party/froala/plugins/link.min.js"></script>
+    <script type="text/javascript" src="~/js/third_party/froala/plugins/lists.min.js"></script>
+    <script type="text/javascript" src="~/js/third_party/froala/plugins/paragraph_format.min.js"></script>
+    <script type="text/javascript" src="~/js/third_party/froala/plugins/paragraph_style.min.js"></script>
+    <script type="text/javascript" src="~/js/third_party/froala/plugins/quick_insert.min.js"></script>
+    <script type="text/javascript" src="~/js/third_party/froala/plugins/quote.min.js"></script>
+    <script type="text/javascript" src="~/js/third_party/froala/plugins/table.min.js"></script>
+    <script type="text/javascript" src="~/js/third_party/froala/plugins/save.min.js"></script>
+    <script type="text/javascript" src="~/js/third_party/froala/plugins/url.min.js"></script>
+    <script type="text/javascript" src="~/js/third_party/froala/plugins/video.min.js"></script>
+    <script type="text/javascript" src="~/js/third_party/froala/plugins/help.min.js"></script>
+    <script type="text/javascript" src="~/js/third_party/froala/plugins/print.min.js"></script>
+    <script type="text/javascript" src="~/js/third_party/froala/plugins/special_characters.min.js"></script>
+    <script type="text/javascript" src="~/js/third_party/froala/plugins/word_paste.min.js"></script>
+    <script type="text/javascript" src="~/js/third_party/froala/third_party/image_tui.min.js"></script>
+
+
+    <script src="~/js/tempView.js"></script>
+    <script>
+
+        $(document).ready(function () {
+
+            var editorInstance, editorHtmlContent;
+            $('#destroy').hide();
+            $('#upload').hide();
+            heightAdjustment();
+
+            $('#init').click(function (e) {
+                editorInstanceInit();
+                $('#init').hide();
+                $('#destroy').show();
+                $('#upload').show();
+            });
+
+            $('#destroy').click(function (e) {
+                editorInstanceDestroy();
+                $('#init').show();
+                $('#destroy').hide();
+                $('#upload').hide();
+            });
+
+            $('#upload').click(function (e) {
+                codeUpload();
+                editorInstanceDestroy();
+                $('#init').show();
+                $('#destroy').hide();
+                $('#upload').hide();
+            });
+
+
+            function editorInstanceInit() {
+                $('#edit').removeClass('fr-view');
+                editorInstance = new FroalaEditor("#edit", {
+                    theme: 'dark',
+                    placeholderText: 'Start typing something...',
+                    tabSpaces: 4,
+                    //pastePlain: true,
+                    //charCounterMax: 140,
+                    dragInline: false,
+                    //pluginsEnabled: ['image', 'link', 'draggable'],
+                    toolbarButtons: {
+                        'moreText': {
+                            'buttons': ['bold', 'italic', 'underline', 'fontFamily', 'strikeThrough', 'subscript', 'superscript', 'fontSize', 'textColor', 'backgroundColor', 'inlineClass', 'inlineStyle', 'clearFormatting'],
+                            'buttonsVisible': 4
+                        },
+                        'moreParagraph': {
+                            'buttons': ['alignLeft', 'alignCenter', 'formatOLSimple', 'alignRight', 'alignJustify', 'formatOL', 'formatUL', 'paragraphFormat', 'paragraphStyle', 'lineHeight', 'outdent', 'indent', 'quote']
+                        },
+                        'moreRich': {
+                            'buttons': ['insertLink', 'insertImage', 'inlineClass', 'insertTable', 'insertHR', 'insertVideo', 'emoticons', 'fontAwesome', 'specialCharacters', 'embedly', 'insertFile'],
+                            'buttonsVisible': 5
+                        },
+                        'moreMisc': {
+                            'buttons': ['undo', 'redo', 'fullscreen', 'html', 'print', 'getPDF', 'spellChecker', 'selectAll', 'help'],
+                            'align': 'right',
+                            'buttonsVisible': 4
+                        }
+                    },
+                    enter: FroalaEditor.ENTER_DIV,
+                    fontFamilySelection: true,
+                    fontFamilyDefaultSelection: 'Font Family',
+                    fontFamily: {
+                        'Arial,Helvetica,sans-serif': 'Arial',
+                        'Georgia,serif': 'Georgia',
+                        'Impact,Charcoal,sans-serif': 'Impact',
+                        'Tahoma,Geneva,sans-serif': 'Tahoma',
+                        "'Times New Roman',Times,serif": 'Times New Roman',
+                        'Verdana,Geneva,sans-serif': 'Verdana'
+                    },
+                    fontSizeSelection: true,
+                    fontSize: ['8', '9', '10', '11', '12', '14', '18', '24', '30', '36', '48', '60', '72', '96'],
+                    paragraphFormatSelection: true,
+                    events: {
+                        contentChanged: function () {
+                            heightAdjustment();
+                        }
+                    },
+                    inlineStyles: {
+                        'Big Red': 'font-size: 20px; color: red;',
+                        'Big Green': 'font-size: 20px; color: green;',
+                        'Small Blue': 'font-size: 14px; color: blue;'
+                    },
+                    inlineClasses: {
+                        'main-headings': 'headings',
+                        'text-para': 'Paragraph',
+                        'href-links': 'Custom Links'
+                    },
+                    colorsBackground: [
+                        '#61BD6D', '#1ABC9C', '#54ACD2', '#2C82C9', '#9365B8', '#475577', '#CCCCCC',
+                        '#41A85F', '#00A885', '#3D8EB9', '#2969B0', '#553982', '#28324E', '#000000',
+                        '#F7DA64', '#FBA026', '#EB6B56', '#E25041', '#A38F84', '#EFEFEF', '#FFFFFF',
+                        '#FAC51C', '#F37934', '#D14841', '#B8312F', '#7C706B', '#D1D5D8', 'REMOVE'
+                    ],
+                    colorsText: [
+                        '#61BD6D', '#1ABC9C', '#54ACD2', '#2C82C9', '#9365B8', '#475577', '#CCCCCC',
+                        '#41A85F', '#00A885', '#3D8EB9', '#2969B0', '#553982', '#28324E', '#000000',
+                        '#F7DA64', '#FBA026', '#EB6B56', '#E25041', '#A38F84', '#EFEFEF', '#FFFFFF',
+                        '#FAC51C', '#F37934', '#D14841', '#B8312F', '#7C706B', '#D1D5D8', 'REMOVE'
+                    ],
+
+                });
+            };
+
+            function editorInstanceDestroy() {
+                editorInstance.destroy();
+                //document.getElementById('edit').classList.add('fr-view');
+                $('#edit').addClass('fr-view');
+            };
+
+            function codeUpload() {
+                editorHtmlContent = editorInstance.html.get();
+                //Send editorHtmlContent into the DB
+                console.log(editorHtmlContent);
+            };
+
+            function heightAdjustment() {
+                var footerHeight = $("footer").height();
+                var headerHeight = $("header").height();
+                var editorHeight = $("#editor").height();
+
+                var h = headerHeight + editorHeight + footerHeight + 150;
+                $("#main-body").css("height", h + "px");
+            };
+
+        });
+    </script>
+}

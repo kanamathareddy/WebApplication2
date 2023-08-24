@@ -1,0 +1,146 @@
+﻿
+@{
+    ViewData["Title"] = "Gallery";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section Styles{
+    <link rel="stylesheet" href="~/css/gallery.css" />
+}
+
+<h1>Gallery</h1>
+@*https://codepen.io/vbservice/pen/NWNJZJz*@
+
+<div class="container">
+    <div class="card">
+        <img src="~/images/Gallery/Campus/main.JPG">
+        <div class="card__head">Campus</div>
+    </div>
+    <div class="card">
+        <img src="~/images/Gallery/CampusLife/main.JPG">
+        <div class="card__head">Campus Life</div>
+    </div>
+    @*<div class="card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Neugierige-Katze.JPG/1280px-Neugierige-Katze.JPG">
+            <div class="card__head">Clubs</div>
+        </div>
+        <div class="card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Al_acecho_%289272124788%29.jpg/1280px-Al_acecho_%289272124788%29.jpg">
+            <div class="card__head">NSS</div>
+        </div>
+        <div class="card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Mimi%26Tigsi.jpg/1280px-Mimi%26Tigsi.jpg">
+            <div class="card__head">Gym</div>
+        </div>
+        <div class="card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/False_alarm_-a.jpg/1280px-False_alarm_-a.jpg">
+            <div class="card__head">Transport</div>
+        </div>
+        <div class="card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/d/d6/Cat_plotting_something_evil%21.jpg">
+            <div class="card__head">Library</div>
+        </div>*@
+    <div class="card">
+        <img src="~/images/Gallery/Placements/main.JPG">
+        <div class="card__head">Placements</div>
+    </div>
+    <div class="card">
+        <img src="~/images/Gallery/Sports/main.JPG">
+        <div class="card__head">Sports</div>
+    </div>
+    <div class="card">
+        <img src="~/images/Gallery/Events/main.JPG">
+        <div class="card__head">College Events</div>
+    </div>
+   
+</div>
+
+
+@*<section class="hero-section">
+        <h2>Gallery</h2>
+        <div class="row">
+            <div class="col-sm-10 col-sm-offset-2">
+                <div class="card-grid">
+                    <a class="card" asp-controller="Gallery" asp-action="Campus" id="campus">
+                        <div class="card__background" style="background-image: url(https://images.unsplash.com/photo-1557177324-56c542165309?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80)"></div>
+                        <div class="card__content">
+                            <p class="card__category">Campus</p>
+                            <h3 class="card__heading">Example Card Heading</h3>
+                        </div>
+                    </a>
+                    <a class="card" asp-controller="Gallery" asp-action="Faculty" id="faculty">
+                        <div class="card__background" style="background-image: url(https://images.unsplash.com/photo-1557187666-4fd70cf76254?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60)"></div>
+                        <div class="card__content">
+                            <p class="card__category">Faculty</p>
+                            <h3 class="card__heading">Example Card Heading</h3>
+                        </div>
+                    </a>
+                    <a class="card" asp-controller="Gallery" asp-action="Placement" id="placement">
+                        <div class="card__background" style="background-image: url(https://images.unsplash.com/photo-1556680262-9990363a3e6d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60)"></div>
+                        <div class="card__content">
+                            <p class="card__category">Placement</p>
+                            <h3 class="card__heading">Example Card Heading</h3>
+                        </div>
+                    </a>
+                    <a class="card" asp-controller="Gallery" asp-action="sports" id="sports">
+                        <div class="card__background" style="background-image: url(https://images.unsplash.com/photo-1557004396-66e4174d7bf6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60)"></div>
+                        <div class="card__content">
+                            <p class="card__category">Sports</p>
+                            <h3 class="card__heading">Example Card Heading</h3>
+                        </div>
+                    </a>
+                    <a class="card" asp-controller="Gallery" asp-action="Campus" id="campus">
+                        <div class="card__background" style="background-image: url(https://images.unsplash.com/photo-1557177324-56c542165309?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80)"></div>
+                        <div class="card__content">
+                            <p class="card__category">Campus</p>
+                            <h3 class="card__heading">Example Card Heading</h3>
+                        </div>
+                    </a>
+                    <a class="card" asp-controller="Gallery" asp-action="Faculty" id="faculty">
+                        <div class="card__background" style="background-image: url(https://images.unsplash.com/photo-1557187666-4fd70cf76254?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60)"></div>
+                        <div class="card__content">
+                            <p class="card__category">Faculty</p>
+                            <h3 class="card__heading">Example Card Heading</h3>
+                        </div>
+                    </a>
+                    <a class="card" asp-controller="Gallery" asp-action="Placement" id="placement">
+                        <div class="card__background" style="background-image: url(https://images.unsplash.com/photo-1556680262-9990363a3e6d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60)"></div>
+                        <div class="card__content">
+                            <p class="card__category">Placement</p>
+                            <h3 class="card__heading">Example Card Heading</h3>
+                        </div>
+                    </a>
+                    <a class="card" asp-controller="Gallery" asp-action="sports" id="sports">
+                        <div class="card__background" style="background-image: url(https://images.unsplash.com/photo-1557004396-66e4174d7bf6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60)"></div>
+                        <div class="card__content">
+                            <p class="card__category">Sports</p>
+                            <h3 class="card__heading">Example Card Heading</h3>
+                        </div>
+                    </a>
+                    <a class="card" asp-controller="Gallery" asp-action="Campus" id="campus">
+                        <div class="card__background" style="background-image: url(https://images.unsplash.com/photo-1557177324-56c542165309?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80)"></div>
+                        <div class="card__content">
+                            <p class="card__category">Campus</p>
+                            <h3 class="card__heading">Example Card Heading</h3>
+                        </div>
+                    </a>
+                    <a class="card" asp-controller="Gallery" asp-action="Faculty" id="faculty">
+                        <div class="card__background" style="background-image: url(https://images.unsplash.com/photo-1557187666-4fd70cf76254?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60)"></div>
+                        <div class="card__content">
+                            <p class="card__category">Faculty</p>
+                            <h3 class="card__heading">Example Card Heading</h3>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </section>*@
+
+@section Scripts{
+    <script src="~/js/gallery.js"></script>
+    <script>
+
+    </script>
+}
+

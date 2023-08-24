@@ -1,0 +1,206 @@
+﻿
+@{
+    ViewData["Title"] = "NBA";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section Styles{
+    <link rel="stylesheet" href="~/css/accreditation.css" />
+}
+
+<div id="accreditation-content">
+    <section id="inner-banner">
+        @Html.Partial("_innerBanner")
+    </section>
+    <div class="row">
+        <aside id="left-side-nav-menu" class="col-md-3 col-sm-4 box hidden-xs">
+            @Html.Partial("_AccreditationSideBar")
+        </aside>
+        <article id="core-content" class="col-md-9 col-sm-8 box ">
+            <div class="col-xs-12">
+                <div id="content-title">
+                    <div class="page-header">
+                        <h1 class="main-headings">NBA</h1>
+                    </div>
+                </div>
+                <section id="content-block">
+                    <div id="content-block__main">
+                        <div id="accordion" class="panel-group">
+                            <div class="panel panel-default">
+                                <div class="panel-heading" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                                    <a class="panel-title">NBA</a>
+                                </div>
+                                <div id="collapseOne" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <table class="table table-hover table-bordered table-striped customTable">
+                                            <thead>
+                                                <tr class="table-header">
+                                                    <th class="text-center">Title</th>
+                                                    <th class="text-center">Download</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Audits</td>
+                                                    <td class="text-center"><a class="href-links" href="~/files/Accreditation/NBA/Audits.pdf" target="_blank">Download File</a></td>
+                                                </tr>                                               
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                           
+                            <div class="panel panel-default">
+                                <div class="panel-heading" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                                    <a class="panel-title">Disclosure</a>
+                                </div>
+                                <div id="collapseTwo" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <table class="table table-hover table-bordered table-striped customTable">
+                                            <thead>
+                                                <tr class="table-header">
+                                                    <th class="text-center">Title</th>
+                                                    <th class="text-center">Download</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Disclosures</td>
+                                                    <td class="text-center"><a class="href-links" href="~/files/Accreditation/NBA/disclosures.pdf" target="_blank">Download File</a></td>
+                                                </tr>    
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </article>
+
+    </div>
+</div>
+
+@section Scripts{
+
+    @*    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.7.570/pdf.min.js"></script>*@
+    @*    <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.0.943/build/pdf.min.js"></script>*@
+    <script src="https://mozilla.github.io/pdf.js/build/pdf.js"></script>
+
+    <script src="~/js/accreditation.js"></script>
+    <script>
+        const url = '../files/Accreditation/NAAC/SSR.pdf';
+
+        let pdfDoc = null,
+            pageNum = 1,
+            pageIsRendering = false,
+            pageNumIsPending = null;
+
+        const scale = 1.5,
+            canvas = document.querySelector('#pdf-render'),
+            ctx = canvas.getContext('2d');
+
+        // Render the page
+        const renderPage = num => {
+            pageIsRendering = true;
+
+            // Get page
+            pdfDoc.getPage(num).then(page => {
+                // Set scale
+                const viewport = page.getViewport({ scale });
+                canvas.height = viewport.height;
+                canvas.width = viewport.width;
+
+                const renderCtx = {
+                    canvasContext: ctx,
+                    viewport
+                };
+
+                page.render(renderCtx).promise.then(() => {
+                    pageIsRendering = false;
+
+                    if (pageNumIsPending !== null) {
+                        renderPage(pageNumIsPending);
+                        pageNumIsPending = null;
+                    }
+                });
+
+                // Output current page
+                var items = document.querySelectorAll('.page-num');
+                for (var i = 0; i < items.length; i++) {
+                    items[i].textContent = num;
+                }
+                //document.querySelector('.page-num').textContent = num;
+            });
+        };
+
+        // Check for pages rendering
+        const queueRenderPage = num => {
+            if (pageIsRendering) {
+                pageNumIsPending = num;
+            } else {
+                renderPage(num);
+            }
+        };
+
+        // Show Prev Page
+        const showPrevPage = () => {
+            if (pageNum <= 1) {
+                return;
+            }
+            pageNum--;
+            queueRenderPage(pageNum);
+        };
+
+        // Show Next Page
+        const showNextPage = () => {
+            if (pageNum >= pdfDoc.numPages) {
+                return;
+            }
+            pageNum++;
+            queueRenderPage(pageNum);
+        };
+
+        // Get Document
+        pdfjsLib
+            .getDocument(url)
+            .promise.then(pdfDoc_ => {
+                pdfDoc = pdfDoc_;
+
+                var items = document.querySelectorAll('.page-count');
+                for (var i = 0; i < items.length; i++) {
+                    items[i].textContent = pdfDoc.numPages;
+                }
+                //document.querySelector('.page-count').textContent = pdfDoc.numPages;
+
+                renderPage(pageNum);
+            })
+            .catch(err => {
+                // Display error
+                const div = document.createElement('div');
+                div.className = 'error';
+                div.appendChild(document.createTextNode(err.message));
+                document.querySelector('body').insertBefore(div, canvas);
+                // Remove top & bottom bar
+                var items = document.querySelectorAll('.pdf-nav-bar');
+                for (var i = 0; i < items.length; i++) {
+                    items[i].style.display = 'none';
+                }
+                //document.querySelector('.pdf-nav-bar').style.display = 'none';
+            });
+
+        // Button Events
+        var prev_items = document.querySelectorAll('.prev-page');
+        var next_items = document.querySelectorAll('.next-page');
+        for (var i = 0; i < next_items.length; i++) {
+            prev_items[i].addEventListener('click', showPrevPage);
+            next_items[i].addEventListener('click', showNextPage);
+        }
+            //document.querySelector('.prev-page').addEventListener('click', showPrevPage);
+            //document.querySelector('.next-page').addEventListener('click', showNextPage);
+
+    </script>
+}
+
