@@ -4,6 +4,62 @@
 #site-banner {
     display: none;
 }
+/*Events Marquee*/
+.ticker {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 40px;
+    margin: 0 auto;
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    z-index: 15;
+}
+
+.news {
+    width: 100%;
+    background-color: #d84153;
+}
+
+.news-title {
+    width: 180px;
+    text-align: center;
+    background: #c81c1c;
+    position: absolute;
+    z-index: 7;
+    height: 35px;
+}
+
+    .news-title:after {
+        position: absolute;
+        content: "";
+        right: -39px;
+        border-left: 20px solid #c81c1c;
+        border-top: 28px solid transparent;
+        border-right: 20px solid transparent;
+        border-bottom: 21px solid transparent;
+        top: 0px
+    }
+
+    .news-title h5 {
+        font-size: 20px;
+        margin: 6% 0;
+        color: #fff;
+        padding-bottom: 2px;
+    }
+
+.news marquee {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.news-content a {
+    margin-top:10px;
+    margin-right: 41px;
+    display: inline;
+    color: #fff;
+}
 
 /*  Class added through Javascript  */
 .navigationBarAfterScroll {

@@ -1,0 +1,229 @@
+﻿@using Microsoft.AspNetCore.Mvc.Rendering
+@{
+    ViewData["Title"] = "Events";
+}
+
+
+@section Styles{
+    <link rel="stylesheet" href="~/css/Events.css" />
+}
+
+<div id="events-content">
+    <div class="row">
+        <article id="core-content" class="col-md-9 col-sm-8 box ">
+            <div class="col-xs-12">
+                <ul class="breadcrumb" id="breadcrumb-nav-section">
+                    <li class="current"><a class="href-links" asp-controller="Events" asp-action="Index" id="events">Events</a></li>
+                </ul>
+                <div id="content-title">
+                    <div class="page-header">
+                        <h1 class="main-headings">All Events</h1>
+                    </div>
+                </div>
+                <section id="content-block">
+                    <div class="col-md-12">
+                        <div id="content-block__Main">
+
+                            <div class="row single-event-block">
+                                <div class="col-md-4">
+                                    <img class="img-responsive" src="~/images/Home/Event/1.jpeg" />
+                                </div>
+                                <div class="col-md-8">
+                                    <h3><a href="~/files/About/Events/event1.pdf">Guest Lecture on Underwater communication systems</a></h3>
+                                    <p> Guest Lecture on Underwater communication systems was conducted by depatrment od ECE on 28-06-2023 for 2nd B.Tech ECE Students</p>
+                                </div>
+                            </div>
+
+                            <div class="row single-event-block">
+                                <div class="col-md-4">
+                                    <img class="img-responsive" src="~/images/Home/Event/2.jpeg" />
+                                </div>
+                                <div class="col-md-8">
+                                    <h3><a href="~/files/About/Events/event2.pdf">FDP on Advances in Device modelling and Signal Conditioning</a></h3>
+                                    <p>
+                                        5 days FDP on Recent Trends in Electronics & Communications:
+                                        Advances in Device modelling and Signal Conditioning was jointly organized by depatrment od ECE, PBR Visvodaya Institute of Technology & Science, Kavali
+                                        &
+                                        Faculty Development Cell, JNTUA, Anantapuramu
+                                        in association with ISTE, AP Section from 26-06-2023 to 30-06-2023
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="row single-event-block">
+                                <div class="col-md-4">
+                                    <img class="img-responsive" src="~/images/Home/Event/3.jpeg" />
+                                </div>
+                                <div class="col-md-8">
+                                    <h3><a href="~/files/About/Events/event3.pdf">Guest Lecture on Future & Growth of Semiconductor Industry in India</a></h3>
+                                    <p> Guest Lecture was conducted by department of ECE on 24-06-2023 on Future & Growth of Semiconductor Industry in India  for 2nd B.Tech ECE Students</p>
+                                </div>
+                            </div>
+                            <div class="row single-event-block">
+                                <div class="col-md-4">
+                                    <img class="img-responsive" src="~/images/Home/Event/4.jpeg" />
+                                </div>
+                                <div class="col-md-8">
+                                    <h3><a href="~/files/About/Events/event4.pdf">Soft Skills Certification</a></h3>
+                                    <p> Certification course was organized by department of ECE on Soft Skills from 12-05-2023 to 17-052023 for B.TECH students</p>
+                                </div>
+                            </div>
+                            <div class="row single-event-block">
+                                <div class="col-md-4">
+                                    <img class="img-responsive" src="~/images/Home/Event/5.jpeg" />
+                                </div>
+                                <div class="col-md-8">
+                                    <h3><a href="~/files/About/Events/event5.pdf">Fundamentals of JAVA Programming Certification</a></h3>
+                                    <p> Certification course was organized by department of ECE on Soft Skills from 05-05-2023 to 10-05-2023 for 3rd B.TECH ECE  students</p>
+                                </div>
+                            </div>
+                            <div class="row single-event-block">
+                                <div class="col-md-4">
+                                    <img class="img-responsive" src="~/images/Home/Event/6.jpeg" />
+                                </div>
+                                <div class="col-md-8">
+                                    <h3><a href="~/files/About/Events/event6.pdf">Guest Lecture on Building and Analyzing Circuits using Online Tools</a></h3>
+                                    <p> Guest Lecture was organized by department of ECE on Building and Analyzing Circuits using Online Tools 04-05-2023 for 1st B.TECH students</p>
+                                </div>
+                            </div>
+                            <div class="row single-event-block">
+                                <div class="col-md-4">
+                                    <img class="img-responsive" src="~/images/Home/Event/7.jpeg" />
+                                </div>
+                                <div class="col-md-8">
+                                    <h3><a href="~/files/About/Events/event7.pdf">Guest Lecture on Recent Trends In Wireless Communications</a></h3>
+                                    <p> Guest Lecture was organized by department of ECE for Recent Trends In Wireless Communications on 24-04-2023 for III B.TECH students</p>
+                                </div>
+                            </div>
+                            <div class="row single-event-block">
+                                <div class="col-md-4">
+                                    <img class="img-responsive" src="~/images/Home/Event/8.jpeg" />
+                                </div>
+                                <div class="col-md-8">
+                                    <h3><a href="~/files/About/Events/event8.pdf">SMART SENSORS Certification</a></h3>
+                                    <p> Certification course was organized by department of ECE on SMART SENSORS from 27-03-2023 to 01-04-2023 for II B.TECH students</p>
+                                </div>
+                            </div>
+                            <div class="row single-event-block">
+                                <div class="col-md-4">
+                                    <img class="img-responsive" src="~/images/Home/Event/9.jpeg" />
+                                </div>
+                                <div class="col-md-8">
+                                    <h3><a href="~/files/About/Events/event9.pdf">Workshop on IOT & EMBEDDED SYSTEMS</a></h3>
+                                    <p> 3 day workshop was conducted by department of ECE on 20th ,21st&23rd March 2023 in IOT & EMBEDDED SYSTEMS for III B.Tech ECE Students</p>
+                                </div>
+                            </div>
+                            <div class="row single-event-block">
+                                <div class="col-md-4">
+                                    <img class="img-responsive" src="~/images/Home/Event/10.jpeg" />
+                                </div>
+                                <div class="col-md-8">
+                                    <h3><a href="~/files/About/Events/event10.pdf">PROGRAMMING ARDUINO Certification</a></h3>
+                                    <p> Certification course was organized by department of ECE on PROGRAMMING ARDUINO from 20-03-2023 to 26-03-2023 for III B.TECH students</p>
+                                </div>
+                            </div>
+                            <div class="row single-event-block">
+                                <div class="col-md-4">
+                                    <img class="img-responsive" src="~/images/Home/Event/11.jpeg" />
+                                </div>
+                                <div class="col-md-8">
+                                    <h3><a href="~/files/About/Events/event11.pdf">Workshop on Integration Sensors & Embedded C Programming using Arduino MCU on Online Simulator</a></h3>
+                                    <p> 3 day workshop was conducted by department of ECE on 10th ,11th& 13th March 2023 in Integration Sensors & Embedded C Programming using Arduino MCU on Online Simulator for II B.Tech ECE Students</p>
+                                </div>
+                            </div>
+                            <div class="row single-event-block">
+                                <div class="col-md-4">
+                                    <img class="img-responsive" src="~/images/Home/Event/12.jpeg" />
+                                </div>
+                                <div class="col-md-8">
+                                    <h3><a href="~/files/About/Events/event12.pdf">Guest Lecture on Higher Studies in Abroad</a></h3>
+                                    <p> Guest Lecture conducted by department of ECE on 09-03-2023 in Higher Studies in Abroad for IVth B.Tech ECE Students</p>
+                                </div>
+                            </div>
+                            <div class="row single-event-block">
+                                <div class="col-md-4">
+                                    <img class="img-responsive" src="~/images/Home/Event/13.jpeg" />
+                                </div>
+                                <div class="col-md-8">
+                                    <h3><a href="~/files/About/Events/event13.pdf">Simulation of Communication Networks Through NS2</a></h3>
+                                    <p> 3 day workshop was conducted by department of ECE on 08-02-2023 to 10-02-2023 in Simulation of Communication Networks Through NS2 for IV B.Tech ECE Students</p>
+                                </div>
+                            </div>
+                            <div class="row single-event-block">
+                                <div class="col-md-4">
+                                    <img class="img-responsive" src="~/images/Home/Event/14.jpeg" />
+                                </div>
+                                <div class="col-md-8">
+                                    <h3><a href="~/files/About/Events/event14.pdf">Sankranthi 2k13</a></h3>
+                                    <p>Pre-Sankranthi event was celebrated by students on 31st december 2023</p>
+                                </div>
+                            </div>
+                            <div class="row single-event-block">
+                                <div class="col-md-4">
+                                    <img class="img-responsive" src="~/images/Home/Event/15.jpeg" />
+                                </div>
+                                <div class="col-md-8">
+                                    <h3><a href="~/files/About/Events/event15.pdf">Industrial visit</a></h3>
+                                    <p>III rd B.Tech students had an Industrial vist to SHAR, Sriharikota on 27-12-2023</p>
+                                </div>
+                            </div>
+                            <div class="row single-event-block">
+                                <div class="col-md-4">
+                                    <img class="img-responsive" src="~/images/Home/Event/16.jpeg" />
+                                </div>
+                                <div class="col-md-8">
+                                    <h3><a href="~/files/About/Events/event16.pdf">Parents- Meet 2k13</a></h3>
+                                    <p>Parent-teacher meeting on Saturday, 24th December 2022 in the college at 10:00 AM. </p>
+                                </div>
+                            </div>
+                            <div class="row single-event-block">
+                                <div class="col-md-4">
+                                    <img class="img-responsive" src="~/images/Home/Event/17.jpeg" />
+                                </div>
+                                <div class="col-md-8">
+                                    <h3><a href="~/files/About/Events/event17.pdf">Employability Skills Certification</a></h3>
+                                    <p> Certification course was organized by department of ECE on Employability Skills from 17-10-2022 to 22-10-2022 for IV B.TECH students</p>
+                                </div>
+                            </div>
+                            <div class="row single-event-block">
+                                <div class="col-md-4">
+                                    <img class="img-responsive" src="~/images/Home/Event/18.jpeg" />
+                                </div>
+                                <div class="col-md-8">
+                                    <h3><a href="~/files/About/Events/event18.pdf">Guest Lecture on Role of Engineer for society</a></h3>
+                                    <p> Guest Lecture was conducted by department of ECE on 30-09-2022 in Role of Engineer for society for IIIth B.Tech ECE Students</p>
+                                </div>
+                            </div>
+                            <div class="row single-event-block">
+                                <div class="col-md-4">
+                                    <img class="img-responsive" src="~/images/Home/Event/19.jpeg" />
+                                </div>
+                                <div class="col-md-8">
+                                    <h3><a href="~/files/About/Events/event19.pdf">Guest Lecture on Role of the student in Reconstruction of the nation</a></h3>
+                                    <p> Guest Lecture was conducted by department of ECE on 29-09-2022 in Role of the student in Reconstruction of the nation for Ist B.Tech ECE Students</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </article>
+        <div class="col-md-3">
+            <aside id="right-side-nav-menu">
+                <div id="content-block__side-menu">
+                    @Html.Partial("_AcadamicsQuickLinks")
+                </div>
+            </aside>
+        </div>
+
+    </div>
+</div>
+
+@section Scripts{
+    <script src="https://cdn.jsdelivr.net/gh/cant89/gianni-accordion-js/dist/gianniAccordion.min.js"></script>
+    <script src="~/js/Events.js"></script>
+    <script>
+
+    </script>
+}

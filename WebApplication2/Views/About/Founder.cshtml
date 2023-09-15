@@ -5,13 +5,64 @@
 }
 
 @section Styles{
-    <link rel="stylesheet" href="~/css/shared/comingSoon.css" />
+    <style>
+        #section-banner {
+            background-image: url(../images/About/DR.jpg)
+        }
+
+        #core-content {
+            box-shadow: none;
+        }
+    </style>
 }
 
-@Html.Partial("_ComingSoon", ViewData["Title"])
+<div id="rti-content">
+    <section id="inner-banner">
+        @Html.Partial("_innerbanner");
+    </section>
+    <div class="row">
+        <article id="core-content" class="container">
+            <div class="col-sm-12">
+                <div id="content-title">
+                    <div class="page-header">
+                        <h1 class="h1 main-headings">Dodla Rama Chandra Reddy</h1>
+                    </div>
+                </div>
+                <section id="content-block">
+                    <div id="content-block__main">
+                        <p class="text-content text-para">
+                            Architecture and founder of Visvodaya and Kavali Visvodaya Institutes Founder D.Ramachandra Reddy (1929-2010) died at Kavali on Friday (15th Jan, 2010), who is populary known as DR. 81 year old DR sir is one of the most importent person in Kavali. Sri D.R. has two dreams, The first dream is that Kavali should grow from a small panchayat lnto a Mega Corporation. The second and more important dream is Visvodaya. Now Visvodaya is one of the leading Educational center in nellre district. DR established Kavali College in 1951 in Kavali later it changed as Jawahar Bharati College. Jawahar Bharati is considered a premier institute and draws students from many places in Nellore & Prakasam district. An young graduate Dr D.Ramachandra Reddy established this college, with a view to impart education to the poor and needed people of Kavali.
+                        </p>
+                        <p class="text-content text-para">
+                            Dr. Dodla Ramachandra Reddy, a young graduate of 20 years, after completing his Intermediate Education at Loyola College and Bachelor’s Degree at Pachaiyappa’s College, Madras (Chennai), established Kavali College in 1951, which was rechristened Jawahar Bharati College in 1965 by the then Vice President of India, Zakir Hussain. The college was named after Jawaharlal Nehru (1889 -1964), the first Prime Minister of Independent India.<br />
+
+                            The prime objective that motivated and drove him to establish an educational institution was his firm belief that imparting education to the needy and underprivileged is the only weapon that can drive away poverty and alleviate the ills of the society.<br />
+
+                            It is a testimony to his vision and compassion that, even after 72 years of glorious existence, the Visvodaya Society, which houses all the below mentioned institutions, continues to follow the ideals of its founder.
+                        </p>
+                        <p class="text-content text-para">
+                            As part of society we have the mentioned institues running as
+                            1. Jawahar Bharati Degree College
+                            2. PHR Jawahar Bharati Junior College
+                            3. Dr. LKR Visvodaya Boys High School
+                            4. SSC Visvodaya Girls High School
+                            5. PBR Visvodaya Institution of Technology and Science
+                            6. Jawahar Bharathi Institute of Medical Sciences (Introduced in 2023)
+                        </p>
+                        <p>
+                            He envisioned the establishment of a 'Health Service Branch' on Visvodaya Campus way back in 1952, and it was promptly incorporated in the ‘Memorandum of Association’ of the Visvodaya Constitution.
+
+                            His vision of the Health Service Branch became a reality when the MPHW (Multipurpose Health Worker) course was introduced at the intermediate level about 25 years ago. Now, his dream is widening further with the introduction of B.Sc. Nursing, and more health care courses are in the pipeline.
+                        </p>
+                    </div>
+                </section>
+            </div>
+
+        </article>
+    </div>
+</div>
 
 @section Scripts{
     <script>
     </script>
 }
-

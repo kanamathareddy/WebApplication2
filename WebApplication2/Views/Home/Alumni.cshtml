@@ -1,15 +1,165 @@
 ﻿
 @{
-    ViewData["Title"] = "Alumni";
+    ViewData["Title"] = "ALUMNI";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-
 @section Styles{
-    <link rel="stylesheet" href="~/css/shared/comingSoon.css" />
+<style>
+    #section-banner {
+        background-image: url(../images/Home/alumni.jpg)
+    }
+</style>
+    <link rel="stylesheet" href="~/css/alumni.css" / >
 }
 
-@Html.Partial("_ComingSoon", ViewData["Title"])
+<div id="rti-content">
+    <section id="inner-banner">
+        @Html.Partial("_innerbanner");
+    </section>
+    <div class="row">
+        <article id="core-content" class="container">
+            <div class="col-sm-12">
+                <div id="content-title">
+                    <div class="page-header">
+                        <h1 class="h1 main-headings">Alumni</h1>
+                    </div>
+                </div>
+                <section id="content-block">
+                    <div id="content-block__main">
+                        <a class="href-links" href="~/files/About/Alumni/alumni-registration.pdf" target="_blank">Certificate Of Registration </a><br /><br />
+                        <a class="href-links" href="~" data-toggle="tab">Click here to  REGISTER as an Alumni </a><br /><br />
+                        <p class="text-content text-para">
+                            PBRVITS has come a long way since its inception but has miles to go. Together we can support VITS in its vision to give a promising future for our students.The aims and objectives of the PBRVITS Alumni Association shall be:
+                        </p>
+                        <ul>
+                            <li>
+                                To provide a forum for the Members of the Alumni Association (herein after referred to as the Members) to interact amongst themselves as also with the Principal, Lecturers and the present students of PBRVITS, Kavali– 524201.
+                            </li>
+                            <li>
+                                To bring together the ex students of PBRVITS, Kavali– 524201 and to promote fellowship amongst them and their families.
+                            </li>
+                            <li>
+                                To disseminate knowledge and know-how for the mutual benefit of the Members as also for the benefit of the College.
+                            </li>
+                            <li>
+                                To undertake <ul>
+                                    <li>
+                                        (i) intellectual, academic and cultural activities
+                                    </li>
+                                    <li>
+                                        (ii) sports and games
+                                    </li>
+                                    <li>
+                                        (iii) entertainment programmes
+                                    </li>
+                                    <li>
+                                        (iv) improvements to existing infrastructure of the college and to provide accommodation at free of cost for Alumni Members for all of their visits to the college.
+                                    </li>
+                                    <li>
+                                        (v) social service etc. for the benefit of the Members as also of the college and for the society at large
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                
+                <section>
+                    <div id="content-title">
+                        <h1 class="h1 main-headings">Year wise Alumni details</h1>
+                    </div>
+                    <table class="table table-hover table-bordered table-striped customTable">
+                        <thead>
+                            <tr class="table-title"><th colspan="2" class="text-center">Alumni Events</th></tr>
+                            <tr class="table-header">
+                                <th class="text-center">Year of Conduction</th>
+                                <th class="text-center">Minutes</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="text-center">2022-2023</td>
+                                <td class="text-center"><a class="href-links" href="~/files/About/Alumni/2023-Alumni.docx" target="_blank">Download File</a></td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">2021-2022</td>
+                                <td class="text-center"><a class="href-links" href="~/files/About/Alumni/2022-Alumni.docx" target="_blank">Download File</a></td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">2020-2021</td>
+                                <td class="text-center"><a class="href-links" href="~/files/About/Alumni/2021-Alumni.docx" target="_blank">Download File</a></td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">2020-2019</td>
+                                <td class="text-center"><a class="href-links" href="~/files/About/Alumni/2019-Alumni.docx" target="_blank">Download File</a></td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">2019-2018</td>
+                                <td class="text-center"><a class="href-links" href="~/files/About/Alumni/2018-Alumni.docx" target="_blank">Download File</a></td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">2018-2017</td>
+                                <td class="text-center"><a class="href-links" href="~/files/About/Alumni/2017-Alumni.docx" target="_blank">Download File</a></td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">2017-2016</td>
+                                <td class="text-center"><a class="href-links" href="~/files/About/Alumni/2016-Alumni.docx" target="_blank">Download File</a></td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">2016-2015</td>
+                                <td class="text-center"><a class="href-links" href="~/files/About/Alumni/2015-Alumni.docx" target="_blank">Download File</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+</div>
+
+        </article>
+        
+        <div class="container gallery-container">
+
+            <h1 class="h1 main-headings">Alumni Gallery</h1>
+            <div class="gallery">
+                <div class="row">
+                    <div class="col-sm-12 col-md-4">
+                        <a class="lightbox" href="~/images/Home/Alumni/6.jpeg">
+                            <img src="~/images/Home/Alumni/4.jpeg" alt="alumni meet">
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <a class="lightbox" href="~/images/Home/Alumni/1.jpeg">
+                            <img src="~/images/Home/Alumni/1.jpeg" alt="alumni meet">
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <a class="lightbox" href="~/images/Home/Alumni/2.jpeg">
+                            <img src="~/images/Home/Alumni/2.jpeg" alt="alumni meet">
+                        </a>
+                    </div>
+                    <div class="col-sm-12 col-md-8">
+                        <a class="lightbox" href="~/images/Home/Alumni/5.jpeg">
+                            <img src="~/images/Home/Alumni/7.jpeg" alt="alumni meet">
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <a class="lightbox" href="~/images/Home/Alumni/3.jpeg">
+                            <img src="~/images/Home/Alumni/5.jpeg" alt="alumni meet">
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <a class="lightbox" href="~/images/Home/Alumni/7.jpeg">
+                            <img src="~/images/Home/Alumni/3.jpeg" alt="alumni meet">
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
 
 @section Scripts{
     <script>

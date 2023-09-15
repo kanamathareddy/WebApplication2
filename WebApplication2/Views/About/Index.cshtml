@@ -7,13 +7,25 @@
     <link rel="stylesheet" href="~/css/about.css" />
     <link rel="stylesheet" href="~/js/third_party/one-page-scroll-slider-wheel/public/slider-wheel.css" />
 }
-
+    
 <div id="parallax-bg" class="home">
     <div class="parallax-bg__content">
         <h1 class=" h1 parallax-bg__content--text"></h1>
     </div>
 </div>
-
+<div class="">
+    <div class="ticker">
+        <div class="news-title">
+            <h5>Events</h5>
+        </div>
+        <div class="news">
+            <marquee class="news-content" onmouseover="stop()" onmouseout="start()" loop="infinite">
+                <a asp-controller="Events" asp-action="Index" id="events">Guest Lecture on Underwater communication systems was conducted by depatrment od ECE on 28-06-2023 for 2nd B.Tech ECE Students  </a> <a asp-controller="Events" asp-action="Index" id="events">
+    5 days FDP on Recent Trends in Electronics & Communications:    Advances in Device modelling and Signal Conditioning</a>
+            </marquee>
+        </div>
+    </div>
+</div>
 <div id="caption-about-college">
     <div class="container-fluid">
         <div class="row">
@@ -80,6 +92,32 @@
                 </div>
             </div>
             <!-- ./Team member -->
+            <div class="col-xs-12 col-sm-6">
+                <div class="image-flip">
+                    <div class="mainflip flip-0">
+                        <div class="frontside">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <div><img class=" img-fluid" src="~/images/Members/VITS_princ.jpg" alt="card image"></div>
+                                    <h4 class="card-title">B. Dathatreya Sharma</h4>
+                                    <p class="card-text">Principal</p>
+                                    <a href="" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="backside">
+                            <div class="card">
+                                <div class="card-body text-center mt-4">
+                                    <h4 class="card-title"> B.Dattatraya Sarma</h4>
+                                    <p class="card-text">
+                                        Dr. B.Dattatraya Sarma, Ph.D in Mechanical Engineering. He has 30 years of experience in various engineering colleges as professor,Dean and Principal.Under his guidance 5 candidates secured Ph.D. degree in Mechanical Engineering.He published/presented more than 50 papers in various international and national journals and conferences. He is the lfe member of ISTE and ORSI.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <!-- Team member -->
             <div class="col-xs-12 col-sm-6">
                 <div class="image-flip" ontouchstart="this.classList.toggle('hover');">

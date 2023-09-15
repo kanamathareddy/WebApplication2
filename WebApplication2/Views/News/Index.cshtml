@@ -1,0 +1,82 @@
+﻿@using Microsoft.AspNetCore.Mvc.Rendering
+@{
+    ViewData["Title"] = "News";
+}
+
+
+@section Styles{
+    <link rel="stylesheet" href="~/css/News.css" />
+}
+
+<div id="events-content">
+    <section id="inner-banner">
+        @Html.Partial("_innerBanner")
+    </section>
+    <div class="row">
+        <article id="core-content" class="col-md-9 col-sm-8 box ">
+            <div class="col-xs-12">
+                <ul class="breadcrumb" id="breadcrumb-nav-section">
+                    <li class="current"><a class="href-links" asp-controller="News" asp-action="Index" id="news">News</a></li>
+                </ul>
+                <div id="content-title">
+                    <div class="page-header">
+                        <h1 class="main-headings">All News</h1>
+                    </div>
+                </div>
+                <section id="content-block">
+                    <div class="col-md-12">
+                        <div id="content-block__Main">
+
+                            <div class="row single-news-block">
+                                <div class="col-md-4">
+                                    <img class="img-responsive" src="~/images/Home/News/1.jpeg" />
+                                </div>
+                                <div class="col-md-8">
+                                    <h3><a href="~/files/About/Brochure.pdf">ADANI INNOVATIVE CENTER IN PBRVITS</a></h3>
+                                    <p>PBR Visvodaya Institute of Technology & Science is awarded permanent affiliation by JNTUA, Anantapuramu. It had been accredited by NAAC with an A grade in 2015 for 5 years.</p>
+                                </div>
+                            </div>
+
+                            <div class="row single-news-block">
+                                <div class="col-md-4">
+                                    <img class="img-responsive" src="~/images/Home/News/3.jpeg" />
+                                </div>
+                                <div class="col-md-8">
+                                    <h3><a href="~/files/About/Brochure.pdf">ADANI INNOVATIVE CENTER IN PBRVITS</a></h3>
+                                    <p>PBR Visvodaya Institute of Technology & Science is awarded permanent affiliation by JNTUA, Anantapuramu. It had been accredited by NAAC with an A grade in 2015 for 5 years.</p>
+                                </div>
+                            </div>
+
+                            <div class="row single-news-block">
+                                <div class="col-md-4">
+                                    <img class="img-responsive" src="~/images/Home/News/4.jpeg" />
+                                </div>
+                                <div class="col-md-8">
+                                    <h3><a href="~/files/About/Brochure.pdf">ADANI INNOVATIVE CENTER IN PBRVITS</a></h3>
+                                    <p>PBR Visvodaya Institute of Technology & Science is awarded permanent affiliation by JNTUA, Anantapuramu. It had been accredited by NAAC with an A grade in 2015 for 5 years.</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </article>
+        <div class="col-md-3">
+            <aside id="right-side-nav-menu">
+                <div id="content-block__side-menu">
+                    @Html.Partial("_AcadamicsQuickLinks")
+                </div>
+            </aside>
+        </div>
+
+    </div>
+</div>
+
+@section Scripts{
+    <script src="https://cdn.jsdelivr.net/gh/cant89/gianni-accordion-js/dist/gianniAccordion.min.js"></script>
+    <script src="~/js/news.js"></script>
+    <script>
+
+    </script>
+}

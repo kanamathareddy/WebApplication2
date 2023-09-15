@@ -17,6 +17,8 @@
     <Folder Include="wwwroot\files\Accreditation\NBA\" />
     <Folder Include="wwwroot\files\Accreditation\Cells\" />
     <Folder Include="wwwroot\files\Faculty\" />
+    <Folder Include="wwwroot\files\Admissions\" />
+    <Folder Include="wwwroot\images\Home\Events\" />
   </ItemGroup>
 
 </Project>

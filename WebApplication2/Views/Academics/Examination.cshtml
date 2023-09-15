@@ -5,15 +5,274 @@
 
 @section Styles{
     <link rel="stylesheet" href="~/css/Academics.css" />
-    <link rel="stylesheet" href="~/css/shared/comingSoon.css" />
+    @*   <link rel="stylesheet" href="~/css/shared/comingSoon.css" /> *@
 }
+@*
+    @Html.Partial("_ComingSoon", ViewData["Title"])
 
-@Html.Partial("_ComingSoon", ViewData["Title"])
+    @section Scripts{
+        <script src="~/js/academics.js"></script>
+        <script>
+            $('#Examination > blockquote').show();
+        </script>
+    } *@
+<div id="academics-content">
+    <section id="inner-banner">
+        @Html.Partial("_innerBanner")
+    </section>
+    <div class="row">
+        <aside id="left-side-nav-menu" class="col-md-3 col-sm-4 box hidden-xs">
+            @Html.Partial("_AcadamicsSideBar")
+        </aside>
+        <article id="core-content" class="col-md-9 col-sm-8 box ">
+            <div class="col-xs-12">
+                <ul id="breadcrumb-nav-section" class="breadcrumb">
+                    <li class="current"><a class="href-links" asp-controller="Academics" asp-action="Index" id="academics">Academics</a></li>
+                    <li id="currentpageBreadcrum" class="current">Examination</li>
+                </ul>
+                <div id="content-title">
+                    <div class="tab-content">
+                        <section class="blocks tab-pane in active tab-main">
+                            <div class="page-header">
+                                <h1 class="h1 main-headings">Examination</h1>
+                            </div>
+                        </section>
+                        <section class="blocks tab-pane tab-Timetables">
+                            <div class="page-header">
+                                <h1 class="h1 main-headings">Time Tables</h1>
+                            </div>
+                        </section>
+                        <section class="blocks tab-pane tab-Notifications">
+                            <div class="page-header">
+                                <h1 class="h1 main-headings">Exam Notifications</h1>
+                            </div>
+                        </section>
+                        <section class="blocks tab-pane tab-codeofconduct">
+                            <div class="page-header">
+                                <h1 class="h1 main-headings">Exam Code of Conduct</h1>
+                            </div>
+                        </section>                       
+                    </div>
+                </div>
+                <section id="content-block">
+                    <div class="col-md-8">
+                        <div id="content-block__main">
+                            <div class="tab-content">
+                                <section class="blocks tab-pane in active tab-main">
+                                    <p class="text-content text-para">
+                                        PBR Visvodaya Institute Of Technology & Science (PBRVITS) was established in 1998, it has surpassed many a milestone.
+                                    </p>
+                                    <p class="text-content text-para">
+                                        After obtaining Autonomy, a separate exams cell was established during the academic year 2021-2022 with Principal as the Chief Controller of Examinations. The cell is headed by Controller of Examinations, Supported by Two Additional Controllers of Examinations.
+                                    </p>
+                                    <p>
+                                        The Controller of Examinations shall supervise day to day activities concerning examinations and is responsible for preparation of draft academic schedule, examination time table, conduct of examinations, declaration of results and issue of marks memos etc. There are sufficient number of supporting staff members to look after the examination related activities.
+                                    </p>
+                                    <p>
+                                        The Exam Cell has integrated software which takes care of the entire process from the registration of the student for the examination to the publication of final results. Adequate infrastructure facilities are provided and constantly improved for the conduct of examination.
+                                    </p>
+                                </section>
+                                <section class="blocks tab-pane tab-Timetables">
+                                    The Exam timetables are given with a notification , 15 days prior to the start of semester end examinations.
+                                    <h6 class="h6 small-headings">Time Tables for current academic year</h6>
+                                    <table class="table table-hover table-bordered table-striped customTable">
+                                        <thead>
+                                            <tr class="table-header">
+                                                <th class="text-center">Title</th>
+                                                <th class="text-center">Download</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>B.TECH I-I SEM SUPPLY EXAMS AUG-2023</td>
+                                                <td class="text-center"><a class="href-links" href="~/files/Examination/B.TECH I-I SEM SUPPLY EXAMS AUG-2023.pdf" target="_blank">Download File</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>B.TECH I-II REG-SUPPLY EXAMS JULY-AUG-2023</td>
+                                                <td class="text-center"><a class="href-links" href="~/files/Examination/B.TECH I-II REG-SUPPLY EXAMS JULY-AUG-2023.pdf" target="_blank">Download File</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>B.TECH II-I SEM SUPPLY EXAMS AUG-2023</td>
+                                                <td class="text-center"><a class="href-links" href="~/files/Examination/B.TECH II-I SEM SUPPLY EXAMS AUG-2023.pdf" target="_blank">Download File</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>B.TECH II-II SEM REG  EXAMS -JULY-AUG-2023</td>
+                                                <td class="text-center"><a class="href-links" href="~/files/Examination/B.TECH II-II SEM REG  EXAMS -JULY-AUG-2023.pdf" target="_blank">Download File</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>M.TECH 1-II SEM REG -SUPP AUG-SEPT-2023</td>
+                                                <td class="text-center"><a class="href-links" href="~/files/Examination/M.TECH 1-II SEM REG -SUPP AUG-SEPT-2023.pdf" target="_blank">Download File</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>M.TECH I-I SEM SUPPLEMENTRY -AUG-SEPT-2023</td>
+                                                <td class="text-center"><a class="href-links" href="~/files/Examination/M.TECH I-I SEM SUPPLEMENTRY -AUG-SEPT-2023.pdf" target="_blank">Download File</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>M.TECH II-II REG AUG-SEPT-2023</td>
+                                                <td class="text-center"><a class="href-links" href="~/files/Examination/M.TECH II-II REG AUG-SEPT-2023.pdf" target="_blank">Download File</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>MBA I-I SEM SUPPLY EXAM AUG-SEPT-2023</td>
+                                                <td class="text-center"><a class="href-links" href="~/files/Examination/MBA I-I SEM SUPPLY EXAM AUG-SEPT-2023.pdf" target="_blank">Download File</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>MBA I-II SEM REG-SUPPLY EXAMS  AUG-SEPT 2023</td>
+                                                <td class="text-center"><a class="href-links" href="~/files/Examination/MBA I-II SEM REG-SUPPLY EXAMS  AUG-SEPT 2023.pdf" target="_blank">Download File</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>MBA II-I SEM SUPPLY EXAMS AUG-SEPT -2023</td>
+                                                <td class="text-center"><a class="href-links" href="~/files/Examination/MBA II-I SEM SUPPLY EXAMS AUG-SEPT -2023.pdf" target="_blank">Download File</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>MBA II-II SEM REG AUG-SEPT-2023</td>
+                                                <td class="text-center"><a class="href-links" href="~/files/Examination/MBA II-II SEM REG AUG-SEPT-2023.pdf" target="_blank">Download File</a></td>
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+                                </section>   
+                                <section class="blocks tab-pane tab-Notifications">
+                                    <p>
+                                        Exam Results <br />
+                                        Results of (R21) Regular/Supplementary End Examinations<br />
+                                        http://examportal.pbrvits.ac.in/beteportal/ <br />
+                                        Results of (R15/R19/R20 ) Regular/Supplementary  End Examinations <br />
+                                        https://jntuaresults.ac.in/ <br />
+
+                                    </p>
+
+                                </section>
+                                <section class="blocks tab-pane tab-codeofconduct">
+                                    <p class="text-content text-para">
+                                        The examinations committee may take the following guidelines into consideration while dealing with the suspected cases of malpractice reported by the invigilators/squad members etc. during end examinations. The punishment may be severe or less  depending on the merits of the individual cases.
+                                    </p>
+                                    <h6 class="h6 small-headings">Nature of Malpractices and Punish ments</h6>
+                                    <ul>
+                                        <li>
+                                            Possesses or keeps accessible in examination hall, any paper, note book, programmable calculators, cell phones, pager, palm computers or any other form of material concerned with or related to the course of the examination (theory or practical) in which he/she is appearing but has not made use of (material shall include any marks on the body of the student which can be used as an aid in the course of the examination).
+                                        <ul>
+                                           <li><span> Punishment For Possession of mobile phone</span>: Expulsion from the examination hall and cancellation of the performance in that course only.
+                                            <br /><span>For possession of any material irrelevant to the exam: </span><br />
+                                            Expulsion from the examination hall and cancellation of the performance in 50% of the subjects. (In case of fraction, the integer part of the number). The subjects for cancellation will be selected in cyclic order starting with the subject in which
+                                            the candidate is found to resort to malpractice.
+                                        </li></ul></li>
+                                        <li>
+                                            Uses objectionable, abusive or offensive language in the answer paper or in letters to the examiners or writes to the examiner requesting him to award pass marks.
+                                            <br /><span>Punishment:</span> Cancellation of the performance in that course.
+                                        </li>
+                                        <li>
+                                            Copying detected on the basis of internal evidence, such as, during valuation or during special scrutiny.
+                                            <br /><span>Punishment:</span> Cancellation of the performance in that course and all other courses the candidate has appeared including practical examinations and project work of that
+                                            semester/year examinations.
+                                        </li>
+                                        <li>
+                                            Gives assistance or guidance or receives it from any other student orally or by any other body language methods or communicates through cell phones with any other student or persons in or outside
+                                            the exam hall in respect of any matter.
+                                            <br /><span>Punishment:</span> Expulsion from the examination hall and cancellation of the performance in that course only of all the students involved.
+                                            In case of an outsider, he will be handed over to the police and a case shall be registered against him.
+
+                                        </li>
+                                        <li>
+                                            Has copied in the examination hall from any paper, book, programmable calculators, palm computers or any other form of material relevant to the course of the examination (theory or practical) in which the student is appearing.
+                                            <br /><span>Punishment:</span> Expulsion from the examination hall and cancellation of the performance in that course and all other courses including practical examinations and project work of that semester/year.
+                                        </li>
+                                        <li>
+                                            Comes in a drunken condition to the examination hall.
+                                            <br /><span>Punishment:</span>Expulsion from the examination hall and cancellation of the performance in that course and all other courses including practical examinations and project work of that semester/year.
+                                        </li>
+                                        <li>
+                                            Smuggles in the answer book or takes out or arranges to send out the question paper during the examination or answer book during or after the examination.
+                                            <br /><span>Punishment:</span> Expulsion from the examination hall and cancellation of performance in that course and all the other courses including practical examinations and project work of that semester/year. The student is also debarred for two consecutive semesters from class work and all examinations. The continuation of the course by the student is subject to the academic regulations in connection with forfeiture
+                                            of seat.
+
+                                        </li>
+                                        <li>
+                                            Refuses to obey the orders of the Chief Superintendent/ Assistant Superintendent/ any officer on duty or misbehaves or creates disturbance of any kind in and around the examination hall or organizes a walk out or instigates others to walk out, or threatens the officer in-charge or any person on duty in or outside the examination hall of any injury to his person or to any of his relations whether by words, either spoken or written or by signs or by visible representation, assaults the officer in-charge, or any person on duty in or outside the examination hall or any of his relations, or indulges in any other act of misconduct or mischief which result in damage to or destruction of property in the examination hall or any part of the College campus or engages in any other act which
+                                            in the opinion of the officer on duty amounts to use of unfair means or misconduct or has the tendency to disrupt the orderly conduct of the examination.
+                                            <br /><span>Punishment:</span> In case of students of the college, they shall be expelled from examination halls and cancellation of their performance in that course and all other courses of that semester/year. The students also are debarred and forfeit their seats.
+                                            <br />In case of outsiders, they will be handed over to the police and a police case shall be registered against them.
+
+                                        </li>
+                                        <li>
+                                            Leaves the exam hall taking away answer script or intentionally tears up the script or any part thereof inside or outside the examination hall.
+                                            <br /><span>Punishment: </span> Expulsion from the examination hall and cancellation of performance in that course and all the other courses including practical examinations and project work of that semester/year. The candidate is also debarred for two consecutive semesters from class work and all end examinations. The continuation of the program by the candidate is subject to the academic regulations in connection with
+                                            For feiture of seat.
+                                        </li>
+                                        <li>
+                                            Possesses any lethal weapon or fire arm in the examination hall.<br /><span>Punishment: </span> Expulsion from the examination hall and cancellation of the performance in that course and all other courses including practical examinations and project work of that semester/year. The student is also debarred and forfeits the seat.
+                                        </li>
+                                        <li>
+                                            If student of the college, who is not a candidate for the particular examination or any person not connected with the college indulges in any malpractice or improper conduct mentioned in the above points.<br /><span>Punishment: </span> For Student of the college: Expulsion from the examination hall and cancellation of the performance in that course and all other courses including practical examinations and project work of that semester/year. The candidate is also debarred and forfeits the seat.
+                                            In case of outsiders, they will be handed over to police and, a police case shall be registered against them.
+
+                                        </li>
+                                        <li>
+                                            Impersonates	any	other	student	in connection with the examination.<br /><span>Punishment: </span> The student who has impersonated shall be expelled from examination hall. The student is debarred from writing the remaining exams, and rusticated from the college for one academic year during which period the student will not be permitted to write any exam. If the imposter is an outsider, he will be handed over to the police and a case shall be registered against him.
+                                            The performance of the original student who has been impersonated, shall be cancelled in all the courses of the examination including practicals and project work of that semester /year. The student is rusticated from the college for two consecutive years during which period the student will not be permitted to
+                                            write any exam. The continuation of the course by the student is subject to
+                                            the academic regulations in connection with forfeiture of seat.
+
+                                        </li>
+                                        <li>
+                                            If any malpractice is detected which is not covered in the above items, it shall be reported to the college academic council for further action and award suitable punishment.
+                                        </li>
+                                        <li>
+                                            Malpractice cases identified during sessional examinations will be reported to the examination committee to award suitable punishment.
+                                        </li>
+                                    </ul>
+                                    <h6 class="h6 small-headings">Punishments</h6>
+                                    <ul>
+
+                                    </ul>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <aside id="right-side-nav-menu">
+                    <div class="col-md-4">
+                        <div id="content-block__side-menu">
+                            @Html.Partial("_AcadamicsQuickLinks")
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </article>
+    </div>
+</div>
+
 
 @section Scripts{
+    <script src="https://cdn.jsdelivr.net/gh/cant89/gianni-accordion-js/dist/gianniAccordion.min.js"></script>
     <script src="~/js/academics.js"></script>
+    @*https://www.jqueryscript.net/text/Animated-Text-Truncate-Content-Toggle-Plugin-jQuery-Collapser.html*@
+    <script src="~/js/jquery.collapser.min.js"></script>
     <script>
-        $('#Examination > blockquote').show();
+        $(document).ready(function () {
+            $('#Examination > blockquote').show();
+
+            $('#currentpageBreadcrum').click(function () {
+                $('[href=".tab-main"]').tab('show');
+                $('#currentpageBreadcrum').html("Examination");
+                $('#breadcrumb-nav-section li').last().hide();
+            });
+            $('#Examination > blockquote li, .tab-content .tab-main .href-links').click(function () {
+                $('#currentpageBreadcrum').html("<a class=\"href-links\" href=\".tab-main\" data-toggle=\"tab\">Examination</a>");
+            });
+
+            //Tag and the text should be at same level for this to work as expected.
+            $(".textTruncation").collapser({
+                target: 'next',
+                mode: 'words',
+                truncate: 20,
+                speed: 'slow',
+                showText: ' Show More',
+                hideText: ' Hide Text',
+                ellipsis: '...',
+                showClass: 'show-class',
+                hideClass: 'hide-class'
+            });
+        });
     </script>
 }
 

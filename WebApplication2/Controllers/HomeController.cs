@@ -50,12 +50,19 @@ namespace vta.website.Controllers
         {
             return View();
         }
+        public IActionResult Governence()
+        {
+            return View();
+        }
 
         public IActionResult OnlineClasses()
         {
             return View();
         }
-
+        public IActionResult Founder()
+        {
+            return View();
+        }
         public IActionResult TempView()
         {
 

@@ -1,13 +1,62 @@
-﻿@{
-    ViewData["Title"] = "OnlineClasses";
-    Layout = "~/Views/About/Founder.cshtml";
+﻿
+@{
+    ViewData["Title"] = "Online Classes";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
 @section Styles{
-    <link rel="stylesheet" href="~/css/shared/comingSoon.css" />
+    <style>
+        #section-banner {
+            background-image: url(../images/Home/onlineclasses.png)
+        }
+
+        #core-content {
+            box-shadow: none;
+        }
+    </style>
 }
 
-@Html.Partial("_ComingSoon", ViewData["Title"])
+<div id="rti-content">
+    <section id="inner-banner">
+        @Html.Partial("_innerbanner");
+    </section>
+    <div class="row">
+        <article id="core-content" class="container">
+            <div class="col-sm-12">
+                <div id="content-title">
+                    <div class="page-header">
+                        <h1 class="h1 main-headings">Online Classes</h1>
+                    </div>
+                </div>
+                <section id="content-block">
+                    <div id="content-block__main">
+                        <p class="text-content text-para">
+                            VITSOL started offering online courses to students of PBRVITs during the pandemic period in the year 2020. In the initial phase 22 courses are offered for more than 5,000 students across all PBRVITs campuses.
+                        </p>
+                        <p class="text-content text-para">
+                            Few of the courses with video lecures are mentioned below.
+                        </p>
+                        <p class="text-content text-para">
+                            <a class="href-links" href="~/files/Home/onlineclasses.pdf" target="_blank">Online Classes</a>
+
+                        </p><br/>
+                        Appellate Authority
+                        Dr.B Dattatraya Sarma
+                        Principal, PBRVITS, KAVALI
+                        Phone: 99291856651
+                        Email: principal.73@jntua.ac.in
+                        
+                        Address of the Institute
+                        PBR VISVODAYA INSTITUTE OF TECHNOLOGY AND SCIENCE
+                        VISVODAYA CAMPUS, KAVALI, NELLORE DISTRICT
+                        Andhra Pradesh – 524201.
+                    </div>
+                </section>
+            </div>
+
+        </article>
+    </div>
+</div>
 
 @section Scripts{
     <script>

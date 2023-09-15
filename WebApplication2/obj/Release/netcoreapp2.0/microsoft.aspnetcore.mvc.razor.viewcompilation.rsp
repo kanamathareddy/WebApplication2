@@ -38,6 +38,7 @@ C:\Users\kanam\source\repos\WebApplication2\WebApplication2
 --file=C:\Users\kanam\source\repos\WebApplication2\WebApplication2\Views\CampusLife\Sports.cshtml
 --file=C:\Users\kanam\source\repos\WebApplication2\WebApplication2\Views\CampusLife\Transport.cshtml
 --file=C:\Users\kanam\source\repos\WebApplication2\WebApplication2\Views\CampusLife\_CampusLifeSideBar.cshtml
+--file=C:\Users\kanam\source\repos\WebApplication2\WebApplication2\Views\Events\Index.cshtml
 --file=C:\Users\kanam\source\repos\WebApplication2\WebApplication2\Views\Facilities\Index.cshtml
 --file=C:\Users\kanam\source\repos\WebApplication2\WebApplication2\Views\Facilities\_Facilities.cshtml
 --file=C:\Users\kanam\source\repos\WebApplication2\WebApplication2\Views\Gallery\Campus.cshtml
@@ -51,11 +52,13 @@ C:\Users\kanam\source\repos\WebApplication2\WebApplication2
 --file=C:\Users\kanam\source\repos\WebApplication2\WebApplication2\Views\Home\Alumni.cshtml
 --file=C:\Users\kanam\source\repos\WebApplication2\WebApplication2\Views\Home\Careers.cshtml
 --file=C:\Users\kanam\source\repos\WebApplication2\WebApplication2\Views\Home\Contact.cshtml
+--file=C:\Users\kanam\source\repos\WebApplication2\WebApplication2\Views\Home\Governence.cshtml
 --file=C:\Users\kanam\source\repos\WebApplication2\WebApplication2\Views\Home\GoverningBody.cshtml
 --file=C:\Users\kanam\source\repos\WebApplication2\WebApplication2\Views\Home\Index.cshtml
 --file=C:\Users\kanam\source\repos\WebApplication2\WebApplication2\Views\Home\OnlineClasses.cshtml
 --file=C:\Users\kanam\source\repos\WebApplication2\WebApplication2\Views\Home\RTI.cshtml
 --file=C:\Users\kanam\source\repos\WebApplication2\WebApplication2\Views\Home\TempView.cshtml
+--file=C:\Users\kanam\source\repos\WebApplication2\WebApplication2\Views\News\Index.cshtml
 --file=C:\Users\kanam\source\repos\WebApplication2\WebApplication2\Views\Placements\Index.cshtml
 --file=C:\Users\kanam\source\repos\WebApplication2\WebApplication2\Views\Placements\PlacementStats.cshtml
 --file=C:\Users\kanam\source\repos\WebApplication2\WebApplication2\Views\Placements\Recruiters.cshtml
@@ -74,5 +77,6 @@ C:\Users\kanam\source\repos\WebApplication2\WebApplication2
 --file=C:\Users\kanam\source\repos\WebApplication2\WebApplication2\Views\Shared\_innerBanner.cshtml
 --file=C:\Users\kanam\source\repos\WebApplication2\WebApplication2\Views\Shared\_Layout.cshtml
 --file=C:\Users\kanam\source\repos\WebApplication2\WebApplication2\Views\Shared\_ValidationScriptsPartial.cshtml
+--file=C:\Users\kanam\source\repos\WebApplication2\WebApplication2\Views\View.cshtml
 --file=C:\Users\kanam\source\repos\WebApplication2\WebApplication2\Views\_ViewImports.cshtml
 --file=C:\Users\kanam\source\repos\WebApplication2\WebApplication2\Views\_ViewStart.cshtml
